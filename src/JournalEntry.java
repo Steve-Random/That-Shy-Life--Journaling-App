@@ -27,6 +27,13 @@ public class JournalEntry {
             this.tags.add(tag);
         }
     }
+    //Setters
+    public void setContent(String content){
+        this.content = content;
+    }
+    public void setSocialBattery(int socialBattery){
+        this.socialBattery = socialBattery;
+    }
 
     //Getters
     public String getId() {
