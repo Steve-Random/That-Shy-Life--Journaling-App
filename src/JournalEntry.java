@@ -52,4 +52,8 @@ public class JournalEntry {
     public List<String> getTags() {
         return tags;
     }
+
+    public boolean isAudioTranscript() {
+        return isAudioTranscript;
+    }
 }
