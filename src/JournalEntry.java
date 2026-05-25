@@ -28,12 +28,25 @@ public class JournalEntry {
         }
     }
     //Setters
+    public void setId(String id){
+        this.id = id;
+    }
     public void setContent(String content){
         this.content = content;
     }
     public void setSocialBattery(int socialBattery){
         this.socialBattery = socialBattery;
     }
+    public void setMicroEntry(String microEntry){
+        this.microEntry = microEntry;
+    }
+    public void setTags(List<String> tags){
+        this.tags = tags;
+    }
+    public void setAudioTranscript (boolean isAudioTranscript){
+        this.isAudioTranscript = isAudioTranscript;
+    }
+
 
     //Getters
     public String getId() {
