@@ -35,7 +35,7 @@ public class DatabaseManager {
     }
 
     public static void saveEntry(JournalEntry entry){
-        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags) VALUES(?,?,?,?,?,?,?";
+        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags) VALUES(?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)){
