@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.time.LocalDateTime;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ public class DatabaseManager {
         return conn;
     }
 
-    public static void createNewTable() {
+    public static  void createNewTable() {
         String sql = "CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
                 + " timestamp TEXT NOT NULL,"
@@ -71,14 +72,27 @@ public class DatabaseManager {
             while (rs.next()) {
                 JournalEntry entry = new JournalEntry();
                 entry.setId(rs.getString("id"));
-                //Just grabbing the basic fields, for timestamp, we'll parse it later since it was saved as a String
+                //timestamp parsing
+                String timestampStr = rs.getString("timestamp");
+                if(timestampStr != null){
+                    entry.setTimestamp(LocalDateTime.parse(timestampStr));
+                }
                 entry.setContent(rs.getString("content"));
                 entry.setMicroEntry(rs.getString("microEntry"));
                 entry.setSocialBattery(rs.getInt("socialBattery"));
-
                 //handling boolean conversion (1 = true, 0 = false)
                 entry.setAudioTranscript(rs.getInt("isAudioTranscript") == 1);
-                //TODO: tags sparsing (skipping for now, might be complex)
+                //tags parsing
+                String tagsJson = rs.getString("tags");
+                if ((tagsJson != null) && (!tagsJson.isEmpty())){
+                    try {
+                        ObjectMapper mapper = new ObjectMapper();
+                        List<String> tags = mapper.readValue(tagsJson,mapper.getTypeFactory().constructCollectionType(List.class, String.class));
+                        entry.setTags(tags);
+                    } catch (Exception e){
+                        System.out.println("Error parsing tags: " + e.getMessage());
+                    }
+                }
                 entries.add(entry);
             }
 
@@ -87,5 +101,6 @@ public class DatabaseManager {
         }
         return entries;
     }
+
 
 }

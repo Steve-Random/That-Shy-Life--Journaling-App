@@ -27,14 +27,21 @@ public class JournalEntry {
             this.tags.add(tag);
         }
     }
+
     //Setters
-    public void setId(String id){
+    public void setId(String id) {
         this.id = id;
     }
-    public void setContent(String content){
+
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public void setContent(String content) {
         this.content = content;
     }
-    public void setSocialBattery(int socialBattery){
+
+    public void setSocialBattery(int socialBattery) {
         this.socialBattery = socialBattery;
     }
     public void setMicroEntry(String microEntry){
