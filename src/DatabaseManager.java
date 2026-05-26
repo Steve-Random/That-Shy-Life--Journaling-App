@@ -18,7 +18,7 @@ public class DatabaseManager {
         return conn;
     }
 
-    public static void createNewTable() {
+    public static  void createNewTable() {
         String sql = "CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
                 + " timestamp TEXT NOT NULL,"
