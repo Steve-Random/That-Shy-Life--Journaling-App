@@ -10,7 +10,7 @@ public static void main(String[] args) {
 
     DatabaseManager.saveEntry(firstEntry);*/
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a");
+    /*DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a");
     List<JournalEntry> history = DatabaseManager.getAllEntries();
     System.out.println("--- THE VAULT: ALL ENTRIES ---");
     for( JournalEntry entry: history){
@@ -22,6 +22,8 @@ public static void main(String[] args) {
         System.out.println("Tags: " + entry.getTags());
         System.out.println("--------------------------------------------- ");
         System.out.println();
-    }
+    }*/
+    MenuHandler menuHandler = new MenuHandler();
+    menuHandler.start();
 
 }
