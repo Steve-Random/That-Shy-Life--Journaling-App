@@ -48,8 +48,10 @@ public class DatabaseManager {
 
             pstmt.setString(1, entry.getId());
             pstmt.setString(2, entry.getTimestamp().toString());
-            pstmt.setString(3, entry.getContent());
-            pstmt.setString(4, entry.getMicroEntry());
+            String encryptedContent = SecurityManager.encrypt(entry.getContent()); //encrypting
+            pstmt.setString(3, encryptedContent);
+            String encryptedMicroEntry = SecurityManager.encrypt(entry.getMicroEntry()); //encrypting
+            pstmt.setString(4, encryptedMicroEntry);
             pstmt.setInt(5, entry.getSocialBattery());
             pstmt.setInt(6, entry.isAudioTranscript() ? 1 : 0);
             pstmt.setString(7, tagsJson);
@@ -77,8 +79,8 @@ public class DatabaseManager {
                 if(timestampStr != null){
                     entry.setTimestamp(LocalDateTime.parse(timestampStr));
                 }
-                entry.setContent(rs.getString("content"));
-                entry.setMicroEntry(rs.getString("microEntry"));
+                entry.setContent(SecurityManager.decrypt(rs.getString("content"))); //Decrypting
+                entry.setMicroEntry(SecurityManager.decrypt(rs.getString("microEntry"))); //Decrypting
                 entry.setSocialBattery(rs.getInt("socialBattery"));
                 //handling boolean conversion (1 = true, 0 = false)
                 entry.setAudioTranscript(rs.getInt("isAudioTranscript") == 1);
