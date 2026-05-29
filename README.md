@@ -19,15 +19,15 @@ daily entries.
 - **Serialization:** Jackson (JSON processing for tags)
 
 ## Project Structure
-- `Main.java`: The entry point that initializes the UI.
-- `MenuHandler.java`: Handles user interaction and console-based navigation.
-- `JournalEntry.java`: The core data model for reflections.
-- `DatabaseManager.java`: Manage SQL queries and database connection lifecycle.
-- `SecurityManager.java`: Implementation of AES encryption/decryption logic.
+- `com.thatshylife.Main.java`: The entry point that initializes the UI.
+- `com.thatshylife.MenuHandler.java`: Handles user interaction and console-based navigation.
+- `com.thatshylife.JournalEntry.java`: The core data model for reflections.
+- `com.thatshylife.DatabaseManager.java`: Manage SQL queries and database connection lifecycle.
+- `com.thatshylife.SecurityManager.java`: Implementation of AES encryption/decryption logic.
 
 ## Security Implementation
 Tha app implements "Transparent Encryption." When a user saves an entry:
-1. The content is passed to the `SecurityManager`.
+1. The content is passed to the `com.thatshylife.SecurityManager`.
 2. It is encrypted a using a 16-byte secret key and the AES algorithm.
 3. The resulting ciphertext is Base64 encoded and stored in the SQLite database.
 4. Upon retrieval, the process is reversed to display the plain text.

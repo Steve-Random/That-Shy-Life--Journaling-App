@@ -1,4 +1,4 @@
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
+package com.thatshylife;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;

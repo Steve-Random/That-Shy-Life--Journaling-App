@@ -1,3 +1,5 @@
+package com.thatshylife;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -40,6 +42,6 @@ class JournalEntryTest {
 
         List<String> tags = entry.getTags();
         assertEquals(1,tags.size());
-        assertEquals("#recharge", tags.getFirst());
+        assertEquals("#recharge", tags.get(0));
     }
 }
