@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Built a Layout for the Journal New Reflection Entry in main.dart">
-      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalEntry.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure.">
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780122931466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure.">
+      <option name="closed" value="true" />
+      <created>1780178956524</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780178956525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure.">
+      <option name="closed" value="true" />
+      <created>1780179394064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780179394064</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +132,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Built a Layout for the Journal feed in main.dart" />
     <MESSAGE value="Built a Layout for the Journal New Reflection Entry in main.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Built a Layout for the Journal New Reflection Entry in main.dart" />
+    <MESSAGE value="Reorganized files for a cleaner structure." />
+    <MESSAGE value="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
