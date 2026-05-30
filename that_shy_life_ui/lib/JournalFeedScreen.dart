@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'JournalEntry.dart';
 import 'NewEntryScreen.dart';
 
 class JournalFeedScreen extends StatefulWidget {
@@ -10,19 +12,22 @@ class JournalFeedScreen extends StatefulWidget {
 
 class _JournalFeedScreenState extends State<JournalFeedScreen> {
   // this is mock data to visualise the layout before connecting to the API
-  final List<Map<String, String>> _mockEntries = [
-    {
-      'date': 'May 29, 2026',
-      'title': 'Morning Reflections',
-      'content':
-      'Just setting up the unified workspace today. It feels great to see the java backend and Flutter web UI finally talking to each other smoothly.',
-    },
-    {
-      'date': 'May 28, 2026',
-      'title': 'Keeping It Natural',
-      'content':
-      'Thinking about content styles today. There is something deeply powerful about keeping things raw, uscripted, and authentically human.',
-    },
+  final List<JournalEntry> _mockEntries = [
+    JournalEntry(
+      id: '1',
+      title: 'Morning Reflections',
+      content:
+          'Just setting up the unified workspace today. It feels great to see the java backend and Flutter web UI finally talking to each other smoothly.',
+      createdAt: DateTime.now(),
+    ),
+
+    JournalEntry(
+      id: '2',
+      title: 'Keeping It Natural',
+      content:
+          'Thinking about content styles today. There is something deeply powerful about keeping things raw, uscripted, and authentically human.',
+      createdAt: DateTime.now().subtract(const Duration(days: 1)),
+    ),
   ];
 
   @override
@@ -71,7 +76,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                entry['date']!,
+                                "${entry.createdAt.month}/${entry.createdAt.day}/${entry.createdAt.year}",
                                 style: TextStyle(
                                   color: Colors.grey[500],
                                   fontWeight: FontWeight.w500,
@@ -82,7 +87,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            entry['title']!,
+                            entry.title,
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -90,7 +95,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            entry['content']!,
+                            entry.content,
                             style: TextStyle(
                               fontSize: 15,
                               color: Colors.grey[700],
