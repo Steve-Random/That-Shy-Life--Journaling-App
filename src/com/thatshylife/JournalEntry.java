@@ -1,5 +1,7 @@
 package com.thatshylife;
-
+import com.fasterxml.jackson.annotation.JsonProperty;
+import java.time.LocalDateTime;
+import java.time.LocalDateTime;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +9,7 @@ import java.util.UUID;
 
 public class JournalEntry {
     private String id;
+    @JsonProperty("createdAt")
     private LocalDateTime timestamp;
     private String content; //the actual journal text
     private String microEntry; //the one-wor or short phrase journal entry

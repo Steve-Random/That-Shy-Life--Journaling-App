@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure.">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="integrated JournalEmtry.dart into JouralFeedScren.dart">
+      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/JournalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/JournalEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalEntry.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalEntry.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780179394064</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="integrated JournalEmtry.dart into JouralFeedScren.dart">
+      <option name="closed" value="true" />
+      <created>1780180498599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780180498599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +153,8 @@
     <MESSAGE value="Built a Layout for the Journal New Reflection Entry in main.dart" />
     <MESSAGE value="Reorganized files for a cleaner structure." />
     <MESSAGE value="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure." />
+    <MESSAGE value="integrated JournalEmtry.dart into JouralFeedScren.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrated JournalEmtry.dart into JouralFeedScren.dart" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
