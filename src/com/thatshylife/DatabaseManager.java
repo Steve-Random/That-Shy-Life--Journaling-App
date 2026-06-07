@@ -1,11 +1,18 @@
 package com.thatshylife;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDateTime;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class DatabaseManager {
+    @PostConstruct
+    public void init(){
+        createNewTable();
+    }
     private static final String DB_URL = "jdbc:sqlite:journal.db";
 
     public static Connection connect() {
@@ -37,7 +44,8 @@ public class DatabaseManager {
         }
     }
 
-    public static void saveEntry(JournalEntry entry) {
+
+    public void saveEntry(JournalEntry entry) {
         String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags) VALUES(?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
@@ -63,7 +71,7 @@ public class DatabaseManager {
         }
     }
 
-    public static List<JournalEntry> getAllEntries() {
+    public  List<JournalEntry> getAllEntries() {
         List<JournalEntry> entries = new ArrayList<>();
         String sql = "SELECT * FROM entries";
 

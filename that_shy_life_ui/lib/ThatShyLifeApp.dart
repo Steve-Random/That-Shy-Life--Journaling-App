@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'JournalFeedScreen.dart';
+
 class ThatShyLifeApp extends StatelessWidget {
   const ThatShyLifeApp({super.key});
 

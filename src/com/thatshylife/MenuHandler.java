@@ -1,10 +1,15 @@
 package com.thatshylife;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
-
+@Component
 public class MenuHandler {
+    @Autowired
+    private DatabaseManager databaseManager;
     private final Scanner scanner = new Scanner(System.in);
     private boolean running = true;
 
@@ -52,12 +57,12 @@ public class MenuHandler {
         entry.setContent(content);
         entry.setSocialBattery(socialBattery);
 
-        DatabaseManager.saveEntry(entry);
+        databaseManager.saveEntry(entry);
     }
 
     private void showHistory() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a");
-        List<JournalEntry> history = DatabaseManager.getAllEntries();
+        List<JournalEntry> history = databaseManager.getAllEntries();
         System.out.println("--- THE VAULT: ALL ENTRIES ---");
         for (JournalEntry entry : history) {
             System.out.println("ID: " + entry.getId());

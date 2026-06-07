@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:that_shy_life_ui/JournalEntry.dart';
+import 'JournalService.dart';
 
 //For New Entries/New Reflections
 class NewEntryScreen extends StatefulWidget {
@@ -20,9 +22,15 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
         title: const Text('New Reflecion'),
         actions: [
           TextButton(
-            onPressed: () {
-              //TODO: link to Java API
-              Navigator.pop(context);
+            onPressed: () async {
+              if((_titleController.text.isNotEmpty) && (_contentController.text.isNotEmpty)){
+                final newEntry = JournalEntry(
+                    microEntry: _titleController.text,
+                    content: _contentController.text,
+                    createdAt: DateTime.now(),
+                );
+                await JournalService().saveEntry(newEntry);
+             if(mounted) Navigator.pop(context,true);}
             },
             child: const Text(
               'Save',
