@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'JournalEntry.dart';
 
-class Journalservice {
+class JournalService {
   // running locally for now (GET...http.get())
-  static const String baseUrl = 'http://localhost:8000/api/entries';
+  static const String baseUrl = 'http://localhost:8080/api/entries';
 
   //Fetching all entries from Java
 Future<List<JournalEntry>> fetchEntries() async{
@@ -23,7 +23,7 @@ Future<void> saveEntry(JournalEntry entry) async{
   await http.post(
     Uri.parse(baseUrl),
     headers: {'Content-Type': 'application/json'},
-    body: jsonEncode(entry.toString()),
+    body: jsonEncode(entry.toJson()),
   );
 }
 }

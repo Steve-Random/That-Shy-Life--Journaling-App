@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'JournalEntry.dart';
+import 'JournalService.dart';
 import 'NewEntryScreen.dart';
 
 class JournalFeedScreen extends StatefulWidget {
@@ -10,24 +12,14 @@ class JournalFeedScreen extends StatefulWidget {
 }
 
 class _JournalFeedScreenState extends State<JournalFeedScreen> {
-  // this is mock data to visualise the layout before connecting to the API
-  final List<JournalEntry> _mockEntries = [
-    JournalEntry(
-      id: '1',
-      title: 'Morning Reflections',
-      content:
-          'Just setting up the unified workspace today. It feels great to see the java backend and Flutter web UI finally talking to each other smoothly.',
-      createdAt: DateTime.now(),
-    ),
+  final JournalService _journalService = JournalService();
+  late Future<List<JournalEntry>>_future;
 
-    JournalEntry(
-      id: '2',
-      title: 'Keeping It Natural',
-      content:
-          'Thinking about content styles today. There is something deeply powerful about keeping things raw, uscripted, and authentically human.',
-      createdAt: DateTime.now().subtract(const Duration(days: 1)),
-    ),
-  ];
+  @override
+  void initState(){
+    super.initState();
+    _future = _journalService.fetchEntries();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,85 +36,82 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
         scrolledUnderElevation: 0,
       ),
       body: Center(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 800),
-          //Centers and bounds layout on web
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: ListView.builder(
-            itemCount: _mockEntries.length,
-            itemBuilder: (context, index) {
-              final entry = _mockEntries[index];
-              return Padding(
-                padding: const EdgeInsets.only(top: 16.0),
-                child: Card(
-                  color: Colors.white,
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    side: BorderSide(color: Colors.grey[200]!),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () {
-                      //TODO: Tack care of oppening detail view
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "${entry.createdAt.month}/${entry.createdAt.day}/${entry.createdAt.year}",
-                                style: TextStyle(
-                                  color: Colors.grey[500],
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                              Icon(Icons.more_horiz, color: Colors.grey[400]),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            entry.title,
-                            style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            entry.content,
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.grey[700],
-                              height: 1.4,
-                            ),
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              );
-            },
-          ),
+        child: FutureBuilder<List<JournalEntry>>(
+          future: _future,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const CircularProgressIndicator();
+            }
+            if (snapshot.hasError) {
+              return Text("Error: ${snapshot.error}");
+            }
+            final entries = snapshot.data ?? [];
+            return Container(
+              constraints: const BoxConstraints(maxWidth: 600),
+              child: ListView.builder(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                itemCount: entries.length,
+                itemBuilder: (context, index) {
+                  final entry = entries[index];
+                  return _buildJournalCard(entry);
+                },
+              ),
+            );
+          },
         ),
       ),
+
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          Navigator.push(
+        onPressed: () async{
+          final result = Navigator.push(
             context,
-            MaterialPageRoute(builder: ((context) => const NewEntryScreen())),
+            MaterialPageRoute(builder: (context) => const NewEntryScreen()),
           );
-        },
+          await Future.delayed(const Duration(milliseconds: 500));
+            setState(() {
+              _future = _journalService.fetchEntries();
+            });
+          },
         icon: const Icon(Icons.edit_note),
         label: const Text('New Reflection'),
       ),
     );
   }
+}
+
+Widget _buildJournalCard(JournalEntry entry) {
+  return Padding(
+    padding: const EdgeInsets.only(top: 16.0),
+    child: Card(
+      color: Colors.white,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: Colors.grey[200]!),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: () {
+          //TODO: Tack care of oppening detail view
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    entry.content ?? "No content recorded",
+                    style: const TextStyle(fontSize: 16, height: 1.5),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
 }

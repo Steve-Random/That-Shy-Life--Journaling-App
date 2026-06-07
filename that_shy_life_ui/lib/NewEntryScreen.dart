@@ -25,12 +25,12 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
             onPressed: () async {
               if((_titleController.text.isNotEmpty) && (_contentController.text.isNotEmpty)){
                 final newEntry = JournalEntry(
-                    title: _titleController.text,
+                    microEntry: _titleController.text,
                     content: _contentController.text,
                     createdAt: DateTime.now(),
                 );
-                await Journalservice().saveEntry(newEntry);
-             if(mounted) Navigator.pop(context);}
+                await JournalService().saveEntry(newEntry);
+             if(mounted) Navigator.pop(context,true);}
             },
             child: const Text(
               'Save',

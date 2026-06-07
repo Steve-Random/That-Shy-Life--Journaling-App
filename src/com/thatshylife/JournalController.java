@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/entries")
-@CrossOrigin(origins = "http://localhost:57669")
+@CrossOrigin(origins ="*")
 
 public class JournalController {
     @Autowired
@@ -16,12 +16,12 @@ public class JournalController {
 
     @GetMapping
     public List<JournalEntry> getAllEntries(){
-        return DatabaseManager.getAllEntries();
+        return databaseManager.getAllEntries();
     }
 
     @PostMapping
     public void addEntry(@RequestBody JournalEntry entry){
         entry.setTimestamp(LocalDateTime.now());
-        DatabaseManager.saveEntry(entry);
+        databaseManager.saveEntry(entry);
     }
 }
