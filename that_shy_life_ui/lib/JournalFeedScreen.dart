@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:that_shy_life_ui/JournalDetailScreen.dart';
 import 'JournalEntry.dart';
 import 'JournalService.dart';
 import 'NewEntryScreen.dart';
@@ -53,7 +53,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
                 itemCount: entries.length,
                 itemBuilder: (context, index) {
                   final entry = entries[index];
-                  return _buildJournalCard(entry);
+                  return _buildJournalCard(context,entry);
                 },
               ),
             );
@@ -79,7 +79,14 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
   }
 }
 
-Widget _buildJournalCard(JournalEntry entry) {
+Widget _buildJournalCard(BuildContext context, JournalEntry entry) {
+  //Helper for a readable date display
+  String formattedDate = "Unknown Date";
+  if (entry.createdAt != null){
+    final DateTime date = entry.createdAt;
+    final months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    formattedDate = "${months[date.month-1]} ${date.day}, ${date.year}";
+  }
   return Padding(
     padding: const EdgeInsets.only(top: 16.0),
     child: Card(
@@ -92,7 +99,12 @@ Widget _buildJournalCard(JournalEntry entry) {
       child: InkWell(
         borderRadius: BorderRadius.circular(12),
         onTap: () {
-          //TODO: Tack care of oppening detail view
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => JournalDetailScreen(entry: entry),
+              ),
+          );
         },
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -102,11 +114,30 @@ Widget _buildJournalCard(JournalEntry entry) {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  Expanded(
+                      child: Text(
+                        entry.microEntry ?? "Untitled Reflection",
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    formattedDate,
+                    style: TextStyle(fontSize: 13, color: Colors.grey[500],
+                    ),
+                  ),
+                  ],
+              ),
+                  const SizedBox(width: 12),
                   Text(
                     entry.content ?? "No content recorded",
-                    style: const TextStyle(fontSize: 16, height: 1.5),
+                    style: TextStyle(fontSize: 16, height: 1.5, color: Colors.grey[800],
                   ),
-                ],
               ),
             ],
           ),
