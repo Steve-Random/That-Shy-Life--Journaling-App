@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'JournalFeedScreen.dart';
+import 'app_theme.dart';
 
 class ThatShyLifeApp extends StatelessWidget {
   const ThatShyLifeApp({super.key});
@@ -9,13 +10,7 @@ class ThatShyLifeApp extends StatelessWidget {
     return MaterialApp(
       title: 'That Shy Life',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blueGrey,
-          brightness: Brightness.light,
-        ),
-      ),
+      theme: AppTheme.theme,
       home: const JournalFeedScreen(),
     );
   }
