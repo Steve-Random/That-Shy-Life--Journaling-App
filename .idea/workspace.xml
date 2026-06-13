@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Solved Connection issue of front end to backend and feed display issue">
-      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalDetailScreen.dart" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Created app_theme.dart for the foundation of the theme for a more organize work.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/journal.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,65 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0322478646597557" />
+      <entry key="MS500" value="2.090353795424111" />
+      <entry key="S2" value="3.7012359916307" />
+      <entry key="S5" value="7.06232658502772" />
+      <entry key="S10" value="11.551651174879428" />
+      <entry key="S30" value="19.19636298560359" />
+      <entry key="S60" value="27.725646111598998" />
+      <entry key="M2" value="44.01292638111853" />
+      <entry key="M5" value="73.92266566630313" />
+      <entry key="M10" value="96.06924768429577" />
+      <entry key="M15" value="111.75420151697476" />
+      <entry key="M30" value="149.25476969958987" />
+      <entry key="H1" value="190.87107178771936" />
+      <entry key="H2" value="223.39339635534486" />
+      <entry key="H4" value="243.9212754699835" />
+      <entry key="D1" value="263.71394679713717" />
+      <entry key="W1" value="267.3806494411483" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.5E-322" />
+      <entry key="MS500" value="4.337510607495986E-65" />
+      <entry key="S2" value="1.0285485071267616E-16" />
+      <entry key="S5" value="5.825567293532178E-7" />
+      <entry key="S10" value="0.0010776358859716575" />
+      <entry key="S30" value="0.18437744739843942" />
+      <entry key="S60" value="0.7644022855691597" />
+      <entry key="M2" value="1.7186340436089136" />
+      <entry key="M5" value="3.0817921877723804" />
+      <entry key="M10" value="3.930889561071503" />
+      <entry key="M15" value="4.418122583671413" />
+      <entry key="M30" value="5.3776926754276175" />
+      <entry key="H1" value="6.3311629552911" />
+      <entry key="H2" value="7.044937959459468" />
+      <entry key="H4" value="7.4871841248193265" />
+      <entry key="D1" value="7.909122426206152" />
+      <entry key="W1" value="7.986877867641469" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9093298913883722" />
+      <entry key="MS500" value="2.0277599569407307" />
+      <entry key="S2" value="3.6719570211130437" />
+      <entry key="S5" value="7.038884547208723" />
+      <entry key="S10" value="11.532456167970253" />
+      <entry key="S30" value="19.361687547101283" />
+      <entry key="S60" value="28.46472190000146" />
+      <entry key="M2" value="45.70309053879011" />
+      <entry key="M5" value="76.98037273250661" />
+      <entry key="M10" value="99.9829735402581" />
+      <entry key="M15" value="116.15878905740395" />
+      <entry key="M30" value="154.6236524985942" />
+      <entry key="H1" value="197.1968305626861" />
+      <entry key="H2" value="230.4352606536768" />
+      <entry key="H4" value="251.40680794371053" />
+      <entry key="D1" value="271.62277571300854" />
+      <entry key="W1" value="275.3674848989583" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -73,11 +133,11 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;flutter.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.Main">
+  <component name="RunManager" selected="Application.Backend">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.thatshylife.Main" />
       <module name="journal-app" />
@@ -104,6 +164,14 @@
         <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -169,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780845210858</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added JournalDetailScreen.dart">
+      <option name="closed" value="true" />
+      <created>1780882077325</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1780882077326</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created app_theme.dart for the foundation of the theme for a more organize work.">
+      <option name="closed" value="true" />
+      <created>1781371146625</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1781371146626</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +268,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/Building-user-interface-a' into Building-user-interface-a&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;that_shy_life_ui/lib/main.dart" />
     <MESSAGE value="Linked Flutter to Java Database" />
     <MESSAGE value="Solved Connection issue of front end to backend and feed display issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved Connection issue of front end to backend and feed display issue" />
+    <MESSAGE value="Added JournalDetailScreen.dart" />
+    <MESSAGE value="Created app_theme.dart for the foundation of the theme for a more organize work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created app_theme.dart for the foundation of the theme for a more organize work." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

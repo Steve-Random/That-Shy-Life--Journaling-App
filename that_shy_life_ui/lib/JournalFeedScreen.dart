@@ -53,7 +53,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
                 itemCount: entries.length,
                 itemBuilder: (context, index) {
                   final entry = entries[index];
-                  return _buildJournalCard(context,entry);
+                  return _buildJournalCard(context, entry);
                 },
               ),
             );
