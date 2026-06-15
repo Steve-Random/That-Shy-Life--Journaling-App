@@ -63,14 +63,15 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
 
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () async{
-          final result = Navigator.push(
+          final result = await Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const NewEntryScreen()),
           );
-          await Future.delayed(const Duration(milliseconds: 500));
+          if (result == true){
             setState(() {
               _future = _journalService.fetchEntries();
             });
+          }
           },
         icon: const Icon(Icons.edit_note),
         label: const Text('New Reflection'),

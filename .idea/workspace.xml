@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Created app_theme.dart for the foundation of the theme for a more organize work.">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="The app can now run on android devices.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/journal.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,61 +42,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0322478646597557" />
-      <entry key="MS500" value="2.090353795424111" />
-      <entry key="S2" value="3.7012359916307" />
-      <entry key="S5" value="7.06232658502772" />
-      <entry key="S10" value="11.551651174879428" />
-      <entry key="S30" value="19.19636298560359" />
-      <entry key="S60" value="27.725646111598998" />
-      <entry key="M2" value="44.01292638111853" />
-      <entry key="M5" value="73.92266566630313" />
-      <entry key="M10" value="96.06924768429577" />
-      <entry key="M15" value="111.75420151697476" />
-      <entry key="M30" value="149.25476969958987" />
-      <entry key="H1" value="190.87107178771936" />
-      <entry key="H2" value="223.39339635534486" />
-      <entry key="H4" value="243.9212754699835" />
-      <entry key="D1" value="263.71394679713717" />
-      <entry key="W1" value="267.3806494411483" />
+      <entry key="MS100" value="1.0000082840547064" />
+      <entry key="MS500" value="1.209482897515075" />
+      <entry key="S2" value="2.6955006809538675" />
+      <entry key="S5" value="5.75139687913505" />
+      <entry key="S10" value="10.533690061151347" />
+      <entry key="S30" value="18.484770700334458" />
+      <entry key="S60" value="21.80237548216212" />
+      <entry key="M2" value="24.149524703324985" />
+      <entry key="M5" value="28.963949192543353" />
+      <entry key="M10" value="35.55990543578457" />
+      <entry key="M15" value="41.45219325771405" />
+      <entry key="M30" value="65.65715873507568" />
+      <entry key="H1" value="119.75057259739076" />
+      <entry key="H2" value="187.2967671396861" />
+      <entry key="H4" value="242.90027618677428" />
+      <entry key="D1" value="306.78198459157517" />
+      <entry key="W1" value="319.76984088972034" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.5E-322" />
-      <entry key="MS500" value="4.337510607495986E-65" />
-      <entry key="S2" value="1.0285485071267616E-16" />
-      <entry key="S5" value="5.825567293532178E-7" />
-      <entry key="S10" value="0.0010776358859716575" />
-      <entry key="S30" value="0.18437744739843942" />
-      <entry key="S60" value="0.7644022855691597" />
-      <entry key="M2" value="1.7186340436089136" />
-      <entry key="M5" value="3.0817921877723804" />
-      <entry key="M10" value="3.930889561071503" />
-      <entry key="M15" value="4.418122583671413" />
-      <entry key="M30" value="5.3776926754276175" />
-      <entry key="H1" value="6.3311629552911" />
-      <entry key="H2" value="7.044937959459468" />
-      <entry key="H4" value="7.4871841248193265" />
-      <entry key="D1" value="7.909122426206152" />
-      <entry key="W1" value="7.986877867641469" />
+      <entry key="MS100" value="4.6419712378699095E-101" />
+      <entry key="MS500" value="8.577100306377688E-21" />
+      <entry key="S2" value="9.623545904779424E-6" />
+      <entry key="S5" value="0.009847682746742081" />
+      <entry key="S10" value="0.0992354913664592" />
+      <entry key="S30" value="0.4629886363412219" />
+      <entry key="S60" value="0.6862948899140021" />
+      <entry key="M2" value="0.9809323157445633" />
+      <entry key="M5" value="2.311719660279875" />
+      <entry key="M10" value="4.015896661827265" />
+      <entry key="M15" value="5.0511838581174535" />
+      <entry key="M30" value="6.992991036484963" />
+      <entry key="H1" value="9.403129696404916" />
+      <entry key="H2" value="11.796662979293854" />
+      <entry key="H4" value="13.59005103898778" />
+      <entry key="D1" value="15.545867043931393" />
+      <entry key="W1" value="15.93368879498584" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9093298913883722" />
-      <entry key="MS500" value="2.0277599569407307" />
-      <entry key="S2" value="3.6719570211130437" />
-      <entry key="S5" value="7.038884547208723" />
-      <entry key="S10" value="11.532456167970253" />
-      <entry key="S30" value="19.361687547101283" />
-      <entry key="S60" value="28.46472190000146" />
-      <entry key="M2" value="45.70309053879011" />
-      <entry key="M5" value="76.98037273250661" />
-      <entry key="M10" value="99.9829735402581" />
-      <entry key="M15" value="116.15878905740395" />
-      <entry key="M30" value="154.6236524985942" />
-      <entry key="H1" value="197.1968305626861" />
-      <entry key="H2" value="230.4352606536768" />
-      <entry key="H4" value="251.40680794371053" />
-      <entry key="D1" value="271.62277571300854" />
-      <entry key="W1" value="275.3674848989583" />
+      <entry key="MS100" value="0.9201949219997022" />
+      <entry key="MS500" value="1.1878771418883074" />
+      <entry key="S2" value="2.6813198498447335" />
+      <entry key="S5" value="5.7438909163459675" />
+      <entry key="S10" value="10.592554338230949" />
+      <entry key="S30" value="18.89045370649171" />
+      <entry key="S60" value="22.445745158553787" />
+      <entry key="M2" value="25.097526390882976" />
+      <entry key="M5" value="31.239892497819" />
+      <entry key="M10" value="39.543116135154776" />
+      <entry key="M15" value="46.47562292085006" />
+      <entry key="M30" value="72.63126913829224" />
+      <entry key="H1" value="129.14161882165223" />
+      <entry key="H2" value="199.0861656250661" />
+      <entry key="H4" value="256.4862475875363" />
+      <entry key="D1" value="322.3270911916327" />
+      <entry key="W1" value="335.70341877848244" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -253,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781371146626</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="The app can now run on android devices.">
+      <option name="closed" value="true" />
+      <created>1781380060098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1781380060099</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +278,8 @@
     <MESSAGE value="Solved Connection issue of front end to backend and feed display issue" />
     <MESSAGE value="Added JournalDetailScreen.dart" />
     <MESSAGE value="Created app_theme.dart for the foundation of the theme for a more organize work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created app_theme.dart for the foundation of the theme for a more organize work." />
+    <MESSAGE value="The app can now run on android devices." />
+    <option name="LAST_COMMIT_MESSAGE" value="The app can now run on android devices." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
