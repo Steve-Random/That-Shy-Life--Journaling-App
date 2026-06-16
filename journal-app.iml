@@ -7,6 +7,8 @@
       <excludeFolder url="file://$MODULE_DIR$/that_shy_life_ui/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/that_shy_life_ui/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/that_shy_life_ui/build" />
+      <excludeFolder url="file://$MODULE_DIR$/that_shy_life_ui/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/that_shy_life_ui/android/.gradle" />
     </content>
   </component>
 </module>

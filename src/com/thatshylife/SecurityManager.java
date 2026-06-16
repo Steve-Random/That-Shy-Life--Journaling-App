@@ -5,7 +5,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 public class SecurityManager {
     // A 16 character key for AES-128
-    private static final String SECRET_KEY = "ShyLifeSecretKey";
+    private static final String SECRET_KEY = System.getenv("SECRET_KEY") != null ? System.getenv("SECRET_KEY"):"fallback-not-for-production";
     private static final String ALGORITHM = "AES";
 
     public static String encrypt(String value){

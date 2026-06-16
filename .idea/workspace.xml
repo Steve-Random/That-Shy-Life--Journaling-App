@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added the app icon to the project.">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-maskable-192.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-maskable-192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-maskable-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/icons/Icon-maskable-512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/SecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/SecurityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/SecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/SecurityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000016708099553" />
-      <entry key="S10" value="1.0057131511909816" />
-      <entry key="S30" value="2.550867575285269" />
-      <entry key="S60" value="8.255728060815581" />
-      <entry key="M2" value="19.374228920405635" />
-      <entry key="M5" value="39.62628004341858" />
-      <entry key="M10" value="58.59846701103108" />
-      <entry key="M15" value="73.1281023152861" />
-      <entry key="M30" value="109.00159423980455" />
-      <entry key="H1" value="170.72247642355208" />
-      <entry key="H2" value="252.2903048797925" />
-      <entry key="H4" value="325.4261857853359" />
-      <entry key="D1" value="415.61752795930636" />
-      <entry key="W1" value="434.6992995239253" />
+      <entry key="MS100" value="1.2181349253156208" />
+      <entry key="MS500" value="3.3282122822515032" />
+      <entry key="S2" value="6.9223240998864926" />
+      <entry key="S5" value="10.908237125886727" />
+      <entry key="S10" value="15.77097891666386" />
+      <entry key="S30" value="25.916024352321482" />
+      <entry key="S60" value="31.33774420166757" />
+      <entry key="M2" value="39.08040373548067" />
+      <entry key="M5" value="64.52622731456741" />
+      <entry key="M10" value="97.367412753465" />
+      <entry key="M15" value="128.27114776468736" />
+      <entry key="M30" value="214.40516813435477" />
+      <entry key="H1" value="339.7950316827285" />
+      <entry key="H2" value="486.00881360614164" />
+      <entry key="H4" value="617.2027103987464" />
+      <entry key="D1" value="785.7602979550956" />
+      <entry key="W1" value="822.586807008616" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.0189597814685356E-96" />
-      <entry key="S2" value="1.0047066126782593E-24" />
-      <entry key="S5" value="2.5166087615715E-10" />
-      <entry key="S10" value="1.5863822873354014E-5" />
-      <entry key="S30" value="0.025126728707029932" />
-      <entry key="S60" value="0.15851412778378987" />
-      <entry key="M2" value="0.3981386650465744" />
-      <entry key="M5" value="0.6978593759202756" />
-      <entry key="M10" value="1.0364847080793196" />
-      <entry key="M15" value="1.578874858996748" />
-      <entry key="M30" value="3.5333173679218572" />
-      <entry key="H1" value="6.695501145653729" />
-      <entry key="H2" value="10.190079980256604" />
-      <entry key="H4" value="12.997315898730475" />
-      <entry key="D1" value="16.22655899990067" />
-      <entry key="W1" value="16.886526333453393" />
+      <entry key="MS100" value="1.7600142403557406E-117" />
+      <entry key="MS500" value="4.457621981455062E-24" />
+      <entry key="S2" value="1.4530341086561528E-6" />
+      <entry key="S5" value="0.004622855553720986" />
+      <entry key="S10" value="0.0679915844330825" />
+      <entry key="S30" value="0.40814867153712076" />
+      <entry key="S60" value="0.638867304483086" />
+      <entry key="M2" value="0.8020813691312946" />
+      <entry key="M5" value="1.234611028250785" />
+      <entry key="M10" value="2.882319516403406" />
+      <entry key="M15" value="4.61324301319472" />
+      <entry key="M30" value="8.45256987639912" />
+      <entry key="H1" value="13.316252979750175" />
+      <entry key="H2" value="18.793838578788538" />
+      <entry key="H4" value="23.562212421792122" />
+      <entry key="D1" value="29.50440011467301" />
+      <entry key="W1" value="30.778848208980303" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.5904963307147651" />
-      <entry key="MS500" value="0.9000019297935121" />
-      <entry key="S2" value="0.974004268543241" />
-      <entry key="S5" value="0.989521135495225" />
-      <entry key="S10" value="1.0004627721179429" />
-      <entry key="S30" value="2.5720461513197708" />
-      <entry key="S60" value="8.40697805508479" />
-      <entry key="M2" value="19.762252597132353" />
-      <entry key="M5" value="40.312948882703786" />
-      <entry key="M10" value="59.62446101519822" />
-      <entry key="M15" value="74.69614697676698" />
-      <entry key="M30" value="112.52366311346091" />
-      <entry key="H1" value="177.40826374561573" />
-      <entry key="H2" value="262.47347238271215" />
-      <entry key="H4" value="338.419258421638" />
-      <entry key="D1" value="431.84323294946114" />
-      <entry key="W1" value="451.58569962540275" />
+      <entry key="MS100" value="1.0741490455871037" />
+      <entry key="MS500" value="3.2567538811433656" />
+      <entry key="S2" value="6.886141993985401" />
+      <entry key="S5" value="10.887767808451406" />
+      <entry key="S10" value="15.81373317002273" />
+      <entry key="S30" value="26.299166239049924" />
+      <entry key="S60" value="31.955546057587398" />
+      <entry key="M2" value="39.862937834897366" />
+      <entry key="M5" value="65.74244782731913" />
+      <entry key="M10" value="100.23013366278187" />
+      <entry key="M15" value="132.86490948555038" />
+      <entry key="M30" value="222.84042109795735" />
+      <entry key="H1" value="353.09717003820805" />
+      <entry key="H2" value="504.7924117211662" />
+      <entry key="H4" value="640.7584293652576" />
+      <entry key="D1" value="815.2633348578009" />
+      <entry key="W1" value="853.3654519447928" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -279,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781567912461</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added the app icon to the project.">
+      <option name="closed" value="true" />
+      <created>1781570415997</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1781570415997</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +301,8 @@
     <MESSAGE value="Created app_theme.dart for the foundation of the theme for a more organize work." />
     <MESSAGE value="The app can now run on android devices." />
     <MESSAGE value="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android" />
+    <MESSAGE value="Added the app icon to the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the app icon to the project." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
