@@ -10,7 +10,7 @@ class JournalService {
     if(kIsWeb){
       return 'http://localhost:8080/api/entries';
     }else{
-      return 'http://10.0.2.2:8080/api/entries';
+      return 'https://that-shy-life-journaling-app.onrender.com/api/entries';
     }
   }
 
