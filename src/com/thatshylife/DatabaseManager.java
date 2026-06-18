@@ -16,8 +16,11 @@ public class DatabaseManager {
         createNewTable();
     }
 
-    private static final String DB_URL = "jdbc:postgresql://localhost:5432/journal";
-    private static final String DB_USER = "postgres";
+    @Value("${DB_URL}")
+    private String dbUrl;
+
+    @Value("${DB_USER}")
+    private String dbUser;
 
     @Value("${DB_PASSWORD}")
     private String dbPassword;
@@ -25,7 +28,7 @@ public class DatabaseManager {
     public Connection connect() {
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection(DB_URL,DB_USER,dbPassword);
+            conn = DriverManager.getConnection(dbUrl,dbUser,dbPassword);
         } catch (SQLException e) {
             System.out.println("Connection failed: " + e.getMessage());
         }
