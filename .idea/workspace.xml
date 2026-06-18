@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Created app_theme.dart for the foundation of the theme for a more organize work.">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Migrated from SQLite to PostgreSQL.">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal.db" beforeDir="false" afterPath="$PROJECT_DIR$/journal.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/.metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,61 +40,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0322478646597557" />
-      <entry key="MS500" value="2.090353795424111" />
-      <entry key="S2" value="3.7012359916307" />
-      <entry key="S5" value="7.06232658502772" />
-      <entry key="S10" value="11.551651174879428" />
-      <entry key="S30" value="19.19636298560359" />
-      <entry key="S60" value="27.725646111598998" />
-      <entry key="M2" value="44.01292638111853" />
-      <entry key="M5" value="73.92266566630313" />
-      <entry key="M10" value="96.06924768429577" />
-      <entry key="M15" value="111.75420151697476" />
-      <entry key="M30" value="149.25476969958987" />
-      <entry key="H1" value="190.87107178771936" />
-      <entry key="H2" value="223.39339635534486" />
-      <entry key="H4" value="243.9212754699835" />
-      <entry key="D1" value="263.71394679713717" />
-      <entry key="W1" value="267.3806494411483" />
+      <entry key="MS100" value="1.3147114971606295" />
+      <entry key="MS500" value="2.586099076859803" />
+      <entry key="S2" value="4.4382783902814165" />
+      <entry key="S5" value="5.3230777489088865" />
+      <entry key="S10" value="6.428316603775831" />
+      <entry key="S30" value="12.847632455931876" />
+      <entry key="S60" value="19.570357480703176" />
+      <entry key="M2" value="27.642716216659117" />
+      <entry key="M5" value="38.119338076623436" />
+      <entry key="M10" value="45.334025444195134" />
+      <entry key="M15" value="49.96428959520359" />
+      <entry key="M30" value="59.231815912674534" />
+      <entry key="H1" value="68.79756221117135" />
+      <entry key="H2" value="76.7133686211505" />
+      <entry key="H4" value="98.51527285471421" />
+      <entry key="D1" value="528.6372349437307" />
+      <entry key="W1" value="861.9008733377893" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.5E-322" />
-      <entry key="MS500" value="4.337510607495986E-65" />
-      <entry key="S2" value="1.0285485071267616E-16" />
-      <entry key="S5" value="5.825567293532178E-7" />
-      <entry key="S10" value="0.0010776358859716575" />
-      <entry key="S30" value="0.18437744739843942" />
-      <entry key="S60" value="0.7644022855691597" />
-      <entry key="M2" value="1.7186340436089136" />
-      <entry key="M5" value="3.0817921877723804" />
-      <entry key="M10" value="3.930889561071503" />
-      <entry key="M15" value="4.418122583671413" />
-      <entry key="M30" value="5.3776926754276175" />
-      <entry key="H1" value="6.3311629552911" />
-      <entry key="H2" value="7.044937959459468" />
-      <entry key="H4" value="7.4871841248193265" />
-      <entry key="D1" value="7.909122426206152" />
-      <entry key="W1" value="7.986877867641469" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.8508122738642392E-291" />
+      <entry key="S5" value="6.557924635213753E-117" />
+      <entry key="S10" value="1.1636654365581177E-58" />
+      <entry key="S30" value="1.2712106767446655E-19" />
+      <entry key="S60" value="9.380656063898107E-10" />
+      <entry key="M2" value="8.792118918329184E-5" />
+      <entry key="M5" value="0.0901341074956585" />
+      <entry key="M10" value="0.97602498622816" />
+      <entry key="M15" value="2.245438355499814" />
+      <entry key="M30" value="5.4040473765463135" />
+      <entry key="H1" value="8.600190109528974" />
+      <entry key="H2" value="10.952548135939896" />
+      <entry key="H4" value="13.002971997199637" />
+      <entry key="D1" value="29.879197742091915" />
+      <entry key="W1" value="42.20277662309911" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9093298913883722" />
-      <entry key="MS500" value="2.0277599569407307" />
-      <entry key="S2" value="3.6719570211130437" />
-      <entry key="S5" value="7.038884547208723" />
-      <entry key="S10" value="11.532456167970253" />
-      <entry key="S30" value="19.361687547101283" />
-      <entry key="S60" value="28.46472190000146" />
-      <entry key="M2" value="45.70309053879011" />
-      <entry key="M5" value="76.98037273250661" />
-      <entry key="M10" value="99.9829735402581" />
-      <entry key="M15" value="116.15878905740395" />
-      <entry key="M30" value="154.6236524985942" />
-      <entry key="H1" value="197.1968305626861" />
-      <entry key="H2" value="230.4352606536768" />
-      <entry key="H4" value="251.40680794371053" />
-      <entry key="D1" value="271.62277571300854" />
-      <entry key="W1" value="275.3674848989583" />
+      <entry key="MS100" value="1.1317166494114559" />
+      <entry key="MS500" value="2.4566192449944335" />
+      <entry key="S2" value="4.38381779237289" />
+      <entry key="S5" value="5.2979698238935935" />
+      <entry key="S10" value="6.413674353191791" />
+      <entry key="S30" value="12.838618630332942" />
+      <entry key="S60" value="19.563582424471992" />
+      <entry key="M2" value="27.6378730151616" />
+      <entry key="M5" value="38.20599365408394" />
+      <entry key="M10" value="46.30412231669627" />
+      <entry key="M15" value="52.201153650051886" />
+      <entry key="M30" value="64.6247398385335" />
+      <entry key="H1" value="77.38818990293152" />
+      <entry key="H2" value="87.65953236613717" />
+      <entry key="H4" value="111.51433094836274" />
+      <entry key="D1" value="558.5148480262211" />
+      <entry key="W1" value="904.1033282741579" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -108,35 +106,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Backend.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Building-user-interface-a&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Backend.executor": "Run",
+    "Flutter.main.dart.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Building-user-interface-a",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Backend">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.thatshylife.Main" />
@@ -253,7 +251,47 @@
       <option name="project" value="LOCAL" />
       <updated>1781371146626</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="The app can now run on android devices.">
+      <option name="closed" value="true" />
+      <created>1781380060098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1781380060099</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android">
+      <option name="closed" value="true" />
+      <created>1781567912461</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1781567912461</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added the app icon to the project.">
+      <option name="closed" value="true" />
+      <created>1781570415997</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1781570415997</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Modified Secret Key implementation for a reinforced security">
+      <option name="closed" value="true" />
+      <created>1781575037747</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1781575037747</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Migrated from SQLite to PostgreSQL.">
+      <option name="closed" value="true" />
+      <created>1781748912268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1781748912269</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +308,12 @@
     <MESSAGE value="Solved Connection issue of front end to backend and feed display issue" />
     <MESSAGE value="Added JournalDetailScreen.dart" />
     <MESSAGE value="Created app_theme.dart for the foundation of the theme for a more organize work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created app_theme.dart for the foundation of the theme for a more organize work." />
+    <MESSAGE value="The app can now run on android devices." />
+    <MESSAGE value="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android" />
+    <MESSAGE value="Added the app icon to the project." />
+    <MESSAGE value="Modified Secret Key implementation for a reinforced security" />
+    <MESSAGE value="Migrated from SQLite to PostgreSQL." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated from SQLite to PostgreSQL." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

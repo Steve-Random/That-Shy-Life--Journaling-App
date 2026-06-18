@@ -1,10 +1,18 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'JournalEntry.dart';
+import 'package:flutter/foundation.dart';
 
 class JournalService {
   // running locally for now (GET...http.get())
-  static const String baseUrl = 'http://10.0.2.2:8080/api/entries';
+
+  static String get baseUrl{
+    if(kIsWeb){
+      return 'http://localhost:8080/api/entries';
+    }else{
+      return 'http://10.0.2.2:8080/api/entries';
+    }
+  }
 
   //Fetching all entries from Java
 Future<List<JournalEntry>> fetchEntries() async{
