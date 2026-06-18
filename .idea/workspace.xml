@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Adjustment made for a Render Web Service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,56 +54,56 @@
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
       <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000164958134" />
-      <entry key="S60" value="1.0004411634406247" />
-      <entry key="M2" value="1.074388804923233" />
-      <entry key="M5" value="2.6982434044459906" />
-      <entry key="M10" value="6.038736804376419" />
-      <entry key="M15" value="8.33308766682699" />
-      <entry key="M30" value="12.019975181451096" />
-      <entry key="H1" value="20.326173654551937" />
-      <entry key="H2" value="47.37427136254791" />
-      <entry key="H4" value="96.46652823560571" />
-      <entry key="D1" value="548.0999144884752" />
-      <entry key="W1" value="940.7028220660408" />
+      <entry key="S30" value="1.0000000165825846" />
+      <entry key="S60" value="1.0001292695284112" />
+      <entry key="M2" value="1.0123789728885897" />
+      <entry key="M5" value="1.3418625942919262" />
+      <entry key="M10" value="2.936789291511781" />
+      <entry key="M15" value="4.920911330609774" />
+      <entry key="M30" value="9.564873120581954" />
+      <entry key="H1" value="18.39077223199496" />
+      <entry key="H2" value="44.51452131656838" />
+      <entry key="H4" value="93.41276496335483" />
+      <entry key="D1" value="545.292308402403" />
+      <entry key="W1" value="942.2741049643796" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="9.772779692757804E-249" />
-      <entry key="S5" value="8.678301442096941E-100" />
-      <entry key="S10" value="4.094617118986668E-50" />
-      <entry key="S30" value="5.4496029119917085E-17" />
-      <entry key="S60" value="1.0434701486367223E-8" />
-      <entry key="M2" value="1.4444436881075117E-4" />
-      <entry key="M5" value="0.044104731783551454" />
-      <entry key="M10" value="0.2969993465915917" />
-      <entry key="M15" value="0.5608777513040348" />
-      <entry key="M30" value="1.0774796834244653" />
-      <entry key="H1" value="2.0087136818718476" />
-      <entry key="H2" value="4.898712449191912" />
-      <entry key="H4" value="9.881669962430848" />
-      <entry key="D1" value="32.4242295267095" />
-      <entry key="W1" value="48.28980133247894" />
+      <entry key="S2" value="4.0096746368195564E-181" />
+      <entry key="S5" value="6.938158253668905E-73" />
+      <entry key="S10" value="8.34409675577262E-37" />
+      <entry key="S30" value="1.1689510514482078E-12" />
+      <entry key="S60" value="1.7933376235981057E-6" />
+      <entry key="M2" value="0.0025547225416630635" />
+      <entry key="M5" value="0.21082584436893345" />
+      <entry key="M10" value="0.9766481158014848" />
+      <entry key="M15" value="1.6949711769890932" />
+      <entry key="M30" value="3.0901843209716664" />
+      <entry key="H1" value="4.682631355677762" />
+      <entry key="H2" value="7.848492291965602" />
+      <entry key="H4" value="13.03240646406564" />
+      <entry key="D1" value="36.04076056610337" />
+      <entry key="W1" value="52.210715219135324" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.7090131751500256E-8" />
-      <entry key="MS500" value="0.03424411770149034" />
-      <entry key="S2" value="0.43017631530571987" />
-      <entry key="S5" value="0.713606172823516" />
-      <entry key="S10" value="0.8447521369156257" />
-      <entry key="S30" value="0.9453147635590737" />
-      <entry key="S60" value="0.9727133120260032" />
-      <entry key="M2" value="1.0604280348009423" />
-      <entry key="M5" value="2.734351770303279" />
-      <entry key="M10" value="6.328088730791098" />
-      <entry key="M15" value="8.886794265749336" />
-      <entry key="M30" value="13.091999164637121" />
-      <entry key="H1" value="22.330278133536115" />
-      <entry key="H2" value="52.26773672081635" />
-      <entry key="H4" value="106.34316543394931" />
-      <entry key="D1" value="580.5218517881153" />
-      <entry key="W1" value="988.9921653535756" />
+      <entry key="MS100" value="6.883475338149553E-12" />
+      <entry key="MS500" value="0.005855467194357607" />
+      <entry key="S2" value="0.27662433827306804" />
+      <entry key="S5" value="0.5980756971957137" />
+      <entry key="S10" value="0.7733535395895682" />
+      <entry key="S30" value="0.9178943579505888" />
+      <entry key="S60" value="0.9581989626518395" />
+      <entry key="M2" value="0.9936932584047484" />
+      <entry key="M5" value="1.5423931888236753" />
+      <entry key="M10" value="3.904447832502838" />
+      <entry key="M15" value="6.607098217330899" />
+      <entry key="M30" value="12.647607158861788" />
+      <entry key="H1" value="23.06735775337471" />
+      <entry key="H2" value="52.35704120654704" />
+      <entry key="H4" value="106.43974086611378" />
+      <entry key="D1" value="581.3306781801515" />
+      <entry key="W1" value="994.4843451746815" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -349,7 +348,23 @@
       <option name="project" value="LOCAL" />
       <updated>1781767555836</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Adjustment made for a Render Web Service">
+      <option name="closed" value="true" />
+      <created>1781806648135</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1781806648135</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adjustment made for a Render Web Service">
+      <option name="closed" value="true" />
+      <created>1781807017603</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1781807017603</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
