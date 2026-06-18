@@ -1,11 +1,7 @@
-FROM maven:3.9-eclipse-temurin-17 AS build
+FROM maven:3.9-eclipse-temurin-17
 WORKDIR /app
 COPY pom.xml .
 COPY src src
 RUN mvn clean package -DskipTests
-
-FROM eclipse-temurin:17-jre-alpine
-WORKDIR /app
-COPY --from=build /app/target/journal-app-1.0-SNAPSHOT.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app/target/*.jar"]
+ENTRYPOINT ["java","-jar","/app/target/journal-app-1.0-SNAPSHOT.jar"]
