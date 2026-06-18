@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added the app icon to the project.">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Modified Secret Key implementation for a reinforced security">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/journal-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/thatshylife/SecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/SecurityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/SecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/SecurityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/kotlin/com/example/that_shy_life_ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/kotlin/com/thatshylife/journal/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.2181349253156208" />
-      <entry key="MS500" value="3.3282122822515032" />
-      <entry key="S2" value="6.9223240998864926" />
-      <entry key="S5" value="10.908237125886727" />
-      <entry key="S10" value="15.77097891666386" />
-      <entry key="S30" value="25.916024352321482" />
-      <entry key="S60" value="31.33774420166757" />
-      <entry key="M2" value="39.08040373548067" />
-      <entry key="M5" value="64.52622731456741" />
-      <entry key="M10" value="97.367412753465" />
-      <entry key="M15" value="128.27114776468736" />
-      <entry key="M30" value="214.40516813435477" />
-      <entry key="H1" value="339.7950316827285" />
-      <entry key="H2" value="486.00881360614164" />
-      <entry key="H4" value="617.2027103987464" />
-      <entry key="D1" value="785.7602979550956" />
-      <entry key="W1" value="822.586807008616" />
+      <entry key="MS100" value="4.933502725458619E-214" />
+      <entry key="MS500" value="2.1808765085951573E-43" />
+      <entry key="S2" value="2.1662207198217675E-11" />
+      <entry key="S5" value="6.149070337253868E-5" />
+      <entry key="S10" value="0.011327834787298414" />
+      <entry key="S30" value="0.4965523190843028" />
+      <entry key="S60" value="1.3911548637144129" />
+      <entry key="M2" value="2.4604268486854872" />
+      <entry key="M5" value="4.130467974285949" />
+      <entry key="M10" value="6.579228859278203" />
+      <entry key="M15" value="8.956392425297675" />
+      <entry key="M30" value="14.271102999229822" />
+      <entry key="H1" value="19.44173200383823" />
+      <entry key="H2" value="23.618702878973956" />
+      <entry key="H4" value="44.43465899740353" />
+      <entry key="D1" value="477.14068764387366" />
+      <entry key="W1" value="804.7042599707937" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.7600142403557406E-117" />
-      <entry key="MS500" value="4.457621981455062E-24" />
-      <entry key="S2" value="1.4530341086561528E-6" />
-      <entry key="S5" value="0.004622855553720986" />
-      <entry key="S10" value="0.0679915844330825" />
-      <entry key="S30" value="0.40814867153712076" />
-      <entry key="S60" value="0.638867304483086" />
-      <entry key="M2" value="0.8020813691312946" />
-      <entry key="M5" value="1.234611028250785" />
-      <entry key="M10" value="2.882319516403406" />
-      <entry key="M15" value="4.61324301319472" />
-      <entry key="M30" value="8.45256987639912" />
-      <entry key="H1" value="13.316252979750175" />
-      <entry key="H2" value="18.793838578788538" />
-      <entry key="H4" value="23.562212421792122" />
-      <entry key="D1" value="29.50440011467301" />
-      <entry key="W1" value="30.778848208980303" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000090729302598" />
+      <entry key="S2" value="1.054882974202916" />
+      <entry key="S5" value="1.315537360060167" />
+      <entry key="S10" value="1.6481491749803192" />
+      <entry key="S30" value="3.0756741738709588" />
+      <entry key="S60" value="4.61418082608477" />
+      <entry key="M2" value="6.166294349928128" />
+      <entry key="M5" value="7.820984805304136" />
+      <entry key="M10" value="9.09174142157236" />
+      <entry key="M15" value="9.940889124285697" />
+      <entry key="M30" value="11.370542723281346" />
+      <entry key="H1" value="12.474957502831321" />
+      <entry key="H2" value="13.191089962105002" />
+      <entry key="H4" value="14.27004632878934" />
+      <entry key="D1" value="30.345855939832838" />
+      <entry key="W1" value="42.296313790129055" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0741490455871037" />
-      <entry key="MS500" value="3.2567538811433656" />
-      <entry key="S2" value="6.886141993985401" />
-      <entry key="S5" value="10.887767808451406" />
-      <entry key="S10" value="15.81373317002273" />
-      <entry key="S30" value="26.299166239049924" />
-      <entry key="S60" value="31.955546057587398" />
-      <entry key="M2" value="39.862937834897366" />
-      <entry key="M5" value="65.74244782731913" />
-      <entry key="M10" value="100.23013366278187" />
-      <entry key="M15" value="132.86490948555038" />
-      <entry key="M30" value="222.84042109795735" />
-      <entry key="H1" value="353.09717003820805" />
-      <entry key="H2" value="504.7924117211662" />
-      <entry key="H4" value="640.7584293652576" />
-      <entry key="D1" value="815.2633348578009" />
-      <entry key="W1" value="853.3654519447928" />
+      <entry key="MS100" value="1.3283547413576118E-5" />
+      <entry key="MS500" value="0.10584508199991412" />
+      <entry key="S2" value="0.6075962042051272" />
+      <entry key="S5" value="1.0690013259238735" />
+      <entry key="S10" value="1.5020072245917955" />
+      <entry key="S30" value="3.446251841942451" />
+      <entry key="S60" value="5.886518347580444" />
+      <entry key="M2" value="8.535205563652012" />
+      <entry key="M5" value="11.896300167307139" />
+      <entry key="M10" value="15.63141374173006" />
+      <entry key="M15" value="18.86463460300376" />
+      <entry key="M30" value="25.61960731793575" />
+      <entry key="H1" value="31.903311503182657" />
+      <entry key="H2" value="36.80231317626338" />
+      <entry key="H4" value="58.70050675055968" />
+      <entry key="D1" value="507.48494925555184" />
+      <entry key="W1" value="847.0002534912252" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -113,35 +114,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Backend.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Building-user-interface-a&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;dart.settings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Backend.executor": "Run",
+    "Flutter.main.dart.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Building-user-interface-a",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Backend">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.thatshylife.Main" />
@@ -282,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781570415997</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Modified Secret Key implementation for a reinforced security">
+      <option name="closed" value="true" />
+      <created>1781575037747</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1781575037747</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +311,8 @@
     <MESSAGE value="The app can now run on android devices." />
     <MESSAGE value="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android" />
     <MESSAGE value="Added the app icon to the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the app icon to the project." />
+    <MESSAGE value="Modified Secret Key implementation for a reinforced security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Secret Key implementation for a reinforced security" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,7 @@
 package com.thatshylife;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -9,23 +10,29 @@ import java.util.ArrayList;
 import java.util.List;
 @Component
 public class DatabaseManager {
+
     @PostConstruct
     public void init(){
         createNewTable();
     }
-    private static final String DB_URL = "jdbc:sqlite:journal.db";
 
-    public static Connection connect() {
+    private static final String DB_URL = "jdbc:postgresql://localhost:5432/journal";
+    private static final String DB_USER = "postgres";
+
+    @Value("${DB_PASSWORD}")
+    private String dbPassword;
+
+    public Connection connect() {
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection(DB_URL);
+            conn = DriverManager.getConnection(DB_URL,DB_USER,dbPassword);
         } catch (SQLException e) {
             System.out.println("Connection failed: " + e.getMessage());
         }
         return conn;
     }
 
-    public static  void createNewTable() {
+    public void createNewTable() {
         String sql = "CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
                 + " timestamp TEXT NOT NULL,"

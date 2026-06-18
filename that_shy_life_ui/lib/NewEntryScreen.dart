@@ -19,7 +19,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text('New Reflecion'),
+        title: const Text('New Reflection'),
         actions: [
           TextButton(
             onPressed: () async {
