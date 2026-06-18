@@ -4,7 +4,7 @@ COPY pom.xml .
 COPY src src
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temerin:17-jre-alpine
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/journal-app-1.0-SNAPSHOT.jar app.jar
 EXPOSE 8080

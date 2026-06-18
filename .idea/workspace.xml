@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added a Dockerfile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/DatabaseManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Adjustment made for a Render Web Service" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,61 +37,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000387907421922" />
-      <entry key="S2" value="1.140340177759201" />
-      <entry key="S5" value="1.4559033767508385" />
-      <entry key="S10" value="1.675206173513571" />
-      <entry key="S30" value="1.8772951599985424" />
-      <entry key="S60" value="1.9379062193904273" />
-      <entry key="M2" value="2.0294127618357978" />
-      <entry key="M5" value="2.6210119770297804" />
-      <entry key="M10" value="3.3726097457017543" />
-      <entry key="M15" value="3.783567439580838" />
-      <entry key="M30" value="4.681185310969557" />
-      <entry key="H1" value="12.178496265628292" />
-      <entry key="H2" value="39.94235550678817" />
-      <entry key="H4" value="89.12096464720223" />
-      <entry key="D1" value="540.5066127633162" />
-      <entry key="W1" value="929.7814796711205" />
+      <entry key="MS100" value="1.0002170609976164" />
+      <entry key="MS500" value="1.2288909939349146" />
+      <entry key="S2" value="2.7354452449066144" />
+      <entry key="S5" value="4.976658060835309" />
+      <entry key="S10" value="6.986449613929407" />
+      <entry key="S30" value="9.413351632899797" />
+      <entry key="S60" value="10.5386453375176" />
+      <entry key="M2" value="11.497415297074083" />
+      <entry key="M5" value="12.753723327372198" />
+      <entry key="M10" value="13.808299594426837" />
+      <entry key="M15" value="14.36037877821735" />
+      <entry key="M30" value="15.42126945236159" />
+      <entry key="H1" value="22.862074314928293" />
+      <entry key="H2" value="50.43847836935687" />
+      <entry key="H4" value="99.56198984088519" />
+      <entry key="D1" value="550.9434869183631" />
+      <entry key="W1" value="940.6431016653675" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="7.403085247099409E-98" />
-      <entry key="S5" value="1.9507094507536876E-39" />
-      <entry key="S10" value="6.138923566476151E-20" />
-      <entry key="S30" value="6.237221507790636E-7" />
-      <entry key="S60" value="0.0011163315116119582" />
-      <entry key="M2" value="0.04724514571857712" />
-      <entry key="M5" value="0.44704147385803833" />
-      <entry key="M10" value="0.9455550301554592" />
-      <entry key="M15" value="1.2138241016120939" />
-      <entry key="M30" value="1.5850861156014515" />
-      <entry key="H1" value="2.4363513770786596" />
-      <entry key="H2" value="5.395017905443685" />
-      <entry key="H4" value="10.370168576243538" />
-      <entry key="D1" value="32.68603516746828" />
-      <entry key="W1" value="48.34531101548573" />
+      <entry key="S2" value="2.1655904705985195E-117" />
+      <entry key="S5" value="2.996801797897572E-47" />
+      <entry key="S10" value="7.608953717319755E-24" />
+      <entry key="S30" value="3.109821104671562E-8" />
+      <entry key="S60" value="2.49267296519285E-4" />
+      <entry key="M2" value="0.022325091756142206" />
+      <entry key="M5" value="0.33122433752591285" />
+      <entry key="M10" value="0.8139055712383547" />
+      <entry key="M15" value="1.0983663802952812" />
+      <entry key="M30" value="1.5078168738076918" />
+      <entry key="H1" value="2.3762262666801077" />
+      <entry key="H2" value="5.3280320023704215" />
+      <entry key="H4" value="10.305588174134344" />
+      <entry key="D1" value="32.65202132738222" />
+      <entry key="W1" value="48.338120773457774" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.268051132537359E-6" />
-      <entry key="MS500" value="0.09381749905376953" />
-      <entry key="S2" value="0.5687863823323629" />
-      <entry key="S5" value="0.9773787056390413" />
-      <entry key="S10" value="1.3221207311617673" />
-      <entry key="S30" value="1.71827696336674" />
-      <entry key="S60" value="1.852825051871285" />
-      <entry key="M2" value="2.0304229747660894" />
-      <entry key="M5" value="3.0440927551384034" />
-      <entry key="M10" value="4.302865009726546" />
-      <entry key="M15" value="4.985993679935245" />
-      <entry key="M30" value="6.259656412670276" />
-      <entry key="H1" value="14.609841428480552" />
-      <entry key="H2" value="45.331860642413076" />
-      <entry key="H4" value="99.48597853321797" />
-      <entry key="D1" value="573.1903575301878" />
-      <entry key="W1" value="978.1263350007328" />
+      <entry key="MS100" value="0.95284477859785" />
+      <entry key="MS500" value="1.2169898185788017" />
+      <entry key="S2" value="2.728561631694195" />
+      <entry key="S5" value="4.971672797871911" />
+      <entry key="S10" value="6.982896941159226" />
+      <entry key="S30" value="9.403849062612741" />
+      <entry key="S60" value="10.518791111223594" />
+      <entry key="M2" value="11.497445325426494" />
+      <entry key="M5" value="13.067010784337404" />
+      <entry key="M10" value="14.608942852926885" />
+      <entry key="M15" value="15.448369443269444" />
+      <entry key="M30" value="16.922762681379222" />
+      <entry key="H1" value="25.23340234022869" />
+      <entry key="H2" value="55.76105825784563" />
+      <entry key="H4" value="109.86245152823639" />
+      <entry key="D1" value="583.5932195788074" />
+      <entry key="W1" value="988.9807667278931" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -308,7 +304,31 @@
       <option name="project" value="LOCAL" />
       <updated>1781751944376</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adjustment made for a Render Web Service">
+      <option name="closed" value="true" />
+      <created>1781766681919</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1781766681919</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adjustment made for a Render Web Service">
+      <option name="closed" value="true" />
+      <created>1781767250174</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1781767250174</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adjustment made for a Render Web Service">
+      <option name="closed" value="true" />
+      <created>1781767335252</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1781767335252</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +352,8 @@
     <MESSAGE value="Migrated from SQLite to PostgreSQL." />
     <MESSAGE value="Stopped Tracking a file" />
     <MESSAGE value="Added a Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a Dockerfile" />
+    <MESSAGE value="Adjustment made for a Render Web Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjustment made for a Render Web Service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
