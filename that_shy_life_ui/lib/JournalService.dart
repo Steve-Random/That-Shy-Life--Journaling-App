@@ -8,7 +8,7 @@ class JournalService {
 
   static String get baseUrl{
     if(kIsWeb){
-      return 'http://localhost:8080/api/entries';
+      return 'https://that-shy-life-journaling-app.onrender.com/api/entries';
     }else{
       return 'https://that-shy-life-journaling-app.onrender.com/api/entries';
     }
