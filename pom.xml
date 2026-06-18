@@ -57,6 +57,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>com.thatshylife.Main</mainClass>
+                    <layout>JAR</layout>
                 </configuration>
             </plugin>
 
