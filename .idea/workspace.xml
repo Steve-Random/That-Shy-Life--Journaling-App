@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Modified Secret Key implementation for a reinforced security">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Migrated from SQLite to PostgreSQL.">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thatshylife/SecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thatshylife/SecurityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/kotlin/com/example/that_shy_life_ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/kotlin/com/thatshylife/journal/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,61 +40,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.933502725458619E-214" />
-      <entry key="MS500" value="2.1808765085951573E-43" />
-      <entry key="S2" value="2.1662207198217675E-11" />
-      <entry key="S5" value="6.149070337253868E-5" />
-      <entry key="S10" value="0.011327834787298414" />
-      <entry key="S30" value="0.4965523190843028" />
-      <entry key="S60" value="1.3911548637144129" />
-      <entry key="M2" value="2.4604268486854872" />
-      <entry key="M5" value="4.130467974285949" />
-      <entry key="M10" value="6.579228859278203" />
-      <entry key="M15" value="8.956392425297675" />
-      <entry key="M30" value="14.271102999229822" />
-      <entry key="H1" value="19.44173200383823" />
-      <entry key="H2" value="23.618702878973956" />
-      <entry key="H4" value="44.43465899740353" />
-      <entry key="D1" value="477.14068764387366" />
-      <entry key="W1" value="804.7042599707937" />
+      <entry key="MS100" value="1.3147114971606295" />
+      <entry key="MS500" value="2.586099076859803" />
+      <entry key="S2" value="4.4382783902814165" />
+      <entry key="S5" value="5.3230777489088865" />
+      <entry key="S10" value="6.428316603775831" />
+      <entry key="S30" value="12.847632455931876" />
+      <entry key="S60" value="19.570357480703176" />
+      <entry key="M2" value="27.642716216659117" />
+      <entry key="M5" value="38.119338076623436" />
+      <entry key="M10" value="45.334025444195134" />
+      <entry key="M15" value="49.96428959520359" />
+      <entry key="M30" value="59.231815912674534" />
+      <entry key="H1" value="68.79756221117135" />
+      <entry key="H2" value="76.7133686211505" />
+      <entry key="H4" value="98.51527285471421" />
+      <entry key="D1" value="528.6372349437307" />
+      <entry key="W1" value="861.9008733377893" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000090729302598" />
-      <entry key="S2" value="1.054882974202916" />
-      <entry key="S5" value="1.315537360060167" />
-      <entry key="S10" value="1.6481491749803192" />
-      <entry key="S30" value="3.0756741738709588" />
-      <entry key="S60" value="4.61418082608477" />
-      <entry key="M2" value="6.166294349928128" />
-      <entry key="M5" value="7.820984805304136" />
-      <entry key="M10" value="9.09174142157236" />
-      <entry key="M15" value="9.940889124285697" />
-      <entry key="M30" value="11.370542723281346" />
-      <entry key="H1" value="12.474957502831321" />
-      <entry key="H2" value="13.191089962105002" />
-      <entry key="H4" value="14.27004632878934" />
-      <entry key="D1" value="30.345855939832838" />
-      <entry key="W1" value="42.296313790129055" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.8508122738642392E-291" />
+      <entry key="S5" value="6.557924635213753E-117" />
+      <entry key="S10" value="1.1636654365581177E-58" />
+      <entry key="S30" value="1.2712106767446655E-19" />
+      <entry key="S60" value="9.380656063898107E-10" />
+      <entry key="M2" value="8.792118918329184E-5" />
+      <entry key="M5" value="0.0901341074956585" />
+      <entry key="M10" value="0.97602498622816" />
+      <entry key="M15" value="2.245438355499814" />
+      <entry key="M30" value="5.4040473765463135" />
+      <entry key="H1" value="8.600190109528974" />
+      <entry key="H2" value="10.952548135939896" />
+      <entry key="H4" value="13.002971997199637" />
+      <entry key="D1" value="29.879197742091915" />
+      <entry key="W1" value="42.20277662309911" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3283547413576118E-5" />
-      <entry key="MS500" value="0.10584508199991412" />
-      <entry key="S2" value="0.6075962042051272" />
-      <entry key="S5" value="1.0690013259238735" />
-      <entry key="S10" value="1.5020072245917955" />
-      <entry key="S30" value="3.446251841942451" />
-      <entry key="S60" value="5.886518347580444" />
-      <entry key="M2" value="8.535205563652012" />
-      <entry key="M5" value="11.896300167307139" />
-      <entry key="M10" value="15.63141374173006" />
-      <entry key="M15" value="18.86463460300376" />
-      <entry key="M30" value="25.61960731793575" />
-      <entry key="H1" value="31.903311503182657" />
-      <entry key="H2" value="36.80231317626338" />
-      <entry key="H4" value="58.70050675055968" />
-      <entry key="D1" value="507.48494925555184" />
-      <entry key="W1" value="847.0002534912252" />
+      <entry key="MS100" value="1.1317166494114559" />
+      <entry key="MS500" value="2.4566192449944335" />
+      <entry key="S2" value="4.38381779237289" />
+      <entry key="S5" value="5.2979698238935935" />
+      <entry key="S10" value="6.413674353191791" />
+      <entry key="S30" value="12.838618630332942" />
+      <entry key="S60" value="19.563582424471992" />
+      <entry key="M2" value="27.6378730151616" />
+      <entry key="M5" value="38.20599365408394" />
+      <entry key="M10" value="46.30412231669627" />
+      <entry key="M15" value="52.201153650051886" />
+      <entry key="M30" value="64.6247398385335" />
+      <entry key="H1" value="77.38818990293152" />
+      <entry key="H2" value="87.65953236613717" />
+      <entry key="H4" value="111.51433094836274" />
+      <entry key="D1" value="558.5148480262211" />
+      <entry key="W1" value="904.1033282741579" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -291,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781575037747</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Migrated from SQLite to PostgreSQL.">
+      <option name="closed" value="true" />
+      <created>1781748912268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1781748912269</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +312,8 @@
     <MESSAGE value="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android" />
     <MESSAGE value="Added the app icon to the project." />
     <MESSAGE value="Modified Secret Key implementation for a reinforced security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified Secret Key implementation for a reinforced security" />
+    <MESSAGE value="Migrated from SQLite to PostgreSQL." />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated from SQLite to PostgreSQL." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
