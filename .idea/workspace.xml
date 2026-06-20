@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Deployment Successful, Backend live!, correcting flutter base url">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Working on security ... CORS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,61 +51,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0007207307427266" />
-      <entry key="MS500" value="1.3131425141111497" />
-      <entry key="S2" value="2.708719910538096" />
-      <entry key="S5" value="4.561718180440042" />
-      <entry key="S10" value="6.728855997279427" />
-      <entry key="S30" value="10.052102540239177" />
-      <entry key="S60" value="11.373785439523283" />
-      <entry key="M2" value="12.144185643560371" />
-      <entry key="M5" value="12.663791747359245" />
-      <entry key="M10" value="13.614874444518223" />
-      <entry key="M15" value="16.075822467277472" />
-      <entry key="M30" value="28.131222802691703" />
-      <entry key="H1" value="53.015113014867225" />
-      <entry key="H2" value="92.60998921628935" />
-      <entry key="H4" value="153.35807115507782" />
-      <entry key="D1" value="621.5996151336996" />
-      <entry key="W1" value="1056.165229076863" />
+      <entry key="MS100" value="1.0000147569693691" />
+      <entry key="MS500" value="1.1786926318736926" />
+      <entry key="S2" value="3.4167970622709327" />
+      <entry key="S5" value="6.539414998622703" />
+      <entry key="S10" value="9.949478146521436" />
+      <entry key="S30" value="18.40502738519642" />
+      <entry key="S60" value="28.100410640199563" />
+      <entry key="M2" value="40.41532251248847" />
+      <entry key="M5" value="54.43009465291507" />
+      <entry key="M10" value="61.58338763807031" />
+      <entry key="M15" value="64.94397125446991" />
+      <entry key="M30" value="69.76463410271914" />
+      <entry key="H1" value="73.25200022168208" />
+      <entry key="H2" value="75.43309395499199" />
+      <entry key="H4" value="77.25108801126513" />
+      <entry key="D1" value="323.7801429390522" />
+      <entry key="W1" value="1003.1417928097521" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="7.04933414527937E-213" />
-      <entry key="S10" value="8.407948359266748E-107" />
-      <entry key="S30" value="5.11882890733171E-36" />
-      <entry key="S60" value="3.646830032692409E-18" />
-      <entry key="M2" value="3.949953179558288E-9" />
-      <entry key="M5" value="0.0012473673079227857" />
-      <entry key="M10" value="0.09367495243705233" />
-      <entry key="M15" value="0.41804724002068944" />
-      <entry key="M30" value="2.1073927134125596" />
-      <entry key="H1" value="5.54380596235471" />
-      <entry key="H2" value="10.735261399361672" />
-      <entry key="H4" value="17.936276846482897" />
-      <entry key="D1" value="45.57626849905038" />
-      <entry key="W1" value="64.50504892354772" />
+      <entry key="MS100" value="3.817634594762571E-74" />
+      <entry key="MS500" value="2.0718526801539117E-15" />
+      <entry key="S2" value="2.1334856095739884E-4" />
+      <entry key="S5" value="0.0340122910801349" />
+      <entry key="S10" value="0.18442421500479517" />
+      <entry key="S30" value="0.5692101659328962" />
+      <entry key="S60" value="0.7544601818074272" />
+      <entry key="M2" value="0.868596673840872" />
+      <entry key="M5" value="0.9452077302368238" />
+      <entry key="M10" value="0.9722179437949213" />
+      <entry key="M15" value="0.9813917924847357" />
+      <entry key="M30" value="0.9906522056124116" />
+      <entry key="H1" value="0.9953151300062303" />
+      <entry key="H2" value="0.9978133559402378" />
+      <entry key="H4" value="1.0677550008434489" />
+      <entry key="D1" value="19.03757903112825" />
+      <entry key="W1" value="57.504823361511214" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9208554328577606" />
-      <entry key="MS500" value="1.2912543502283964" />
-      <entry key="S2" value="2.6965003801737453" />
-      <entry key="S5" value="4.553272142999752" />
-      <entry key="S10" value="6.722327779233527" />
-      <entry key="S30" value="10.048647291534943" />
-      <entry key="S60" value="11.371793610761825" />
-      <entry key="M2" value="12.143111828419585" />
-      <entry key="M5" value="12.664492622147545" />
-      <entry key="M10" value="13.705576419069073" />
-      <entry key="M15" value="16.48647354817421" />
-      <entry key="M30" value="30.223357994685006" />
-      <entry key="H1" value="58.54192647997349" />
-      <entry key="H2" value="103.33089243751917" />
-      <entry key="H4" value="171.28351981373208" />
-      <entry key="D1" value="667.1721703123233" />
-      <entry key="W1" value="1120.6695849539296" />
+      <entry key="MS100" value="0.01925078728920215" />
+      <entry key="MS500" value="0.6309583062942523" />
+      <entry key="S2" value="3.232397684728376" />
+      <entry key="S5" value="6.485242722109387" />
+      <entry key="S10" value="10.06863421979349" />
+      <entry key="S30" value="18.932726870277943" />
+      <entry key="S60" value="28.828051537345623" />
+      <entry key="M2" value="41.26777730296749" />
+      <entry key="M5" value="55.367759314508596" />
+      <entry key="M10" value="62.551574272467306" />
+      <entry key="M15" value="65.92259920062074" />
+      <entry key="M30" value="70.75385296655425" />
+      <entry key="H1" value="74.24658099897484" />
+      <entry key="H2" value="76.43053453046454" />
+      <entry key="H4" value="78.31861361184131" />
+      <entry key="D1" value="342.8162208228016" />
+      <entry key="W1" value="1060.6460045705742" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -472,7 +472,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781818639517</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Working on security ... CORS">
+      <option name="closed" value="true" />
+      <created>1781931485013</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1781931485014</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +506,8 @@
     <MESSAGE value="Added a Dockerfile" />
     <MESSAGE value="Adjustment made for a Render Web Service" />
     <MESSAGE value="Deployment Successful, Backend live!, correcting flutter base url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deployment Successful, Backend live!, correcting flutter base url" />
+    <MESSAGE value="Working on security ... CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on security ... CORS" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

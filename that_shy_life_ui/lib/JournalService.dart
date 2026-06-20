@@ -7,11 +7,7 @@ class JournalService {
   // running locally for now (GET...http.get())
 
   static String get baseUrl{
-    if(kIsWeb){
       return 'https://that-shy-life-journaling-app.onrender.com/api/entries';
-    }else{
-      return 'https://that-shy-life-journaling-app.onrender.com/api/entries';
-    }
   }
 
   //Fetching all entries from Java
