@@ -8,7 +8,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/entries")
-@CrossOrigin(origins ="*")
+@CrossOrigin(origins ={"http://localhost:8080",
+"http://localhost:60148","https://that-shy-life-journaling-app.onrender.com"})
 
 public class JournalController {
     @Autowired
