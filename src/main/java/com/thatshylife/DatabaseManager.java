@@ -13,6 +13,7 @@ public class DatabaseManager {
 
     @PostConstruct
     public void init(){
+        createUsersTable();
         createNewTable();
     }
 
@@ -35,6 +36,64 @@ public class DatabaseManager {
         return conn;
     }
 
+    //Users......
+
+    public void createUsersTable(){
+        String sql = "CREATE TABLE IF NOT EXISTS users ("
+                + " id TEXT PRIMARY KEY,"
+                + " email TEXT NOT NULL UNIQUE,"
+                + " password TEXT NOT NULL,"
+                + " createdAt TEXT NOT NULL"
+                + ");";
+
+        try(Connection conn = connect();
+         Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Table 'users' is ready");
+        }catch (SQLException e){
+            System.out.println("Users table creation failed." + e.getMessage());
+        }
+    }
+
+    public void saveUser(User user){
+        String sql = "INSERT INTO users (id, email, password, createdAt) VALUES (?,?,?,?)";
+
+        try(Connection conn = connect();
+           PreparedStatement pstmt = conn.prepareStatement(sql)){
+            pstmt.setString(1, user.getId());
+            pstmt.setString(2, user.getEmail());
+            pstmt.setString(3, user.getPassword());
+            pstmt.setString(4, user.getCreatedAt().toString());
+            pstmt.executeUpdate();
+            System.out.println("User saved.");
+        } catch (SQLException e){
+            System.out.println("Save user failed" + e.getMessage());
+        }
+    }
+
+    public com.thatshylife.User findUserByEmail(String email){
+        String sql = "SELECT * FROM users WHERE email = ?";
+
+        try (Connection conn = connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)){
+            pstmt.setString(1, email);
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()){
+                com.thatshylife.User user = new com.thatshylife.User();
+                user.setId(rs.getString("id"));
+                user.setEmail(rs.getString("email"));
+                user.setPassword(rs.getString("password"));
+                user.setCreatedAt(LocalDateTime.parse(rs.getString("id")));
+                return user;
+            }
+        }catch (SQLException e){
+            System.out.println("Find user failed" + e.getMessage());
+        }
+        return null;
+    }
+
+    //Entries.....
+
     public void createNewTable() {
         String sql = "CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
@@ -43,7 +102,8 @@ public class DatabaseManager {
                 + " microEntry TEXT,"
                 + " socialBattery INTEGER,"
                 + " isAudioTranscript INTEGER,"
-                + " tags TEXT"
+                + " tags TEXT,"
+                + "userId TEXT REFERENCES users(id)"
                 + ");";
         try (Connection conn = connect();
              Statement stmt = conn.createStatement()) {

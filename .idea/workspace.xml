@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Adding flutter web build">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Enabled the flutter web to talk to backend.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,61 +57,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000242719525211" />
-      <entry key="MS500" value="1.2774308392084321" />
-      <entry key="S2" value="3.127730264416649" />
-      <entry key="S5" value="4.816075882163002" />
-      <entry key="S10" value="5.766750608010126" />
-      <entry key="S30" value="7.929032372321212" />
-      <entry key="S60" value="12.095755206429226" />
-      <entry key="M2" value="19.144583434438168" />
-      <entry key="M5" value="35.31448601934193" />
-      <entry key="M10" value="56.981861291248634" />
-      <entry key="M15" value="72.1475801970357" />
-      <entry key="M30" value="96.5120620048208" />
-      <entry key="H1" value="114.56004270470925" />
-      <entry key="H2" value="125.80858692582055" />
-      <entry key="H4" value="132.6882906801961" />
-      <entry key="D1" value="381.3680160059107" />
-      <entry key="W1" value="1062.6781906402634" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="6.642582665508667E-87" />
+      <entry key="S2" value="2.897471064474624E-22" />
+      <entry key="S5" value="3.2009636230565834E-9" />
+      <entry key="S10" value="9.878263762763109E-5" />
+      <entry key="S30" value="0.14161505360357568" />
+      <entry key="S60" value="1.1413437768039778" />
+      <entry key="M2" value="4.783943214127343" />
+      <entry key="M5" value="20.664696751251565" />
+      <entry key="M10" value="45.25887411418641" />
+      <entry key="M15" value="62.900539540677194" />
+      <entry key="M30" value="91.75123763957356" />
+      <entry key="H1" value="113.22379342301193" />
+      <entry key="H2" value="126.53930317933927" />
+      <entry key="H4" value="135.2067216808418" />
+      <entry key="D1" value="334.638105217497" />
+      <entry key="W1" value="1195.5321097138294" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.472448940772737E-246" />
-      <entry key="MS500" value="9.599104425727574E-50" />
-      <entry key="S2" value="8.066716385447885E-13" />
-      <entry key="S5" value="2.1676070594935866E-5" />
-      <entry key="S10" value="0.006580428109834347" />
-      <entry key="S30" value="0.3364397301201064" />
-      <entry key="S60" value="1.0613660597616343" />
-      <entry key="M2" value="2.1271320262890603" />
-      <entry key="M5" value="3.7288930066951855" />
-      <entry key="M10" value="4.848332596548411" />
-      <entry key="M15" value="5.394205713725705" />
-      <entry key="M30" value="6.0885049938515285" />
-      <entry key="H1" value="6.511497888686076" />
-      <entry key="H2" value="6.746853494575822" />
-      <entry key="H4" value="6.935877664446959" />
-      <entry key="D1" value="24.83566240495422" />
-      <entry key="W1" value="63.42070225460392" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000000047" />
+      <entry key="S5" value="1.0000021107034416" />
+      <entry key="S10" value="1.0018992350104945" />
+      <entry key="S30" value="1.2929596716056841" />
+      <entry key="S60" value="2.804043873476761" />
+      <entry key="M2" value="7.969549760256452" />
+      <entry key="M5" value="24.225278993003677" />
+      <entry key="M10" value="43.590030365460436" />
+      <entry key="M15" value="56.44694842811504" />
+      <entry key="M30" value="76.91206751387612" />
+      <entry key="H1" value="91.95327204800057" />
+      <entry key="H2" value="101.23603154199618" />
+      <entry key="H4" value="106.52817017872934" />
+      <entry key="D1" value="125.46118086940744" />
+      <entry key="W1" value="178.99328493434905" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9332641572578597" />
-      <entry key="MS500" value="1.2411023997782522" />
-      <entry key="S2" value="3.0304757718869233" />
-      <entry key="S5" value="4.745688124254993" />
-      <entry key="S10" value="5.729530737097289" />
-      <entry key="S30" value="8.237783006669492" />
-      <entry key="S60" value="13.128758252887994" />
-      <entry key="M2" value="21.240524555370442" />
-      <entry key="M5" value="39.01180866875222" />
-      <entry key="M10" value="61.80582772312493" />
-      <entry key="M15" value="77.52265510078657" />
-      <entry key="M30" value="102.58916360760949" />
-      <entry key="H1" value="121.06528000987268" />
-      <entry key="H2" value="132.55215449936398" />
-      <entry key="H4" value="139.62244519308535" />
-      <entry key="D1" value="406.20193689512314" />
-      <entry key="W1" value="1126.0982455861513" />
+      <entry key="MS100" value="7.088226765410417E-8" />
+      <entry key="MS500" value="0.03716272234383503" />
+      <entry key="S2" value="0.4390630400933277" />
+      <entry key="S5" value="0.7194685097482896" />
+      <entry key="S10" value="0.8500135721500673" />
+      <entry key="S30" value="1.3683854741464396" />
+      <entry key="S60" value="3.876767723812131" />
+      <entry key="M2" value="12.653465889918152" />
+      <entry key="M5" value="44.74233899001879" />
+      <entry key="M10" value="88.6895074346008" />
+      <entry key="M15" value="119.19827474449839" />
+      <entry key="M30" value="168.55233060660672" />
+      <entry key="H1" value="205.10769740437615" />
+      <entry key="H2" value="227.736294328655" />
+      <entry key="H4" value="241.71408575068034" />
+      <entry key="D1" value="460.0944739345651" />
+      <entry key="W1" value="1374.524140554104" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -151,7 +157,7 @@
       <recent name="com.thatshylife" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart">
+  <component name="RunManager" selected="Application.Backend">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.thatshylife.Main" />
       <module name="journal-app" />
@@ -512,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781935100995</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Enabled the flutter web to talk to backend.">
+      <option name="closed" value="true" />
+      <created>1781935510145</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1781935510145</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +555,8 @@
     <MESSAGE value="Working on security ... CORS" />
     <MESSAGE value="building the flutter web" />
     <MESSAGE value="Adding flutter web build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding flutter web build" />
+    <MESSAGE value="Enabled the flutter web to talk to backend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled the flutter web to talk to backend." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
