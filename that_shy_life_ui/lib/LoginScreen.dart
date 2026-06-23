@@ -3,7 +3,6 @@ import 'app_theme.dart';
 import 'JournalService.dart';
 import 'JournalFeedScreen.dart';
 import 'RegisterScreen.dart';
-import 'RegisterScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -76,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen>{
                 ),
               ),
 
-              const SizedBox(height: 32)
+              const SizedBox(height: 32),
               TextField(
                 controller: _emailController,
                   keyboardType:TextInputType.emailAddress,
@@ -97,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen>{
                 ),
               ),
 
-              const SizedBox(height: 16)
+              const SizedBox(height: 16),
               TextField(
                 controller: _passwordController,
                 obscureText: true,
