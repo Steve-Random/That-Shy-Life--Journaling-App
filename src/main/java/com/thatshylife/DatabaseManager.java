@@ -13,6 +13,7 @@ public class DatabaseManager {
 
     @PostConstruct
     public void init(){
+        createUsersTable();
         createNewTable();
     }
 
@@ -35,6 +36,64 @@ public class DatabaseManager {
         return conn;
     }
 
+    //Users......
+
+    public void createUsersTable(){
+        String sql = "CREATE TABLE IF NOT EXISTS users ("
+                + " id TEXT PRIMARY KEY,"
+                + " email TEXT NOT NULL UNIQUE,"
+                + " password TEXT NOT NULL,"
+                + " createdAt TEXT NOT NULL"
+                + ");";
+
+        try(Connection conn = connect();
+         Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Table 'users' is ready");
+        }catch (SQLException e){
+            System.out.println("Users table creation failed." + e.getMessage());
+        }
+    }
+
+    public void saveUser(User user){
+        String sql = "INSERT INTO users (id, email, password, createdAt) VALUES (?,?,?,?)";
+
+        try(Connection conn = connect();
+           PreparedStatement pstmt = conn.prepareStatement(sql)){
+            pstmt.setString(1, user.getId());
+            pstmt.setString(2, user.getEmail());
+            pstmt.setString(3, user.getPassword());
+            pstmt.setString(4, user.getCreatedAt().toString());
+            pstmt.executeUpdate();
+            System.out.println("User saved.");
+        } catch (SQLException e){
+            System.out.println("Save user failed" + e.getMessage());
+        }
+    }
+
+    public com.thatshylife.User findUserByEmail(String email){
+        String sql = "SELECT * FROM users WHERE email = ?";
+
+        try (Connection conn = connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)){
+            pstmt.setString(1, email);
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()){
+                com.thatshylife.User user = new com.thatshylife.User();
+                user.setId(rs.getString("id"));
+                user.setEmail(rs.getString("email"));
+                user.setPassword(rs.getString("password"));
+                user.setCreatedAt(LocalDateTime.parse(rs.getString("createdAt")));
+                return user;
+            }
+        }catch (SQLException e){
+            System.out.println("Find user failed" + e.getMessage());
+        }
+        return null;
+    }
+
+    //Entries.....
+
     public void createNewTable() {
         String sql = "CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
@@ -43,7 +102,8 @@ public class DatabaseManager {
                 + " microEntry TEXT,"
                 + " socialBattery INTEGER,"
                 + " isAudioTranscript INTEGER,"
-                + " tags TEXT"
+                + " tags TEXT,"
+                + "userId TEXT REFERENCES users(id)"
                 + ");";
         try (Connection conn = connect();
              Statement stmt = conn.createStatement()) {
@@ -56,7 +116,7 @@ public class DatabaseManager {
 
 
     public void saveEntry(JournalEntry entry) {
-        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags) VALUES(?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -73,6 +133,7 @@ public class DatabaseManager {
             pstmt.setInt(5, entry.getSocialBattery());
             pstmt.setInt(6, entry.isAudioTranscript() ? 1 : 0);
             pstmt.setString(7, tagsJson);
+            pstmt.setString(8, entry.getUserId());
 
             pstmt.executeUpdate();
             System.out.println("Entry saved to the Vault.");
@@ -81,13 +142,13 @@ public class DatabaseManager {
         }
     }
 
-    public  List<JournalEntry> getAllEntries() {
+    public  List<JournalEntry> getAllEntries(String userId) {
         List<JournalEntry> entries = new ArrayList<>();
-        String sql = "SELECT * FROM entries";
+        String sql = "SELECT * FROM entries WHERE userId = ?";
 
         try (Connection conn = connect();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
+             PreparedStatement pstmt = conn.prepareStatement(sql);
+             ResultSet rs = pstmt.executeQuery(sql)) {
 
             while (rs.next()) {
                 JournalEntry entry = new JournalEntry();
