@@ -8,6 +8,7 @@ import java.util.UUID;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class JournalEntry {
+    private String userId;
     private String id;
     @JsonProperty("createdAt")
     private LocalDateTime timestamp;
@@ -34,6 +35,7 @@ public class JournalEntry {
     }
 
     //Setters
+    public void setUserId(String userId){ this.userId = userId;}
     public void setId(String id) {
         this.id = id;
     }
@@ -61,6 +63,7 @@ public class JournalEntry {
 
 
     //Getters
+    public String getUserId(){ return userId;}
     public String getId() {
         return id;
     }

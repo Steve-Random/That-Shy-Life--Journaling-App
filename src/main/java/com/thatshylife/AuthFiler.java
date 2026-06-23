@@ -21,7 +21,7 @@ public class AuthFiler extends OncePerRequestFilter {
         String path = request.getRequestURI();
 
         //Skipping filter for Auth endpoints
-        if (path.startsWith("/api.auth")){
+        if ((path.startsWith("/api/auth/"))){
             filterChain.doFilter(request,response);
             return;
         }

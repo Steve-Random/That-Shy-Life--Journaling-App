@@ -61,7 +61,7 @@ public class MenuHandler {
     }
 
     private void showHistory() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a");
+    /*    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a");
         List<JournalEntry> history = databaseManager.getAllEntries();
         System.out.println("--- THE VAULT: ALL ENTRIES ---");
         for (JournalEntry entry : history) {
@@ -75,7 +75,7 @@ public class MenuHandler {
             System.out.println("Social Battery: " + entry.getSocialBattery());
             System.out.println("Tags: " + entry.getTags());
             System.out.println("--------------------------------------------- ");
-            System.out.println();
-        }
+            System.out.println();*/
+      //  }
     }
 }

@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Created User.java to keep track of different users. Modified DatabaseManager.java to create a User tale and related methods">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthFiler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Created JwtUtil.java for token management.&#10;Created AuthController.java for Signing in or registering logic&#10;Created AuthFiler.java for filtering all requests to the controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthFiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthFiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/MenuHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/MenuHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/MenuHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,61 +59,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4354170654526982E-63" />
-      <entry key="MS500" value="2.700198060832491E-13" />
-      <entry key="S2" value="7.2099635934908E-4" />
-      <entry key="S5" value="0.05716652197587088" />
-      <entry key="S10" value="0.2792549149369976" />
-      <entry key="S30" value="1.1105905548994108" />
-      <entry key="S60" value="2.0787472836760865" />
-      <entry key="M2" value="4.078245009858293" />
-      <entry key="M5" value="12.507963534008287" />
-      <entry key="M10" value="30.23004190969752" />
-      <entry key="M15" value="49.44234962743093" />
-      <entry key="M30" value="103.11375323816247" />
-      <entry key="H1" value="172.06319793338068" />
-      <entry key="H2" value="232.4507143840697" />
-      <entry key="H4" value="274.36898729263726" />
-      <entry key="D1" value="502.4420386999353" />
-      <entry key="W1" value="1371.389570943574" />
+      <entry key="MS100" value="6.312028768447908E-82" />
+      <entry key="MS500" value="5.754847160031713E-17" />
+      <entry key="S2" value="8.70980533275072E-5" />
+      <entry key="S5" value="0.023768587816933782" />
+      <entry key="S10" value="0.15417064512070314" />
+      <entry key="S30" value="0.5362087499078255" />
+      <entry key="S60" value="0.7322627601536387" />
+      <entry key="M2" value="0.8557235302091669" />
+      <entry key="M5" value="0.9395791906298303" />
+      <entry key="M10" value="0.9693189313274708" />
+      <entry key="M15" value="0.9794399099420256" />
+      <entry key="M30" value="0.9896665651315855" />
+      <entry key="H1" value="0.9950185811766362" />
+      <entry key="H2" value="1.302777142156774" />
+      <entry key="H4" value="13.315163169488425" />
+      <entry key="D1" value="374.3986972569725" />
+      <entry key="W1" value="1423.9744689123986" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.000000000023804" />
-      <entry key="MS500" value="1.0075618945815554" />
-      <entry key="S2" value="1.4100842243598022" />
-      <entry key="S5" value="2.31753337223717" />
-      <entry key="S10" value="3.310477630296224" />
-      <entry key="S30" value="5.295189713761835" />
-      <entry key="S60" value="7.075873100818293" />
-      <entry key="M2" value="10.737327554468656" />
-      <entry key="M5" value="25.074212356690214" />
-      <entry key="M10" value="50.61355975749516" />
-      <entry key="M15" value="75.7829737470255" />
-      <entry key="M30" value="138.26015210524744" />
-      <entry key="H1" value="209.93134323782246" />
-      <entry key="H2" value="268.75866167028994" />
-      <entry key="H4" value="307.41117382046906" />
-      <entry key="D1" value="359.52455422078884" />
-      <entry key="W1" value="419.5920334906742" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000000009" />
+      <entry key="S2" value="1.0002134109129268" />
+      <entry key="S5" value="1.048367186981691" />
+      <entry key="S10" value="1.3073130220557911" />
+      <entry key="S30" value="2.068307722290261" />
+      <entry key="S60" value="2.461216031200097" />
+      <entry key="M2" value="2.70936576343629" />
+      <entry key="M5" value="2.878205318390026" />
+      <entry key="M10" value="2.9381395418730243" />
+      <entry key="M15" value="2.958542630958722" />
+      <entry key="M30" value="2.9791620141429527" />
+      <entry key="H1" value="2.9896781335627436" />
+      <entry key="H2" value="3.212981036861422" />
+      <entry key="H4" value="12.26215949353263" />
+      <entry key="D1" value="222.6795666273011" />
+      <entry key="W1" value="427.2495096472852" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0017480958416714275" />
-      <entry key="MS500" value="0.28261146338989873" />
-      <entry key="S2" value="1.0110645028134269" />
-      <entry key="S5" value="2.0471688711951996" />
-      <entry key="S10" value="3.2768656075603193" />
-      <entry key="S30" value="6.142208055014871" />
-      <entry key="S60" value="8.943340529706113" />
-      <entry key="M2" value="14.634326793566027" />
-      <entry key="M5" value="37.40065629483038" />
-      <entry key="M10" value="80.65576954699301" />
-      <entry key="M15" value="125.0349673783111" />
-      <entry key="M30" value="241.19525777180772" />
-      <entry key="H1" value="381.8553100310253" />
-      <entry key="H2" value="501.1186433365936" />
-      <entry key="H4" value="581.7276990585644" />
-      <entry key="D1" value="861.9555454900477" />
-      <entry key="W1" value="1790.979430312184" />
+      <entry key="MS100" value="6.415530511884418E-6" />
+      <entry key="MS500" value="0.09150535599660166" />
+      <entry key="S2" value="0.5501412815020351" />
+      <entry key="S5" value="0.8395593545348756" />
+      <entry key="S10" value="1.2779603420636232" />
+      <entry key="S30" value="2.4767940885046" />
+      <entry key="S60" value="3.1119352078366727" />
+      <entry key="M2" value="3.5186674144351078" />
+      <entry key="M5" value="3.7976678298276507" />
+      <entry key="M10" value="3.897124469436995" />
+      <entry key="M15" value="3.9310305720550427" />
+      <entry key="M30" value="3.9653209282793656" />
+      <entry key="H1" value="3.9829348216701175" />
+      <entry key="H2" value="4.514800598175774" />
+      <entry key="H4" value="25.575284849100143" />
+      <entry key="D1" value="597.0714482913646" />
+      <entry key="W1" value="1851.221803198509" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -531,7 +536,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782078749398</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Created JwtUtil.java for token management.&#10;Created AuthController.java for Signing in or registering logic&#10;Created AuthFiler.java for filtering all requests to the controller">
+      <option name="closed" value="true" />
+      <created>1782098741368</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1782098741369</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +575,8 @@
     <MESSAGE value="Adding flutter web build" />
     <MESSAGE value="Enabled the flutter web to talk to backend." />
     <MESSAGE value="Created User.java to keep track of different users. Modified DatabaseManager.java to create a User tale and related methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created User.java to keep track of different users. Modified DatabaseManager.java to create a User tale and related methods" />
+    <MESSAGE value="Created JwtUtil.java for token management.&#10;Created AuthController.java for Signing in or registering logic&#10;Created AuthFiler.java for filtering all requests to the controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created JwtUtil.java for token management.&#10;Created AuthController.java for Signing in or registering logic&#10;Created AuthFiler.java for filtering all requests to the controller" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

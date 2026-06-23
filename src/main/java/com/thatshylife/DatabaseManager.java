@@ -83,7 +83,7 @@ public class DatabaseManager {
                 user.setId(rs.getString("id"));
                 user.setEmail(rs.getString("email"));
                 user.setPassword(rs.getString("password"));
-                user.setCreatedAt(LocalDateTime.parse(rs.getString("id")));
+                user.setCreatedAt(LocalDateTime.parse(rs.getString("createdAt")));
                 return user;
             }
         }catch (SQLException e){
@@ -116,7 +116,7 @@ public class DatabaseManager {
 
 
     public void saveEntry(JournalEntry entry) {
-        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags) VALUES(?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -133,6 +133,7 @@ public class DatabaseManager {
             pstmt.setInt(5, entry.getSocialBattery());
             pstmt.setInt(6, entry.isAudioTranscript() ? 1 : 0);
             pstmt.setString(7, tagsJson);
+            pstmt.setString(8, entry.getUserId());
 
             pstmt.executeUpdate();
             System.out.println("Entry saved to the Vault.");
@@ -141,13 +142,13 @@ public class DatabaseManager {
         }
     }
 
-    public  List<JournalEntry> getAllEntries() {
+    public  List<JournalEntry> getAllEntries(String userId) {
         List<JournalEntry> entries = new ArrayList<>();
-        String sql = "SELECT * FROM entries";
+        String sql = "SELECT * FROM entries WHERE userId = ?";
 
         try (Connection conn = connect();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
+             PreparedStatement pstmt = conn.prepareStatement(sql);
+             ResultSet rs = pstmt.executeQuery(sql)) {
 
             while (rs.next()) {
                 JournalEntry entry = new JournalEntry();
