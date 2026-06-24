@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart">
+      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/SocialBatteryScreen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/app_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LoginScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LoginScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,61 +57,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000112799844698" />
-      <entry key="MS500" value="1.2072136085047886" />
-      <entry key="S2" value="3.491395284729362" />
-      <entry key="S5" value="6.64069457995467" />
-      <entry key="S10" value="9.031482820173958" />
-      <entry key="S30" value="11.440254136801213" />
-      <entry key="S60" value="12.187643670599497" />
-      <entry key="M2" value="12.674295164906567" />
-      <entry key="M5" value="14.878504118749591" />
-      <entry key="M10" value="19.71500771960445" />
-      <entry key="M15" value="23.265363877255563" />
-      <entry key="M30" value="31.248594433005582" />
-      <entry key="H1" value="60.40485380034154" />
-      <entry key="H2" value="132.22766979198755" />
-      <entry key="H4" value="225.45351415580598" />
-      <entry key="D1" value="672.6600387130627" />
-      <entry key="W1" value="1776.4428742155942" />
+      <entry key="MS100" value="5.559924273675581E-13" />
+      <entry key="MS500" value="0.003540085753922459" />
+      <entry key="S2" value="0.24667958466374482" />
+      <entry key="S5" value="0.6689053152451213" />
+      <entry key="S10" value="1.1676682760725883" />
+      <entry key="S30" value="2.8147203562365686" />
+      <entry key="S60" value="5.169163344857269" />
+      <entry key="M2" value="10.002607878753603" />
+      <entry key="M5" value="24.219273303720836" />
+      <entry key="M10" value="46.805453711880915" />
+      <entry key="M15" value="69.29080510274441" />
+      <entry key="M30" value="136.2890492596124" />
+      <entry key="H1" value="250.0757252194797" />
+      <entry key="H2" value="406.96112450694125" />
+      <entry key="H4" value="590.5719171144407" />
+      <entry key="D1" value="1192.4912800542575" />
+      <entry key="W1" value="2360.2492427429625" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.3107680976700388E-132" />
-      <entry key="S5" value="2.913054506912569E-53" />
-      <entry key="S10" value="8.69947480929704E-27" />
-      <entry key="S30" value="7.073707370337546E-9" />
-      <entry key="S60" value="3.0774811639462863E-4" />
-      <entry key="M2" value="0.07655284775828983" />
-      <entry key="M5" value="2.318989807941269" />
-      <entry key="M10" value="7.405522603675604" />
-      <entry key="M15" value="10.960111547827996" />
-      <entry key="M30" value="18.118827015841134" />
-      <entry key="H1" value="40.655637721853175" />
-      <entry key="H2" value="93.00438466014468" />
-      <entry key="H4" value="158.89390904399446" />
-      <entry key="D1" value="434.41218183456266" />
-      <entry key="W1" value="682.9781164586268" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000165584373" />
+      <entry key="S2" value="1.0127940977398102" />
+      <entry key="S5" value="1.299054455954954" />
+      <entry key="S10" value="2.171507142320843" />
+      <entry key="S30" value="5.74500159973983" />
+      <entry key="S60" value="9.819066436667343" />
+      <entry key="M2" value="14.991125618516469" />
+      <entry key="M5" value="28.907571946028938" />
+      <entry key="M10" value="56.88584970657633" />
+      <entry key="M15" value="84.45631885283322" />
+      <entry key="M30" value="151.80933366517718" />
+      <entry key="H1" value="242.58477107665436" />
+      <entry key="H2" value="354.6438679222415" />
+      <entry key="H4" value="481.7522401000658" />
+      <entry key="D1" value="865.356018198647" />
+      <entry key="W1" value="1162.265147914143" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0018715155670505172" />
-      <entry key="MS500" value="0.4897982344890208" />
-      <entry key="S2" value="3.2149079020418143" />
-      <entry key="S5" value="6.516463287330129" />
-      <entry key="S10" value="8.966288312010295" />
-      <entry key="S30" value="11.417693726498333" />
-      <entry key="S60" value="12.176540467079755" />
-      <entry key="M2" value="12.743238916030522" />
-      <entry key="M5" value="17.171260268630945" />
-      <entry key="M10" value="27.08044480044323" />
-      <entry key="M15" value="34.18605116820302" />
-      <entry key="M30" value="49.335217848584" />
-      <entry key="H1" value="101.0263942366531" />
-      <entry key="H2" value="225.1946802222538" />
-      <entry key="H4" value="384.3161145630513" />
-      <entry key="D1" value="1107.058420399426" />
-      <entry key="W1" value="2459.4176277045217" />
+      <entry key="MS100" value="7.135750801323863E-13" />
+      <entry key="MS500" value="0.0037214832395656913" />
+      <entry key="S2" value="0.2803089736309808" />
+      <entry key="S5" value="1.129006275259229" />
+      <entry key="S10" value="2.6630359582351146" />
+      <entry key="S30" value="8.113325959419777" />
+      <entry key="S60" value="14.652110101019916" />
+      <entry key="M2" value="24.738394985223838" />
+      <entry key="M5" value="52.898198179315" />
+      <entry key="M10" value="103.45598275809682" />
+      <entry key="M15" value="153.5122465757284" />
+      <entry key="M30" value="287.88091985120593" />
+      <entry key="H1" value="492.4802289644315" />
+      <entry key="H2" value="761.4698497830842" />
+      <entry key="H4" value="1072.2312756146002" />
+      <entry key="D1" value="2057.8195660030988" />
+      <entry key="W1" value="3522.5088172697283" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,6 +155,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.thatshylife" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nanaf\Desktop\Ryder\Portfolio\That-Shy-Life--Journaling-App\that_shy_life_ui\lib" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Backend">
@@ -557,7 +569,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782193659500</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart">
+      <option name="closed" value="true" />
+      <created>1782194154466</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1782194154466</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app_theme.dart';
+import 'app_widgets.dart';
 import 'JournalService.dart';
 import 'JournalFeedScreen.dart';
 import 'RegisterScreen.dart';
@@ -56,118 +57,46 @@ class _LoginScreenState extends State<LoginScreen>{
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'That Shy Life',
-                style: TextStyle(
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
-                  color: AppTheme.textDark,
-                  letterSpacing: 0.5
-                ),
-              ),
-
-              const SizedBox(height: 8),
-              Text(
-                'Welcome back',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: AppTheme.textMuted,
-                ),
+              AppWidgets.screenTitle(
+                  title: 'That Shy Life',
+                  subtitle: 'Welcome back',
               ),
 
               const SizedBox(height: 32),
-              TextField(
-                controller: _emailController,
-                  keyboardType:TextInputType.emailAddress,
-                style: TextStyle(color: AppTheme.textDark),
-                decoration: InputDecoration(
-                  hintText: 'Email',
-                  hintStyle: TextStyle(color: AppTheme.textMuted),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: AppTheme.border),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: AppTheme.primary),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  filled: true,
-                  fillColor: AppTheme.surface,
-                ),
+              AppWidgets.textField(
+                  controller: _emailController,
+                  hint: 'Email',
+                keyboardType: TextInputType.emailAddress,
               ),
 
               const SizedBox(height: 16),
-              TextField(
+              AppWidgets.textField(
                 controller: _passwordController,
-                obscureText: true,
-                style: TextStyle(color: AppTheme.textDark),
-                decoration: InputDecoration(
-                  hintText: 'Password',
-                  hintStyle: TextStyle(color: AppTheme.textMuted),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: AppTheme.border),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: AppTheme.primary),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  filled: true,
-                  fillColor: AppTheme.surface,
-                ),
+                hint: 'Password',
+                obscure: true,
               ),
 
               const SizedBox(height: 8),
-              if(_errorMessage != null)
-                Text(
-                  _errorMessage!,
-                  style: const TextStyle(color: Colors.red),
-                ),
+              AppWidgets.errorText(_errorMessage),
 
               const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                    onPressed: _isLoading?null: _login,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppTheme.primary,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadiusGeometry.circular(12),
-                      )
-                    ),
-
-                    child: _isLoading
-                      ?const CircularProgressIndicator(color: Colors.white)
-                      :const Text(
-                      'Login',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                ),
+              AppWidgets.primaryButton(
+                label: 'Login',
+                onPressed: _login,
+                isLoading: _isLoading,
               ),
 
               const SizedBox(height: 16),
-              Center(
-                child: TextButton(
-                    onPressed: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((context) => const RegisterScreen())),
-                          );
-                    },
-
-                    child: Text(
-                      "Don't have an account? Sign up",
-                      style: TextStyle(color: AppTheme.primary),
-                    ),
-                ),
+              AppWidgets.textLink(
+                  label: "Don't have an account? Sign up",
+                  onPressed: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const RegisterScreen()),
+                        );
+                  },
               ),
-
             ],
           ),
         ),
