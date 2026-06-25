@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Edited JournalFeedScreen.dart">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,61 +50,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.001475275781329" />
-      <entry key="MS500" value="1.4751081376174546" />
-      <entry key="S2" value="3.9644126422120194" />
-      <entry key="S5" value="7.6544859176238" />
-      <entry key="S10" value="10.915168862281611" />
-      <entry key="S30" value="14.52259530579528" />
-      <entry key="S60" value="15.806818404647595" />
-      <entry key="M2" value="17.450268727599816" />
-      <entry key="M5" value="25.015266028547813" />
-      <entry key="M10" value="43.06840266724557" />
-      <entry key="M15" value="63.49583465068685" />
-      <entry key="M30" value="128.16605269667616" />
-      <entry key="H1" value="243.80680803706397" />
-      <entry key="H2" value="407.5793149836128" />
-      <entry key="H4" value="600.3198225916311" />
-      <entry key="D1" value="1218.9271608619267" />
-      <entry key="W1" value="2392.8321048554035" />
+      <entry key="MS100" value="1.0000002032839084" />
+      <entry key="MS500" value="1.1017800782331955" />
+      <entry key="S2" value="3.744155301053574" />
+      <entry key="S5" value="7.170791233644989" />
+      <entry key="S10" value="9.207408086352212" />
+      <entry key="S30" value="10.968483677617824" />
+      <entry key="S60" value="11.470442106042075" />
+      <entry key="M2" value="11.731788968764413" />
+      <entry key="M5" value="12.104865368350664" />
+      <entry key="M10" value="15.920494312529293" />
+      <entry key="M15" value="24.930970225320518" />
+      <entry key="M30" value="69.90113318844624" />
+      <entry key="H1" value="175.88785319136562" />
+      <entry key="H2" value="346.17097039926665" />
+      <entry key="H4" value="555.5782993018167" />
+      <entry key="D1" value="1210.9226281422355" />
+      <entry key="W1" value="2399.1822687496388" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="4.4990455627975343E-200" />
-      <entry key="S2" value="1.4563980804106569E-50" />
-      <entry key="S5" value="1.1622834579975694E-20" />
-      <entry key="S10" value="1.0784391707666988E-10" />
-      <entry key="S30" value="5.749922641249949E-4" />
-      <entry key="S60" value="0.05268972516741856" />
-      <entry key="M2" value="0.8503720538329397" />
-      <entry key="M5" value="8.21663722850572" />
-      <entry key="M10" value="28.784395969617396" />
-      <entry key="M15" value="52.98486123965019" />
-      <entry key="M30" value="120.67439780797613" />
-      <entry key="H1" value="218.75999806613166" />
-      <entry key="H2" value="340.6940213722566" />
-      <entry key="H4" value="477.1319075311331" />
-      <entry key="D1" value="875.1302020894192" />
-      <entry key="W1" value="1177.0704801458971" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="7.643184294505663E-145" />
+      <entry key="S10" value="8.745341864241274E-73" />
+      <entry key="S30" value="1.155196100554044E-24" />
+      <entry key="S60" value="2.3616894497606894E-12" />
+      <entry key="M2" value="5.69321267335341E-6" />
+      <entry key="M5" value="0.06998314961789973" />
+      <entry key="M10" value="2.6564815624309306" />
+      <entry key="M15" value="10.820606197745834" />
+      <entry key="M30" value="54.53370889013407" />
+      <entry key="H1" value="147.05942327731447" />
+      <entry key="H2" value="279.3360491223109" />
+      <entry key="H4" value="432.03576199939306" />
+      <entry key="D1" value="860.768195242438" />
+      <entry key="W1" value="1174.2912664380488" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04492467831288212" />
-      <entry key="MS500" value="1.000720435823819" />
-      <entry key="S2" value="3.8026707703090596" />
-      <entry key="S5" value="7.571425836758806" />
-      <entry key="S10" value="10.86487438218296" />
-      <entry key="S30" value="14.502991699060473" />
-      <entry key="S60" value="15.84662744975835" />
-      <entry key="M2" value="18.27282356567221" />
-      <entry key="M5" value="33.143839596750475" />
-      <entry key="M10" value="71.71270955162743" />
-      <entry key="M15" value="116.31594835885008" />
-      <entry key="M30" value="248.65715876872014" />
-      <entry key="H1" value="462.3987671117545" />
-      <entry key="H2" value="748.1407492727718" />
-      <entry key="H4" value="1077.358352971667" />
-      <entry key="D1" value="2094.0290792432556" />
-      <entry key="W1" value="3569.896909913074" />
+      <entry key="MS100" value="0.022561574049769748" />
+      <entry key="MS500" value="0.5668091844262952" />
+      <entry key="S2" value="3.545428830921125" />
+      <entry key="S5" value="7.074641539145008" />
+      <entry key="S10" value="9.154949862250621" />
+      <entry key="S30" value="10.94978929414778" />
+      <entry key="S60" value="11.460926186221572" />
+      <entry key="M2" value="11.726992873252835" />
+      <entry key="M5" value="12.172167149556625" />
+      <entry key="M10" value="18.5630797526104" />
+      <entry key="M15" value="35.71728619904671" />
+      <entry key="M30" value="124.35168821938704" />
+      <entry key="H1" value="322.83415229013553" />
+      <entry key="H2" value="625.398230216449" />
+      <entry key="H4" value="987.5294693137926" />
+      <entry key="D1" value="2071.662997117616" />
+      <entry key="W1" value="3573.4678725375124" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -201,14 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780082168451</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Built a Layout for the Journal New Reflection Entry in main.dart">
-      <option name="closed" value="true" />
-      <created>1780122931466</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1780122931466</updated>
     </task>
     <task id="LOCAL-00003" summary="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure.">
       <option name="closed" value="true" />
@@ -594,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782348084512</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Edited JournalFeedScreen.dart">
+      <option name="closed" value="true" />
+      <created>1782348464323</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1782348464323</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
