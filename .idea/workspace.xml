@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added a global CORS configuration to main.java">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthFiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthFilter.java" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Modified AuthFilter.java">
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.4155110671119406E-131" />
-      <entry key="MS500" value="8.491730361402068E-27" />
-      <entry key="S2" value="3.035634841400442E-7" />
-      <entry key="S5" value="0.002481391666501891" />
-      <entry key="S10" value="0.05291049776954246" />
-      <entry key="S30" value="0.5150504858392747" />
-      <entry key="S60" value="0.9936830411162091" />
-      <entry key="M2" value="1.6114075853489491" />
-      <entry key="M5" value="4.739963744095105" />
-      <entry key="M10" value="11.348079784196296" />
-      <entry key="M15" value="18.874283078369128" />
-      <entry key="M30" value="52.58555878768312" />
-      <entry key="H1" value="145.443734452917" />
-      <entry key="H2" value="314.25166317961657" />
-      <entry key="H4" value="533.8526912165058" />
-      <entry key="D1" value="1219.2056944254125" />
-      <entry key="W1" value="2420.1665275597134" />
+      <entry key="MS100" value="3.2802504292202916E-7" />
+      <entry key="MS500" value="0.07091145498335262" />
+      <entry key="S2" value="2.442704375097906" />
+      <entry key="S5" value="6.442712534691039" />
+      <entry key="S10" value="9.138446578014097" />
+      <entry key="S30" value="12.179716965935446" />
+      <entry key="S60" value="14.049365893822062" />
+      <entry key="M2" value="15.844427529340297" />
+      <entry key="M5" value="17.983864242344296" />
+      <entry key="M10" value="21.750526617395373" />
+      <entry key="M15" value="27.052777905538605" />
+      <entry key="M30" value="53.51810600036642" />
+      <entry key="H1" value="136.2739264204964" />
+      <entry key="H2" value="301.06902202321965" />
+      <entry key="H4" value="525.2340692954857" />
+      <entry key="D1" value="1229.3086744463471" />
+      <entry key="W1" value="2438.7834787047723" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.000000003089456" />
-      <entry key="MS500" value="1.0198598701454011" />
-      <entry key="S2" value="1.3754135206025715" />
-      <entry key="S5" value="1.693354995366105" />
-      <entry key="S10" value="2.0397975716354235" />
-      <entry key="S30" value="3.1717346377682802" />
-      <entry key="S60" value="3.8895763152454816" />
-      <entry key="M2" value="4.413239876975791" />
-      <entry key="M5" value="5.876715080181026" />
-      <entry key="M10" value="10.235062826550994" />
-      <entry key="M15" value="16.16081411974618" />
-      <entry key="M30" value="46.88889506560396" />
-      <entry key="H1" value="128.26390775230988" />
-      <entry key="H2" value="262.10839983544395" />
-      <entry key="H4" value="425.10751612131105" />
-      <entry key="D1" value="879.0191807606323" />
-      <entry key="W1" value="1202.807193629376" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000011424789632" />
+      <entry key="S5" value="1.0063618081806955" />
+      <entry key="S10" value="1.1395991853873122" />
+      <entry key="S30" value="2.522742451871443" />
+      <entry key="S60" value="4.124376924302886" />
+      <entry key="M2" value="5.624107792728544" />
+      <entry key="M5" value="7.328360757290756" />
+      <entry key="M10" value="10.191819948358571" />
+      <entry key="M15" value="14.341139094599004" />
+      <entry key="M30" value="37.76660706745584" />
+      <entry key="H1" value="110.13531556195316" />
+      <entry key="H2" value="241.93422433579832" />
+      <entry key="H4" value="409.80596823062217" />
+      <entry key="D1" value="879.4527962704029" />
+      <entry key="W1" value="1210.1263369112316" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.237166197707856E-8" />
-      <entry key="MS500" value="0.03880190121366052" />
-      <entry key="S2" value="0.6358088467525879" />
-      <entry key="S5" value="1.2569650888555939" />
-      <entry key="S10" value="1.8122263049787257" />
-      <entry key="S30" value="3.5342912575229817" />
-      <entry key="S60" value="4.788007346010925" />
-      <entry key="M2" value="5.968734389633783" />
-      <entry key="M5" value="10.57407325902102" />
-      <entry key="M10" value="21.532454360775056" />
-      <entry key="M15" value="34.978283053306946" />
-      <entry key="M30" value="99.39546997138495" />
-      <entry key="H1" value="273.6039950079795" />
-      <entry key="H2" value="576.2552100364028" />
-      <entry key="H4" value="958.8755060556231" />
-      <entry key="D1" value="2098.1961891816195" />
-      <entry key="W1" value="3622.9678883946763" />
+      <entry key="MS100" value="9.46189881046752E-6" />
+      <entry key="MS500" value="0.1559019956943648" />
+      <entry key="S2" value="2.959191880056445" />
+      <entry key="S5" value="7.207231541135304" />
+      <entry key="S10" value="10.121018228943267" />
+      <entry key="S30" value="14.553554911810535" />
+      <entry key="S60" value="18.04388366173525" />
+      <entry key="M2" value="21.37655837046221" />
+      <entry key="M5" value="25.26246739409133" />
+      <entry key="M10" value="31.903300028452488" />
+      <entry key="M15" value="41.352920753374725" />
+      <entry key="M30" value="91.22526456374578" />
+      <entry key="H1" value="246.32204060295285" />
+      <entry key="H2" value="542.9073261159763" />
+      <entry key="H4" value="934.9588089280945" />
+      <entry key="D1" value="2108.7328359861285" />
+      <entry key="W1" value="3648.9039583576573" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -201,14 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780082168451</updated>
-    </task>
-    <task id="LOCAL-00005" summary="integrated JournalEmtry.dart into JouralFeedScren.dart">
-      <option name="closed" value="true" />
-      <created>1780180498599</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1780180498599</updated>
     </task>
     <task id="LOCAL-00006" summary="Linked Flutter to Java Database">
       <option name="closed" value="true" />
@@ -594,14 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782374270784</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Modified AuthFilter.java">
+      <option name="closed" value="true" />
+      <created>1782375011027</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1782375011027</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge remote-tracking branch 'origin/Building-user-interface-a' into Building-user-interface-a&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;that_shy_life_ui/lib/main.dart" />
     <MESSAGE value="Linked Flutter to Java Database" />
     <MESSAGE value="Solved Connection issue of front end to backend and feed display issue" />
     <MESSAGE value="Added JournalDetailScreen.dart" />
@@ -626,7 +627,8 @@
     <MESSAGE value="Created app_widgets.dart&#10;Edited LoginScreen.dart&#10;Edited RegisterScreen.dart&#10;Created SocialBatteryScreen.dart" />
     <MESSAGE value="Edited JournalFeedScreen.dart" />
     <MESSAGE value="Added a global CORS configuration to main.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a global CORS configuration to main.java" />
+    <MESSAGE value="Modified AuthFilter.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified AuthFilter.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
