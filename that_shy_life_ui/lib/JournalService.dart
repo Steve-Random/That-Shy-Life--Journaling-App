@@ -6,6 +6,7 @@ import 'JournalEntry.dart';
 import 'package:flutter/foundation.dart';
 
 class JournalService {
+  static String? _cachedToken;
 
   static String get baseUrl{
       return 'https://that-shy-life-journaling-app.onrender.com';
@@ -13,11 +14,13 @@ class JournalService {
 
   //Token Storage
   static Future<void> saveToken(String token) async {
+    _cachedToken = token;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('jwt_token', token);
   }
 
   static Future<String?> getToken() async {
+    if( _cachedToken != null) return _cachedToken;
     final prefs = await SharedPreferences.getInstance();
     await prefs.getString('jwt_token');
   }
