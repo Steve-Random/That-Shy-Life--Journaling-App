@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Created app_widgets.dart&#10;Edited LoginScreen.dart&#10;Edited RegisterScreen.dart&#10;Created SocialBatteryScreen.dart">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
-    </list>
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Edited JournalFeedScreen.dart" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="5.341899573861904E-9" />
-      <entry key="MS500" value="0.022158474596177702" />
-      <entry key="S2" value="0.3996457788734867" />
-      <entry key="S5" value="0.8636476482945019" />
-      <entry key="S10" value="1.2560934940689978" />
-      <entry key="S30" value="1.9659037329139906" />
-      <entry key="S60" value="3.049638457305713" />
-      <entry key="M2" value="5.840943556532635" />
-      <entry key="M5" value="17.237431991638633" />
-      <entry key="M10" value="38.671290851459915" />
-      <entry key="M15" value="60.733495251387154" />
-      <entry key="M30" value="127.3441060396933" />
-      <entry key="H1" value="242.54498351779822" />
-      <entry key="H2" value="403.0736755816167" />
-      <entry key="H4" value="591.2506150005033" />
-      <entry key="D1" value="1201.3311247476154" />
-      <entry key="W1" value="2372.074279783499" />
+      <entry key="MS100" value="1.001475275781329" />
+      <entry key="MS500" value="1.4751081376174546" />
+      <entry key="S2" value="3.9644126422120194" />
+      <entry key="S5" value="7.6544859176238" />
+      <entry key="S10" value="10.915168862281611" />
+      <entry key="S30" value="14.52259530579528" />
+      <entry key="S60" value="15.806818404647595" />
+      <entry key="M2" value="17.450268727599816" />
+      <entry key="M5" value="25.015266028547813" />
+      <entry key="M10" value="43.06840266724557" />
+      <entry key="M15" value="63.49583465068685" />
+      <entry key="M30" value="128.16605269667616" />
+      <entry key="H1" value="243.80680803706397" />
+      <entry key="H2" value="407.5793149836128" />
+      <entry key="H4" value="600.3198225916311" />
+      <entry key="D1" value="1218.9271608619267" />
+      <entry key="W1" value="2392.8321048554035" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000338613730548" />
-      <entry key="S2" value="1.0765601955972797" />
-      <entry key="S5" value="1.3983414535792882" />
-      <entry key="S10" value="1.884297409872835" />
-      <entry key="S30" value="3.752068065171153" />
-      <entry key="S60" value="6.008846141097962" />
-      <entry key="M2" value="9.802851844033166" />
-      <entry key="M5" value="22.244151087120986" />
-      <entry key="M10" value="47.60596283042322" />
-      <entry key="M15" value="74.19365940703665" />
-      <entry key="M30" value="142.80460501354307" />
-      <entry key="H1" value="237.82343150398668" />
-      <entry key="H2" value="354.98066666081655" />
-      <entry key="H4" value="486.7209642590731" />
-      <entry key="D1" value="877.3384597576992" />
-      <entry key="W1" value="1176.6860172234487" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="4.4990455627975343E-200" />
+      <entry key="S2" value="1.4563980804106569E-50" />
+      <entry key="S5" value="1.1622834579975694E-20" />
+      <entry key="S10" value="1.0784391707666988E-10" />
+      <entry key="S30" value="5.749922641249949E-4" />
+      <entry key="S60" value="0.05268972516741856" />
+      <entry key="M2" value="0.8503720538329397" />
+      <entry key="M5" value="8.21663722850572" />
+      <entry key="M10" value="28.784395969617396" />
+      <entry key="M15" value="52.98486123965019" />
+      <entry key="M30" value="120.67439780797613" />
+      <entry key="H1" value="218.75999806613166" />
+      <entry key="H2" value="340.6940213722566" />
+      <entry key="H4" value="477.1319075311331" />
+      <entry key="D1" value="875.1302020894192" />
+      <entry key="W1" value="1177.0704801458971" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6719927240714725E-6" />
-      <entry key="MS500" value="0.07025426888876464" />
-      <entry key="S2" value="0.6817013937380805" />
-      <entry key="S5" value="1.6192572529057303" />
-      <entry key="S10" value="2.651100136649319" />
-      <entry key="S30" value="5.389007401930118" />
-      <entry key="S60" value="8.747871877519422" />
-      <entry key="M2" value="15.363146720941648" />
-      <entry key="M5" value="39.24336749097534" />
-      <entry key="M10" value="86.04535345709543" />
-      <entry key="M15" value="134.6963369662695" />
-      <entry key="M30" value="269.9317247863659" />
-      <entry key="H1" value="480.18567100892153" />
-      <entry key="H2" value="757.9161565983238" />
-      <entry key="H4" value="1077.8763043902236" />
-      <entry key="D1" value="2078.6412261265286" />
-      <entry key="W1" value="3548.7546230943744" />
+      <entry key="MS100" value="0.04492467831288212" />
+      <entry key="MS500" value="1.000720435823819" />
+      <entry key="S2" value="3.8026707703090596" />
+      <entry key="S5" value="7.571425836758806" />
+      <entry key="S10" value="10.86487438218296" />
+      <entry key="S30" value="14.502991699060473" />
+      <entry key="S60" value="15.84662744975835" />
+      <entry key="M2" value="18.27282356567221" />
+      <entry key="M5" value="33.143839596750475" />
+      <entry key="M10" value="71.71270955162743" />
+      <entry key="M15" value="116.31594835885008" />
+      <entry key="M30" value="248.65715876872014" />
+      <entry key="H1" value="462.3987671117545" />
+      <entry key="H2" value="748.1407492727718" />
+      <entry key="H4" value="1077.358352971667" />
+      <entry key="D1" value="2094.0290792432556" />
+      <entry key="W1" value="3569.896909913074" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -579,14 +576,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782280388416</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Edited JournalFeedScreen.dart">
+      <option name="closed" value="true" />
+      <created>1782346495098</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1782346495098</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created JournalEntry.dart to act as POJO, also reorganized files for a clean structure." />
     <MESSAGE value="integrated JournalEmtry.dart into JouralFeedScren.dart" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Building-user-interface-a' into Building-user-interface-a&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;that_shy_life_ui/lib/main.dart" />
     <MESSAGE value="Linked Flutter to Java Database" />
@@ -611,7 +615,8 @@
     <MESSAGE value="Udpdated methods in DatabaseManager.java, JournalController.java, Register and Login good" />
     <MESSAGE value="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart" />
     <MESSAGE value="Created app_widgets.dart&#10;Edited LoginScreen.dart&#10;Edited RegisterScreen.dart&#10;Created SocialBatteryScreen.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created app_widgets.dart&#10;Edited LoginScreen.dart&#10;Edited RegisterScreen.dart&#10;Created SocialBatteryScreen.dart" />
+    <MESSAGE value="Edited JournalFeedScreen.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited JournalFeedScreen.dart" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
