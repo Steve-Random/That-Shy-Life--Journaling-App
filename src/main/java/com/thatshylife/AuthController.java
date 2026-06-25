@@ -14,7 +14,7 @@ import java.util.Map;
         "http://localhost:8080",
         "http://localhost:60148",
         "https://that-shy-life-journaling-app.onrender.com",
-        "https://that-shy-life-web.onrender.com/"
+        "https://that-shy-life-web.onrender.com"
 })
 
 public class AuthController {
