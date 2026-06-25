@@ -6,7 +6,6 @@ import 'JournalEntry.dart';
 import 'package:flutter/foundation.dart';
 
 class JournalService {
-  // running locally for now (GET...http.get())
 
   static String get baseUrl{
       return 'https://that-shy-life-journaling-app.onrender.com';
