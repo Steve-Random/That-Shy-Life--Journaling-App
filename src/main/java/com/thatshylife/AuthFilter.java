@@ -10,7 +10,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 @Component
-public class AuthFiler extends OncePerRequestFilter {
+public class AuthFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal (HttpServletRequest request,
@@ -21,7 +21,8 @@ public class AuthFiler extends OncePerRequestFilter {
         String path = request.getRequestURI();
 
         //Skipping filter for Auth endpoints
-        if ((path.startsWith("/api/auth/"))){
+        String method = request.getMethod();
+        if ((path.startsWith("/api/auth/")) || (method.equals("OPTIONS")) ){
             filterChain.doFilter(request,response);
             return;
         }
