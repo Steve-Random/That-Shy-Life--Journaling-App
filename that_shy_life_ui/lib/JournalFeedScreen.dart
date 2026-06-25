@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:that_shy_life_ui/JournalDetailScreen.dart';
+import 'package:that_shy_life_ui/app_theme.dart';
+import 'JournalDetailScreen.dart';
+import 'SocialBatteryScreen.dart';
 import 'JournalEntry.dart';
 import 'JournalService.dart';
 import 'NewEntryScreen.dart';
@@ -34,6 +36,19 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
         backgroundColor: Colors.white,
         elevation: 1,
         scrolledUnderElevation: 0,
+        actions: [
+          IconButton(
+              icon: const Icon(Icons.battery_charging_full_rounded),
+              color: AppTheme.primary,
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SocialBatteryScreen()),
+                );
+              },
+          ),
+        ],
       ),
       body: Center(
         child: FutureBuilder<List<JournalEntry>>(
