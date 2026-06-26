@@ -61,6 +61,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
               return Text("Error: ${snapshot.error}");
             }
             final entries = snapshot.data ?? [];
+            print('Entries count: ${entries.length}');
             return Container(
               constraints: const BoxConstraints(maxWidth: 600),
               child: ListView.builder(
