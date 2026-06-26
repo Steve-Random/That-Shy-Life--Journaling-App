@@ -10,8 +10,9 @@ class NewEntryScreen extends StatefulWidget {
   @override
   State<NewEntryScreen> createState() => _NewEntryScreenState();
 }
-int _socialBattery = 50;
+
 class _NewEntryScreenState extends State<NewEntryScreen> {
+  int _socialBattery = 50;
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _contentController = TextEditingController();
 

@@ -63,7 +63,7 @@ class JournalService {
   //Entries
 
   //Fetching all entries from Java
-Future<List<JournalEntry>> fetchEntries() async{
+static Future<List<JournalEntry>> fetchEntries() async{
     final token = await getToken();
   final response = await http.get(
       Uri.parse('$baseUrl/api/entries'),
