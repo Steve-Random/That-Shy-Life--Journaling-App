@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Modified AuthFilter.java">
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="90" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,63 +52,67 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" root0="SKIP_INSPECTION" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.2802504292202916E-7" />
-      <entry key="MS500" value="0.07091145498335262" />
-      <entry key="S2" value="2.442704375097906" />
-      <entry key="S5" value="6.442712534691039" />
-      <entry key="S10" value="9.138446578014097" />
-      <entry key="S30" value="12.179716965935446" />
-      <entry key="S60" value="14.049365893822062" />
-      <entry key="M2" value="15.844427529340297" />
-      <entry key="M5" value="17.983864242344296" />
-      <entry key="M10" value="21.750526617395373" />
-      <entry key="M15" value="27.052777905538605" />
-      <entry key="M30" value="53.51810600036642" />
-      <entry key="H1" value="136.2739264204964" />
-      <entry key="H2" value="301.06902202321965" />
-      <entry key="H4" value="525.2340692954857" />
-      <entry key="D1" value="1229.3086744463471" />
-      <entry key="W1" value="2438.7834787047723" />
+      <entry key="MS100" value="1.0000000004110619" />
+      <entry key="MS500" value="1.0152081761129654" />
+      <entry key="S2" value="1.753835162948338" />
+      <entry key="S5" value="3.7829941150493003" />
+      <entry key="S10" value="6.544821171463814" />
+      <entry key="S30" value="11.308717459538261" />
+      <entry key="S60" value="13.362105500344981" />
+      <entry key="M2" value="14.625931474452416" />
+      <entry key="M5" value="17.289654876113634" />
+      <entry key="M10" value="25.188766892117975" />
+      <entry key="M15" value="33.03933970747073" />
+      <entry key="M30" value="48.433832368234285" />
+      <entry key="H1" value="63.18950181494546" />
+      <entry key="H2" value="105.88764458184222" />
+      <entry key="H4" value="266.4681185735018" />
+      <entry key="D1" value="1210.7322417185446" />
+      <entry key="W1" value="2615.5448389844073" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000011424789632" />
-      <entry key="S5" value="1.0063618081806955" />
-      <entry key="S10" value="1.1395991853873122" />
-      <entry key="S30" value="2.522742451871443" />
-      <entry key="S60" value="4.124376924302886" />
-      <entry key="M2" value="5.624107792728544" />
-      <entry key="M5" value="7.328360757290756" />
-      <entry key="M10" value="10.191819948358571" />
-      <entry key="M15" value="14.341139094599004" />
-      <entry key="M30" value="37.76660706745584" />
-      <entry key="H1" value="110.13531556195316" />
-      <entry key="H2" value="241.93422433579832" />
-      <entry key="H4" value="409.80596823062217" />
-      <entry key="D1" value="879.4527962704029" />
-      <entry key="W1" value="1210.1263369112316" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.946033350680221E-255" />
+      <entry key="S2" value="2.717240618728261E-64" />
+      <entry key="S5" value="5.242726174055135E-26" />
+      <entry key="S10" value="3.1883697021673915E-13" />
+      <entry key="S30" value="1.0806242127123857E-4" />
+      <entry key="S60" value="0.014758110691266344" />
+      <entry key="M2" value="0.19613295927634325" />
+      <entry key="M5" value="2.400615601680981" />
+      <entry key="M10" value="10.228402582156182" />
+      <entry key="M15" value="18.204158097490843" />
+      <entry key="M30" value="33.92123498607599" />
+      <entry key="H1" value="47.87519953021679" />
+      <entry key="H2" value="75.75315205899186" />
+      <entry key="H4" value="179.37865693863165" />
+      <entry key="D1" value="794.2074003071423" />
+      <entry key="W1" value="1265.0890116917012" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.46189881046752E-6" />
-      <entry key="MS500" value="0.1559019956943648" />
-      <entry key="S2" value="2.959191880056445" />
-      <entry key="S5" value="7.207231541135304" />
-      <entry key="S10" value="10.121018228943267" />
-      <entry key="S30" value="14.553554911810535" />
-      <entry key="S60" value="18.04388366173525" />
-      <entry key="M2" value="21.37655837046221" />
-      <entry key="M5" value="25.26246739409133" />
-      <entry key="M10" value="31.903300028452488" />
-      <entry key="M15" value="41.352920753374725" />
-      <entry key="M30" value="91.22526456374578" />
-      <entry key="H1" value="246.32204060295285" />
-      <entry key="H2" value="542.9073261159763" />
-      <entry key="H4" value="934.9588089280945" />
-      <entry key="D1" value="2108.7328359861285" />
-      <entry key="W1" value="3648.9039583576573" />
+      <entry key="MS100" value="0.8827029966611228" />
+      <entry key="MS500" value="0.9902186910002061" />
+      <entry key="S2" value="1.7428495836108022" />
+      <entry key="S5" value="3.773683426028563" />
+      <entry key="S10" value="6.536641483698699" />
+      <entry key="S30" value="11.303816432181867" />
+      <entry key="S60" value="13.373543753903272" />
+      <entry key="M2" value="14.818140732789361" />
+      <entry key="M5" value="19.671102795733248" />
+      <entry key="M10" value="35.373137854271114" />
+      <entry key="M15" value="51.190549690766325" />
+      <entry key="M30" value="82.30526853042086" />
+      <entry key="H1" value="111.02931535212332" />
+      <entry key="H2" value="181.61191832766377" />
+      <entry key="H4" value="445.81141718582177" />
+      <entry key="D1" value="2004.913601012455" />
+      <entry key="W1" value="3880.627710947102" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -118,35 +124,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Backend.executor&quot;: &quot;Run&quot;,
-    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Building-user-interface-a&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Backend.executor": "Run",
+    "Flutter.main.dart.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Building-user-interface-a",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.thatshylife" />
@@ -203,14 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780082168451</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Linked Flutter to Java Database">
-      <option name="closed" value="true" />
-      <created>1780186872899</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1780186872899</updated>
     </task>
     <task id="LOCAL-00007" summary="Solved Connection issue of front end to backend and feed display issue">
       <option name="closed" value="true" />
@@ -596,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782375011027</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Modified AuthFilter.java">
+      <option name="closed" value="true" />
+      <created>1782376221205</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1782376221205</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
