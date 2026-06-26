@@ -14,13 +14,13 @@ class JournalFeedScreen extends StatefulWidget {
 }
 
 class _JournalFeedScreenState extends State<JournalFeedScreen> {
-  final JournalService _journalService = JournalService();
+  //final JournalService _journalService = JournalService();
   late Future<List<JournalEntry>>_future;
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
-    _future = _journalService.fetchEntries();
+    _future = JournalService.fetchEntries();
   }
 
   @override
@@ -84,7 +84,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
           );
           if (result == true){
             setState(() {
-              _future = _journalService.fetchEntries();
+              _future = JournalService.fetchEntries();
             });
           }
           },

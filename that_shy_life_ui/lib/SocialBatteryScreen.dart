@@ -19,7 +19,7 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
   @override
   void initState(){
     super.initState();
-    _future = JournalService().fetchEntries();
+    _future = JournalService.fetchEntries();
   }
 
   Color _batteryColor(double value) {
