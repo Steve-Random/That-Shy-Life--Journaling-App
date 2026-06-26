@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/JournalEntry.dart';
+import 'package:that_shy_life_ui/app_theme.dart';
 import 'JournalService.dart';
 
 //For New Entries/New Reflections
@@ -9,10 +10,17 @@ class NewEntryScreen extends StatefulWidget {
   @override
   State<NewEntryScreen> createState() => _NewEntryScreenState();
 }
-
+int _socialBattery = 50;
 class _NewEntryScreenState extends State<NewEntryScreen> {
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _contentController = TextEditingController();
+
+  //Color helper
+  Color _socialBatteryColor(){
+    if (_socialBattery >= 65) return const Color(0xFF7FB5A8);
+    if (_socialBattery >= 35) return const Color(0xFFD4A96A);
+    return const Color(0xFFB08090);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +36,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                     microEntry: _titleController.text,
                     content: _contentController.text,
                     createdAt: DateTime.now(),
+                  socialBattery: _socialBattery,
                 );
                 await JournalService().saveEntry(newEntry);
              if(mounted) Navigator.pop(context,true);}
@@ -57,7 +66,86 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                   hintStyle: TextStyle(color: Colors.grey),
                 ),
               ),
+
+
               const Divider(),
+
+              //Social Battery Label
+              const SizedBox(height: 16),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Social Battery',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: AppTheme.textMuted,
+                            letterSpacing: 0.3,
+                          ),
+                        ),
+                        Text(
+                          '$_socialBattery',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                            color: _socialBatteryColor()
+                          ),
+                        ),
+                      ],
+                ),
+
+                    const SizedBox(height: 8),
+
+              SliderTheme(
+                data: SliderTheme.of(context).copyWith(
+                  trackHeight: 3,
+                  thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 7),
+                  overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
+                  activeTickMarkColor: _socialBatteryColor(),
+                  inactiveTickMarkColor: AppTheme.border,
+                  thumbColor: Colors.white,
+                  overlayColor: _socialBatteryColor().withOpacity(0.15),
+                ),
+                child: Slider(
+                  value: _socialBattery.toDouble(),
+                  min: 0,
+                  max: 100,
+                  divisions: 100,
+                  onChanged: (value){
+                    setState(() {
+                      _socialBattery = value.toInt();
+                    });
+                  },
+                ),
+              ),
+
+              const SizedBox(height: 4),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Drained',
+                    style: TextStyle(fontSize: 11, color: AppTheme.textMuted),
+                  ),
+                  Text(
+                    'Recharged',
+                    style: TextStyle(fontSize: 11, color: AppTheme.textMuted),
+                  ),
+                ],
+              ),
+              ],
+                ),
+              ),
+
+              const SizedBox(height: 8),
+
               Expanded(
                 child: TextField(
                   controller: _contentController,
@@ -82,4 +170,5 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
     _contentController.dispose();
     super.dispose();
   }
+
 }
