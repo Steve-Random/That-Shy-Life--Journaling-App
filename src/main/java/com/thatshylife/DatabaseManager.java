@@ -116,7 +116,7 @@ public class DatabaseManager {
 
 
     public void saveEntry(JournalEntry entry) {
-        String sql = "INSERT INTO entries(id, timestamp, content, microentry, socialbattery, saudiotranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO entries(id, timestamp, content, microentry, socialbattery, isaudiotranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -146,9 +146,10 @@ public class DatabaseManager {
         List<JournalEntry> entries = new ArrayList<>();
         String sql = "SELECT * FROM entries WHERE userid = ?";
 
-        try (Connection conn = connect();
+        try (Connection conn = connect()){
              PreparedStatement pstmt = conn.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
+             pstmt.setString(1, userId);
+             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()) {
                 JournalEntry entry = new JournalEntry();
