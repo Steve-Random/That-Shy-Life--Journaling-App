@@ -103,7 +103,7 @@ public class DatabaseManager {
                 + " socialBattery INTEGER,"
                 + " isAudioTranscript INTEGER,"
                 + " tags TEXT,"
-                + "userId TEXT REFERENCES users(id)"
+                + " userId TEXT REFERENCES users(id)"
                 + ");";
         try (Connection conn = connect();
              Statement stmt = conn.createStatement()) {
