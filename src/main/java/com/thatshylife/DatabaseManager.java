@@ -116,7 +116,7 @@ public class DatabaseManager {
 
 
     public void saveEntry(JournalEntry entry) {
-        String sql = "INSERT INTO entries(id, timestamp, content, \"microEntry\", \"socialBattery\", \"isAudioTranscript\", tags, \"userId\") VALUES(?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -144,10 +144,10 @@ public class DatabaseManager {
 
     public  List<JournalEntry> getAllEntries(String userId) {
         List<JournalEntry> entries = new ArrayList<>();
-        String sql = "SELECT * FROM entries WHERE \"userId\" = ?";
+        String sql = "SELECT * FROM entries WHERE userId = ?";
 
-        try (Connection conn = connect()){
-             PreparedStatement pstmt = conn.prepareStatement(sql);
+        try (Connection conn = connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)){
              pstmt.setString(1, userId);
              ResultSet rs = pstmt.executeQuery();
 
