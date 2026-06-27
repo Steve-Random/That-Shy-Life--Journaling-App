@@ -116,7 +116,7 @@ public class DatabaseManager {
 
 
     public void saveEntry(JournalEntry entry) {
-        String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO entries(id, timestamp, content, microentry, socialbattery, saudiotranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -144,7 +144,7 @@ public class DatabaseManager {
 
     public  List<JournalEntry> getAllEntries(String userId) {
         List<JournalEntry> entries = new ArrayList<>();
-        String sql = "SELECT * FROM entries WHERE userId = ?";
+        String sql = "SELECT * FROM entries WHERE userid = ?";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -159,10 +159,10 @@ public class DatabaseManager {
                     entry.setTimestamp(LocalDateTime.parse(timestampStr));
                 }
                 entry.setContent(SecurityManager.decrypt(rs.getString("content"))); //Decrypting
-                entry.setMicroEntry(SecurityManager.decrypt(rs.getString("microEntry"))); //Decrypting
-                entry.setSocialBattery(rs.getInt("socialBattery"));
+                entry.setMicroEntry(SecurityManager.decrypt(rs.getString("microentry"))); //Decrypting
+                entry.setSocialBattery(rs.getInt("socialbattery"));
                 //handling boolean conversion (1 = true, 0 = false)
-                entry.setAudioTranscript(rs.getInt("isAudioTranscript") == 1);
+                entry.setAudioTranscript(rs.getInt("isaudiotranscript") == 1);
                 //tags parsing
                 String tagsJson = rs.getString("tags");
                 if ((tagsJson != null) && (!tagsJson.isEmpty())){
