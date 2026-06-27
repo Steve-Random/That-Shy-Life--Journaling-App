@@ -95,7 +95,7 @@ public class DatabaseManager {
     //Entries.....
 
     public void createNewTable() {
-        String sql = "DROP TABLE IF EXISTS entries; CREATE TABLE IF NOT EXISTS entries ("
+        String sql = "CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
                 + " timestamp TEXT NOT NULL,"
                 + " content TEXT,"
