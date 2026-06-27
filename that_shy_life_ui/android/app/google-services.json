@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "357880266713",
+    "project_id": "that-shy-life",
+    "storage_bucket": "that-shy-life.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357880266713:android:a004f7ee8c0f6792d463c8",
+        "android_client_info": {
+          "package_name": "com.thatshylife.journal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGi003pcYa6UR6PweUxkfCDQdBLStlY8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

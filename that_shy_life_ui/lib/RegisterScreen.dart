@@ -4,6 +4,7 @@ import 'JournalFeedScreen.dart';
 import 'JournalService.dart';
 import 'app_theme.dart';
 import 'app_widgets.dart';
+import 'LegalScreen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -106,6 +107,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 label: "Already have an account? Login",
                 onPressed: () {
                   Navigator.pop(context);
+                },
+              ),
+
+              const SizedBox(height: 8),
+              AppWidgets.textLink(
+                label: 'Privacy Policy & Terms of Service',
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LegalScreen()),
+                  );
                 },
               ),
             ],
