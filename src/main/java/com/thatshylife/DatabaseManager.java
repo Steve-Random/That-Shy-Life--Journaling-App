@@ -148,7 +148,7 @@ public class DatabaseManager {
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery(sql)) {
+             ResultSet rs = pstmt.executeQuery()) {
 
             while (rs.next()) {
                 JournalEntry entry = new JournalEntry();
