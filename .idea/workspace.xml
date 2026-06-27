@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added the Social Battery feature.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixing blank feed sceen bug">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,23 +57,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000024274216" />
-      <entry key="S5" value="1.0004902191946596" />
-      <entry key="S10" value="1.034021833108497" />
-      <entry key="S30" value="1.733482447646658" />
-      <entry key="S60" value="2.684472122736107" />
-      <entry key="M2" value="3.584492843841703" />
-      <entry key="M5" value="4.355266416626266" />
-      <entry key="M10" value="4.6628284733907295" />
-      <entry key="M15" value="4.771787934111287" />
-      <entry key="M30" value="4.884141691769916" />
-      <entry key="H1" value="4.941652612637914" />
-      <entry key="H2" value="5.0213215138987355" />
-      <entry key="H4" value="9.52540933769279" />
-      <entry key="D1" value="613.8687284296076" />
-      <entry key="W1" value="2412.559511609245" />
+      <entry key="MS100" value="1.1224275371983659" />
+      <entry key="MS500" value="1.6570158135746855" />
+      <entry key="S2" value="1.9003139007509042" />
+      <entry key="S5" value="1.9588652555405721" />
+      <entry key="S10" value="1.97921665403556" />
+      <entry key="S30" value="1.9931252343542856" />
+      <entry key="S60" value="2.02864649448564" />
+      <entry key="M2" value="2.6182350766488076" />
+      <entry key="M5" value="5.9167981102152405" />
+      <entry key="M10" value="9.367282910426223" />
+      <entry key="M15" value="11.11446333356407" />
+      <entry key="M30" value="13.289274417728448" />
+      <entry key="H1" value="14.569876608411738" />
+      <entry key="H2" value="15.312843717785263" />
+      <entry key="H4" value="20.034191446234555" />
+      <entry key="D1" value="621.789767760609" />
+      <entry key="W1" value="2421.8420969092826" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -84,35 +83,35 @@
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
       <entry key="S60" value="0.0" />
-      <entry key="M2" value="1.795536817934708E-185" />
-      <entry key="M5" value="6.016649546231257E-74" />
-      <entry key="M10" value="9.297130839090435E-37" />
-      <entry key="M15" value="2.371363496013536E-24" />
-      <entry key="M30" value="6.361932903311732E-12" />
-      <entry key="H1" value="1.1782256733738225E-5" />
-      <entry key="H2" value="0.024965360235940436" />
-      <entry key="H4" value="2.6384275482216935" />
-      <entry key="D1" value="389.4006797907198" />
-      <entry key="W1" value="1156.324745426943" />
+      <entry key="M2" value="5.013048154843972E-187" />
+      <entry key="M5" value="1.4378637682395432E-74" />
+      <entry key="M10" value="4.544964079294669E-37" />
+      <entry key="M15" value="1.4715865339228888E-24" />
+      <entry key="M30" value="5.011675254472171E-12" />
+      <entry key="H1" value="1.0457440456562021E-5" />
+      <entry key="H2" value="0.023519944706710153" />
+      <entry key="H4" value="2.56091051031057" />
+      <entry key="D1" value="387.4701435396444" />
+      <entry key="W1" value="1155.5040393435984" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.5864174746159394" />
-      <entry key="MS500" value="0.8987551266110297" />
-      <entry key="S2" value="0.9736667652000331" />
-      <entry key="S5" value="0.9898526375891469" />
-      <entry key="S10" value="1.0278236397787273" />
-      <entry key="S30" value="1.725161301182719" />
-      <entry key="S60" value="2.6761882000696837" />
-      <entry key="M2" value="3.578442187362665" />
-      <entry key="M5" value="4.3522012376267325" />
-      <entry key="M10" value="4.661168129944231" />
-      <entry key="M15" value="4.770650940138319" />
-      <entry key="M30" value="4.883557696257065" />
-      <entry key="H1" value="4.941368426898543" />
-      <entry key="H2" value="5.046127858125009" />
-      <entry key="H4" value="12.163231228165934" />
-      <entry key="D1" value="1003.2565733984851" />
-      <entry key="W1" value="3568.8786326524096" />
+      <entry key="MS100" value="0.17195344233152238" />
+      <entry key="MS500" value="0.80458749440369" />
+      <entry key="S2" value="1.4800202880946367" />
+      <entry key="S5" value="1.7608270551956242" />
+      <entry key="S10" value="1.8744148383757935" />
+      <entry key="S30" value="1.9568222627427596" />
+      <entry key="S60" value="2.0103046702377427" />
+      <entry key="M2" value="2.608794401342611" />
+      <entry key="M5" value="5.912231324385214" />
+      <entry key="M10" value="9.364498359289332" />
+      <entry key="M15" value="11.112424764554245" />
+      <entry key="M30" value="13.288137188647998" />
+      <entry key="H1" value="14.569282716002828" />
+      <entry key="H2" value="15.336042199213116" />
+      <entry key="H4" value="22.594428052953212" />
+      <entry key="D1" value="1009.247125739491" />
+      <entry key="W1" value="3577.3405138073877" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -210,14 +209,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780082168451</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added the app icon to the project.">
-      <option name="closed" value="true" />
-      <created>1781570415997</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1781570415997</updated>
     </task>
     <task id="LOCAL-00013" summary="Modified Secret Key implementation for a reinforced security">
       <option name="closed" value="true" />
@@ -603,14 +594,21 @@
       <option name="project" value="LOCAL" />
       <updated>1782465032713</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Fixing blank feed sceen bug">
+      <option name="closed" value="true" />
+      <created>1782539020407</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1782539020407</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solved Connection issue of front end to backend and feed display issue" />
     <MESSAGE value="Added JournalDetailScreen.dart" />
     <MESSAGE value="Created app_theme.dart for the foundation of the theme for a more organize work." />
     <MESSAGE value="The app can now run on android devices." />
@@ -635,7 +633,8 @@
     <MESSAGE value="Added a global CORS configuration to main.java" />
     <MESSAGE value="Modified AuthFilter.java" />
     <MESSAGE value="Added the Social Battery feature." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the Social Battery feature." />
+    <MESSAGE value="Fixing blank feed sceen bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing blank feed sceen bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
