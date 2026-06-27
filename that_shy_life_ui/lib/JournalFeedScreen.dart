@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:that_shy_life_ui/LoginScreen.dart';
+import 'package:that_shy_life_ui/ThatShyLifeApp.dart';
 import 'package:that_shy_life_ui/app_theme.dart';
 import 'JournalDetailScreen.dart';
 import 'SocialBatteryScreen.dart';
@@ -36,7 +38,7 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
         backgroundColor: Colors.white,
         elevation: 1,
         scrolledUnderElevation: 0,
-        actions: [
+        leading:
           IconButton(
               icon: const Icon(Icons.battery_charging_full_rounded),
               color: AppTheme.primary,
@@ -48,7 +50,23 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
                 );
               },
           ),
+
+        actions: [
+        IconButton(
+          icon: const Icon(Icons.logout),
+          color: AppTheme.primary,
+          onPressed: (){
+           JournalService.deleteToken();
+            Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const LoginScreen()),
+                (route) => false,
+            );
+          },
+        ),
         ],
+
       ),
       body: Center(
         child: FutureBuilder<List<JournalEntry>>(
