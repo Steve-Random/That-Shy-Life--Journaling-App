@@ -95,7 +95,7 @@ public class DatabaseManager {
     //Entries.....
 
     public void createNewTable() {
-        String sql = "CREATE TABLE IF NOT EXISTS entries ("
+        String sql = "DROP TABLE IF EXISTS CREATE TABLE IF NOT EXISTS entries ("
                 + " id TEXT PRIMARY KEY,"
                 + " timestamp TEXT NOT NULL,"
                 + " content TEXT,"
@@ -103,7 +103,7 @@ public class DatabaseManager {
                 + " socialBattery INTEGER,"
                 + " isAudioTranscript INTEGER,"
                 + " tags TEXT,"
-                + " userId TEXT REFERENCES users(id)"
+                + " userId TEXT"
                 + ");";
         try (Connection conn = connect();
              Statement stmt = conn.createStatement()) {
