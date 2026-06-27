@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added the Social Battery feature.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,61 +58,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000119329535966" />
-      <entry key="MS500" value="1.2513939506356142" />
-      <entry key="S2" value="4.730511857867537" />
-      <entry key="S5" value="8.347069977276117" />
-      <entry key="S10" value="10.357097598693953" />
-      <entry key="S30" value="12.627826830624155" />
-      <entry key="S60" value="14.81131461647298" />
-      <entry key="M2" value="17.945251512162514" />
-      <entry key="M5" value="22.178241593706577" />
-      <entry key="M10" value="25.580686636876095" />
-      <entry key="M15" value="28.268713259959572" />
-      <entry key="M30" value="33.778176943779314" />
-      <entry key="H1" value="40.953070868317816" />
-      <entry key="H2" value="62.49414541404179" />
-      <entry key="H4" value="159.52153082256763" />
-      <entry key="D1" value="1101.9230564020122" />
-      <entry key="W1" value="2620.479626866606" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000024274216" />
+      <entry key="S5" value="1.0004902191946596" />
+      <entry key="S10" value="1.034021833108497" />
+      <entry key="S30" value="1.733482447646658" />
+      <entry key="S60" value="2.684472122736107" />
+      <entry key="M2" value="3.584492843841703" />
+      <entry key="M5" value="4.355266416626266" />
+      <entry key="M10" value="4.6628284733907295" />
+      <entry key="M15" value="4.771787934111287" />
+      <entry key="M30" value="4.884141691769916" />
+      <entry key="H1" value="4.941652612637914" />
+      <entry key="H2" value="5.0213215138987355" />
+      <entry key="H4" value="9.52540933769279" />
+      <entry key="D1" value="613.8687284296076" />
+      <entry key="W1" value="2412.559511609245" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.1952480544789156E-212" />
-      <entry key="MS500" value="5.303365134929823E-43" />
-      <entry key="S2" value="2.7146801266394637E-11" />
-      <entry key="S5" value="7.283361071906427E-5" />
-      <entry key="S10" value="0.014762644724496435" />
-      <entry key="S30" value="0.7663935182650048" />
-      <entry key="S60" value="2.610537608655138" />
-      <entry key="M2" value="5.556594707192274" />
-      <entry key="M5" value="9.453670867873928" />
-      <entry key="M10" value="11.653914407078185" />
-      <entry key="M15" value="12.796171468818837" />
-      <entry key="M30" value="14.778489415202806" />
-      <entry key="H1" value="17.957627636172013" />
-      <entry key="H2" value="30.821095926524773" />
-      <entry key="H4" value="92.70438836468958" />
-      <entry key="D1" value="704.7296740033815" />
-      <entry key="W1" value="1258.5877865761784" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="1.795536817934708E-185" />
+      <entry key="M5" value="6.016649546231257E-74" />
+      <entry key="M10" value="9.297130839090435E-37" />
+      <entry key="M15" value="2.371363496013536E-24" />
+      <entry key="M30" value="6.361932903311732E-12" />
+      <entry key="H1" value="1.1782256733738225E-5" />
+      <entry key="H2" value="0.024965360235940436" />
+      <entry key="H4" value="2.6384275482216935" />
+      <entry key="D1" value="389.4006797907198" />
+      <entry key="W1" value="1156.324745426943" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.001553163578326641" />
-      <entry key="MS500" value="0.517051489638839" />
-      <entry key="S2" value="4.422358276405631" />
-      <entry key="S5" value="8.200834418729471" />
-      <entry key="S10" value="10.289427960618795" />
-      <entry key="S30" value="13.30056341993669" />
-      <entry key="S60" value="17.300552928031053" />
-      <entry key="M2" value="23.384664774170012" />
-      <entry key="M5" value="31.555282016994763" />
-      <entry key="M10" value="37.18745406887827" />
-      <entry key="M15" value="41.029915121532085" />
-      <entry key="M30" value="48.53529019245939" />
-      <entry key="H1" value="58.89671848888919" />
-      <entry key="H2" value="93.30285217527373" />
-      <entry key="H4" value="252.20726481263122" />
-      <entry key="D1" value="1806.6295248057647" />
-      <entry key="W1" value="3879.0612935931317" />
+      <entry key="MS100" value="0.5864174746159394" />
+      <entry key="MS500" value="0.8987551266110297" />
+      <entry key="S2" value="0.9736667652000331" />
+      <entry key="S5" value="0.9898526375891469" />
+      <entry key="S10" value="1.0278236397787273" />
+      <entry key="S30" value="1.725161301182719" />
+      <entry key="S60" value="2.6761882000696837" />
+      <entry key="M2" value="3.578442187362665" />
+      <entry key="M5" value="4.3522012376267325" />
+      <entry key="M10" value="4.661168129944231" />
+      <entry key="M15" value="4.770650940138319" />
+      <entry key="M30" value="4.883557696257065" />
+      <entry key="H1" value="4.941368426898543" />
+      <entry key="H2" value="5.046127858125009" />
+      <entry key="H4" value="12.163231228165934" />
+      <entry key="D1" value="1003.2565733984851" />
+      <entry key="W1" value="3568.8786326524096" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -212,14 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780082168451</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fixed auto refresh after saving new entry.&#10;Fixed base Url to automatically switch between Web and Android">
-      <option name="closed" value="true" />
-      <created>1781567912461</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1781567912461</updated>
     </task>
     <task id="LOCAL-00012" summary="Added the app icon to the project.">
       <option name="closed" value="true" />
@@ -605,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782462940122</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Added the Social Battery feature.">
+      <option name="closed" value="true" />
+      <created>1782465032713</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1782465032713</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
