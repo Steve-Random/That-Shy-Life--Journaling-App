@@ -105,13 +105,13 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
 
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackHeight: 3,
-                  thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 7),
-                  overlayShape: const RoundSliderOverlayShape(overlayRadius: 14),
+                  trackHeight: 6,
+                  thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 10),
+                  overlayShape: const RoundSliderOverlayShape(overlayRadius: 20),
                   activeTickMarkColor: _socialBatteryColor(),
                   inactiveTickMarkColor: AppTheme.border,
                   thumbColor: Colors.white,
-                  overlayColor: _socialBatteryColor().withOpacity(0.15),
+                  overlayColor: _socialBatteryColor().withValues(alpha: 0.15),
                 ),
                 child: Slider(
                   value: _socialBattery.toDouble(),
