@@ -27,7 +27,7 @@ factory JournalEntry.fromJson(Map<String, dynamic> json) =>
     createdAt: json['createdAt']!= null
     ?DateTime.tryParse(json['createdAt'].toString().length>26
     ? json['createdAt'].toString().substring(0,26):json['createdAt'].toString())??DateTime.now():DateTime.now(),
-    socialBattery: json['socialBattery']??50,
+    socialBattery: (json['socialBattery'] as num ?)?.toInt() ?? 50,
     isAudioTranscript: json['isAudioTranscript']??false,
     tags: List<String>.from(json['tags']??[]),
   );
