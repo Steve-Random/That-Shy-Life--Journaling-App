@@ -56,7 +56,7 @@ class LegalScreen extends StatelessWidget {
           _heading2('Children\'s Privacy'),
           _body('The app is not directed at children under 13. We do not knowingly collect data from children under 13.'),
           _heading2('Contact'),
-          _body('nanafokousteve@gmail.com'),
+          _body('stevenaatoo@gmail.com'),
         ],
       ),
     );

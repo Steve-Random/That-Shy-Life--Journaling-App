@@ -48,7 +48,7 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
     if(entries.isEmpty) {
       return 'Start logging entries to see your energy patterns';
     }
-    final avg = entries.map((e) => e.socialBattery).reduce((a,b) => a+b)/entries.length;
+    final avg = entries.map((e) => (e.socialBattery ?? 0)).reduce((a,b) => a+b)/entries.length;
     if (avg >= 65) return 'You\'ve been well charged this week. Keep it up!';
     if (avg >= 35) return 'Your energy has been balanced this week.';
     return 'Your energy has been low this week. Remember to recharge.';
@@ -122,11 +122,11 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
 
 
             final spots = entries.asMap().entries.map((e) {
-              return FlSpot(e.key.toDouble(), e.value.socialBattery.toDouble());
+              return FlSpot(e.key.toDouble(), (e.value.socialBattery ?? 0).toDouble());
             }).toList();
 
             final avgColor = _batteryColor(
-              entries.map((e) => e.socialBattery).reduce((a,b) => a+b)/entries.length,
+              entries.map((e) => (e.socialBattery ?? 0)).reduce((a,b) => a+b)/entries.length,
             );
 
             return SingleChildScrollView(
