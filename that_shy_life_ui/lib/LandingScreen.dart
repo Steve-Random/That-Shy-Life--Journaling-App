@@ -13,13 +13,13 @@ class LandingScreen extends StatelessWidget {
       backgroundColor: AppTheme.background,
 
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsetsGeometry.symmetric(horizontal: 32),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Spacer(flex: 2),
+              const SizedBox(height: 40),
 
               //Logo Icon
               Container(
@@ -42,27 +42,35 @@ class LandingScreen extends StatelessWidget {
               Text(
                 'That Shy Life',
                 style: TextStyle(
-                  fontSize: 32,
+                  fontSize: 34,
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primary,
                   letterSpacing: 0.5,
                 ),
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 24),
+
+              Icon(
+                Icons.air_rounded,
+                size: 72,
+                  color: AppTheme.primary.withValues(alpha: 0.4),
+              ),
+
+              const SizedBox(height: 8),
 
               // Tagline
               Text(
-                'A quiet space for introverts to reflect,\nrecharge, and track their energy',
+                'A quiet space for introverts to reflect, recharge, and track their energy',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 18,
                   color: Colors.grey[600],
-                  height: 16,
+                  height: 12,
                 ),
               ),
 
-              const Spacer(flex: 2),
+              const SizedBox(height: 17),
 
               //Feature bullets
               _feature(Icons.lock_outline_rounded,
@@ -74,7 +82,7 @@ class LandingScreen extends StatelessWidget {
               _feature(
                   Icons.insights_rounded, 'See your energy patterns over time'),
 
-              const Spacer(flex: 3),
+              const SizedBox(height: 24),
 
               //Get Started button
               SizedBox(
@@ -127,9 +135,8 @@ class LandingScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: 20),
 
-          const SizedBox(height: 16),
 
           Center(
             child: TextButton(
