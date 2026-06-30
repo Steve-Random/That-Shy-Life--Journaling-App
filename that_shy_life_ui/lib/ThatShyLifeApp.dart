@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:that_shy_life_ui/LandingScreen.dart';
 import 'JournalFeedScreen.dart';
 import 'JournalService.dart';
 import 'LoginScreen.dart';
 import 'app_theme.dart';
+import 'LegalScreen.dart';
 
 class ThatShyLifeApp extends StatefulWidget {
   const ThatShyLifeApp({super.key});
@@ -36,7 +38,7 @@ class ThatShyLifeApp extends StatefulWidget {
             if(snapshot.data != null){
               return const JournalFeedScreen();
             }
-            return const LoginScreen();
+            return const LandingScreen();
           },
       ),
     );
