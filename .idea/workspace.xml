@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixing blank screen caused by unhandled Social battery null or empty">
+      <change afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,61 +59,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.188174078625687" />
-      <entry key="MS500" value="2.881827468622455" />
-      <entry key="S2" value="5.603578626387334" />
-      <entry key="S5" value="8.179476900714649" />
-      <entry key="S10" value="10.273592387165156" />
-      <entry key="S30" value="12.66135649052855" />
-      <entry key="S60" value="14.923053933361588" />
-      <entry key="M2" value="21.382827638999338" />
-      <entry key="M5" value="39.35629537796377" />
-      <entry key="M10" value="64.21434156735921" />
-      <entry key="M15" value="85.48289248180608" />
-      <entry key="M30" value="132.74968148469068" />
-      <entry key="H1" value="181.7297053243505" />
-      <entry key="H2" value="224.22196629509395" />
-      <entry key="H4" value="296.87966671997157" />
-      <entry key="D1" value="974.2806288063014" />
-      <entry key="W1" value="3018.713827544448" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000000000056" />
+      <entry key="S2" value="1.0004914558343914" />
+      <entry key="S5" value="1.0561479016559692" />
+      <entry key="S10" value="1.363097423319042" />
+      <entry key="S30" value="3.414715345418074" />
+      <entry key="S60" value="6.31930449059026" />
+      <entry key="M2" value="10.411439560153527" />
+      <entry key="M5" value="19.6191184573356" />
+      <entry key="M10" value="35.873530598711426" />
+      <entry key="M15" value="50.40417878301039" />
+      <entry key="M30" value="77.63187068278212" />
+      <entry key="H1" value="99.89589126284729" />
+      <entry key="H2" value="121.055291413953" />
+      <entry key="H4" value="178.6832571426204" />
+      <entry key="D1" value="892.7582130159685" />
+      <entry key="W1" value="3082.5408334498943" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.5504536471419454E-278" />
-      <entry key="MS500" value="3.401033728921076E-56" />
-      <entry key="S2" value="1.3580092706847782E-14" />
-      <entry key="S5" value="2.8389718998299937E-6" />
-      <entry key="S10" value="0.0016849248944181426" />
-      <entry key="S30" value="0.11899448925135615" />
-      <entry key="S60" value="0.34496549118127157" />
-      <entry key="M2" value="0.5912933467024089" />
-      <entry key="M5" value="0.9826669626122154" />
-      <entry key="M10" value="1.6037536313256286" />
-      <entry key="M15" value="2.133406029341464" />
-      <entry key="M30" value="3.2176243885694076" />
-      <entry key="H1" value="4.254398636097791" />
-      <entry key="H2" value="5.316804567124808" />
-      <entry key="H4" value="8.75627847116461" />
-      <entry key="D1" value="229.7073538884453" />
-      <entry key="W1" value="1091.2007166246515" />
+      <entry key="MS100" value="8.265624331852341E-40" />
+      <entry key="MS500" value="1.5258468087070047E-8" />
+      <entry key="S2" value="0.012330868805476607" />
+      <entry key="S5" value="0.2598508763003789" />
+      <entry key="S10" value="1.0119340450699643" />
+      <entry key="S30" value="4.482607460646902" />
+      <entry key="S60" value="8.352881100777056" />
+      <entry key="M2" value="13.180206661106864" />
+      <entry key="M5" value="21.95802024697398" />
+      <entry key="M10" value="35.47715792067889" />
+      <entry key="M15" value="48.24250521821221" />
+      <entry key="M30" value="73.81516830467869" />
+      <entry key="H1" value="95.7483657517729" />
+      <entry key="H2" value="110.50477279752084" />
+      <entry key="H4" value="120.54872199890023" />
+      <entry key="D1" value="296.9521749421758" />
+      <entry key="W1" value="1174.462828834313" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1385274057981516" />
-      <entry key="MS500" value="2.855378397947636" />
-      <entry key="S2" value="5.590145667726194" />
-      <entry key="S5" value="8.17146170384691" />
-      <entry key="S10" value="10.269673523158307" />
-      <entry key="S30" value="12.763626650546408" />
-      <entry key="S60" value="15.24361349912958" />
-      <entry key="M2" value="21.950388466362842" />
-      <entry key="M5" value="40.31534556000624" />
-      <entry key="M10" value="65.79354026997657" />
-      <entry key="M15" value="87.59339327952976" />
-      <entry key="M30" value="135.9500661322096" />
-      <entry key="H1" value="185.9730791609117" />
-      <entry key="H2" value="229.53228312141422" />
-      <entry key="H4" value="305.6316340256776" />
-      <entry key="D1" value="1203.9796460464556" />
-      <entry key="W1" value="4109.909110032454" />
+      <entry key="MS100" value="0.16042823719536303" />
+      <entry key="MS500" value="0.6935154851559838" />
+      <entry key="S2" value="0.9180950473239229" />
+      <entry key="S5" value="1.1828902521410698" />
+      <entry key="S10" value="2.129790620468596" />
+      <entry key="S30" value="7.542178772635192" />
+      <entry key="S60" value="14.346155579030631" />
+      <entry key="M2" value="23.33900534778283" />
+      <entry key="M5" value="41.4052649879526" />
+      <entry key="M10" value="71.20348593955447" />
+      <entry key="M15" value="98.51067998005912" />
+      <entry key="M30" value="151.3421864128009" />
+      <entry key="H1" value="195.5763769342642" />
+      <entry key="H2" value="231.5208750527307" />
+      <entry key="H4" value="299.2102580208751" />
+      <entry key="D1" value="1189.700490303129" />
+      <entry key="W1" value="4256.997914148114" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -211,14 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1780082168451</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Adjustment made for a Render Web Service">
-      <option name="closed" value="true" />
-      <created>1781812386391</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1781812386391</updated>
     </task>
     <task id="LOCAL-00031" summary="Adjustment made for a Render Web Service">
       <option name="closed" value="true" />
@@ -604,7 +596,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782620721220</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Fixing blank screen caused by unhandled Social battery null or empty">
+      <option name="closed" value="true" />
+      <created>1782623551724</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1782623551725</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
