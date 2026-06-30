@@ -5,6 +5,7 @@ import 'JournalService.dart';
 import 'app_theme.dart';
 import 'app_widgets.dart';
 import 'LegalScreen.dart';
+import 'OnboardingScreen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -42,7 +43,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: ((context) => const JournalFeedScreen())),
+          MaterialPageRoute(builder: (context) => OnboardingScreen(
+              onDone: (){
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const JournalFeedScreen()),
+                    );
+                        },
+          ),
+          ),
         );
       }
     } else {

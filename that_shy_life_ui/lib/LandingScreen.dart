@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'LoginScreen.dart';
 import 'app_theme.dart';
 import 'RegisterScreen.dart';
+import 'LegalScreen.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -127,6 +128,22 @@ class LandingScreen extends StatelessWidget {
               ),
 
               const SizedBox(height: 32),
+
+          const SizedBox(height: 16),
+
+          Center(
+            child: TextButton(
+              onPressed: () =>
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const LegalScreen()),
+                  ),
+              child: const Text(
+                'Privacy policy & Terms of Service',
+                style: TextStyle(fontSize: 13, color: AppTheme.primary),
+              ),
+            ),
+          ),
             ],
           ),
         ),
