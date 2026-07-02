@@ -61,12 +61,12 @@ class LandingScreen extends StatelessWidget {
 
               // Tagline
               Text(
-                'A quiet space for introverts to reflect, recharge, and track their energy',
+                'A quiet space to reflect, recharge, and track your energy.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 17,
                   color: Colors.grey[600],
-                  height: 12,
+                  height: 1.5,
                 ),
               ),
 

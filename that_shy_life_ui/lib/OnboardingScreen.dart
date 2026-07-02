@@ -101,7 +101,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           style: TextStyle(
                             fontSize: 15,
                             color: AppTheme.textMuted,
-                            height: 16,
+                            height: 1.6,
                           ),
                         ),
                       ],
