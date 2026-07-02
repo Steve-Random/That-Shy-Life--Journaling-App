@@ -88278,7 +88278,7 @@ return new A.dy(s,r,q,p,o,A.is(n,!0,t.N))},
 $S:546}
 A.LD.prototype={
 K(a){var s=null,r=B.W.ri(0.12)
-return A.mP(s,B.dn,A.axl(!0,A.Os(A.eg(A.c([B.Pd,A.ez(s,A.tr(B.FI,B.W,s,44),B.w,s,new A.dv(r,s,s,s,s,s,B.cB),90,s,s,s,90),B.Pc,A.b6("That Shy Life",s,s,s,s,A.bK(s,s,B.W,s,s,s,s,s,s,s,s,34,s,s,B.aL,s,s,!0,s,0.5,s,s,s,s,s,s),s,s),B.dW,A.tr(B.FH,B.W.ri(0.4),s,72),B.c9,A.b6("A quiet space for introverts to reflect, recharge, and track their energy",s,s,s,s,A.bK(s,s,B.ak,s,s,s,s,s,s,s,s,18,s,s,s,s,12,!0,s,s,s,s,s,s,s,s),B.bS,s),B.Pa,this.DP(B.ob,"Your journal, private and encrypted"),B.ip,this.DP(B.kx,"Track your social battery daily"),B.ip,this.DP(B.FK,"See your energy patterns over time"),B.dW,A.ff(A.a3G(B.UA,new A.a7e(a),A.a3H(s,s,B.W,s,s,s,s,s,s,B.k,s,s,B.hg,s,new A.cr(A.h3(12),B.p),s,s,s,s,s)),s,1/0),B.ip,A.ff(A.a3G(B.UH,new A.a7f(a),A.a3H(s,s,B.W,s,s,s,s,s,s,B.k,s,s,B.hg,s,new A.cr(A.h3(12),B.p),s,s,s,s,s)),s,1/0),B.Pb,A.ef(A.CC(B.UB,new A.a7g(a),s),s,s)],t.p),B.a2,B.dC,B.T),s,B.aj,B.nA,s,B.ap),!0),s)},
+return A.mP(s,B.dn,A.axl(!0,A.Os(A.eg(A.c([B.Pd,A.ez(s,A.tr(B.FI,B.W,s,44),B.w,s,new A.dv(r,s,s,s,s,s,B.cB),90,s,s,s,90),B.Pc,A.b6("That Shy Life",s,s,s,s,A.bK(s,s,B.W,s,s,s,s,s,s,s,s,34,s,s,B.aL,s,s,!0,s,0.5,s,s,s,s,s,s),s,s),B.dW,A.tr(B.FH,B.W.ri(0.4),s,72),B.c9,A.b6("A quiet space to reflect, recharge, and track your energy.",s,s,s,s,A.bK(s,s,B.ak,s,s,s,s,s,s,s,s,17,s,s,s,s,1.5,!0,s,s,s,s,s,s,s,s),B.bS,s),B.Pa,this.DP(B.ob,"Your journal, private and encrypted"),B.ip,this.DP(B.kx,"Track your social battery daily"),B.ip,this.DP(B.FK,"See your energy patterns over time"),B.dW,A.ff(A.a3G(B.UA,new A.a7e(a),A.a3H(s,s,B.W,s,s,s,s,s,s,B.k,s,s,B.hg,s,new A.cr(A.h3(12),B.p),s,s,s,s,s)),s,1/0),B.ip,A.ff(A.a3G(B.UH,new A.a7f(a),A.a3H(s,s,B.W,s,s,s,s,s,s,B.k,s,s,B.hg,s,new A.cr(A.h3(12),B.p),s,s,s,s,s)),s,1/0),B.Pb,A.ef(A.CC(B.UB,new A.a7g(a),s),s,s)],t.p),B.a2,B.dC,B.T),s,B.aj,B.nA,s,B.ap),!0),s)},
 DP(a,b){var s=null
 return A.jE(A.c([A.tr(a,B.W,s,20),B.lI,A.b6(b,s,s,s,s,A.bK(s,s,B.cI,s,s,s,s,s,s,s,s,15,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.a2,B.X,B.T)}}
 A.a7e.prototype={
@@ -88417,7 +88417,7 @@ $0(){return this.a.e=this.b},
 $S:0}
 A.aon.prototype={
 $2(a,b){var s=null,r=B.Hu[b],q=B.W.ri(0.12)
-return new A.bf(B.Fa,A.eg(A.c([A.ez(s,A.tr(r.a,B.W,s,48),B.w,s,new A.dv(q,s,s,s,s,s,B.cB),100,s,s,s,100),B.iq,A.b6(r.b,s,s,s,s,A.bK(s,s,B.cJ,s,s,s,s,s,s,s,s,24,s,s,B.aL,s,s,!0,s,s,s,s,s,s,s,s),B.bS,s),B.bR,A.b6(r.c,s,s,s,s,A.bK(s,s,B.ak,s,s,s,s,s,s,s,s,15,s,s,s,s,16,!0,s,s,s,s,s,s,s,s),B.bS,s)],t.p),B.a2,B.X,B.T),s)},
+return new A.bf(B.Fa,A.eg(A.c([A.ez(s,A.tr(r.a,B.W,s,48),B.w,s,new A.dv(q,s,s,s,s,s,B.cB),100,s,s,s,100),B.iq,A.b6(r.b,s,s,s,s,A.bK(s,s,B.cJ,s,s,s,s,s,s,s,s,24,s,s,B.aL,s,s,!0,s,s,s,s,s,s,s,s),B.bS,s),B.bR,A.b6(r.c,s,s,s,s,A.bK(s,s,B.ak,s,s,s,s,s,s,s,s,15,s,s,s,s,1.6,!0,s,s,s,s,s,s,s,s),B.bS,s)],t.p),B.a2,B.X,B.T),s)},
 $S:550}
 A.aoo.prototype={
 $0(){var s,r=this.a
