@@ -19,7 +19,7 @@ class LandingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 40),
+              const Spacer(flex: 2),
 
               //Logo Icon
               Container(
@@ -57,7 +57,7 @@ class LandingScreen extends StatelessWidget {
                   color: AppTheme.primary.withValues(alpha: 0.4),
               ),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: 12),
 
               // Tagline
               Text(
@@ -70,7 +70,7 @@ class LandingScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 17),
+              const Spacer(flex: 2),
 
               //Feature bullets
               _feature(Icons.lock_outline_rounded,
@@ -82,7 +82,7 @@ class LandingScreen extends StatelessWidget {
               _feature(
                   Icons.insights_rounded, 'See your energy patterns over time'),
 
-              const SizedBox(height: 24),
+              const Spacer(flex: 3),
 
               //Get Started button
               SizedBox(
