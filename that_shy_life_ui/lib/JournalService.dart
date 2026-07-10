@@ -22,7 +22,9 @@ class JournalService {
   static Future<String?> getToken() async {
     if( _cachedToken != null) return _cachedToken;
     final prefs = await SharedPreferences.getInstance();
-    await prefs.getString('jwt_token');
+    final token = await prefs.getString('jwt_token');
+    _cachedToken = token;
+    return token;
   }
 
   static Future<void> deleteToken() async {

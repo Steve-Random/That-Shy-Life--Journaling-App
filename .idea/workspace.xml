@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Startung DatabaseManagerTest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixing the LandingScreen.dart">
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,61 +58,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.343690838809084E-15" />
-      <entry key="MS500" value="0.001344171359076579" />
-      <entry key="S2" value="0.25810923879861186" />
-      <entry key="S5" value="1.0283579098354543" />
-      <entry key="S10" value="1.7302322652604156" />
-      <entry key="S30" value="2.4891311248094996" />
-      <entry key="S60" value="2.7315933043308815" />
-      <entry key="M2" value="2.879037718739476" />
-      <entry key="M5" value="4.773469672277837" />
-      <entry key="M10" value="14.532395636711353" />
-      <entry key="M15" value="25.254620479773095" />
-      <entry key="M30" value="46.80429882776239" />
-      <entry key="H1" value="64.92605619444275" />
-      <entry key="H2" value="76.7746537434022" />
-      <entry key="H4" value="84.46089792905363" />
-      <entry key="D1" value="504.2358361625463" />
-      <entry key="W1" value="3101.928266354358" />
+      <entry key="MS100" value="1.0579042408210143E-11" />
+      <entry key="MS500" value="0.00638101557116279" />
+      <entry key="S2" value="0.3115071024460012" />
+      <entry key="S5" value="1.235918860751283" />
+      <entry key="S10" value="2.5992977068290926" />
+      <entry key="S30" value="4.930623604280176" />
+      <entry key="S60" value="6.098621571429901" />
+      <entry key="M2" value="6.9879243458824485" />
+      <entry key="M5" value="9.463840734812093" />
+      <entry key="M10" value="16.81698258206224" />
+      <entry key="M15" value="25.459010705996786" />
+      <entry key="M30" value="50.950561260080555" />
+      <entry key="H1" value="89.25867027734765" />
+      <entry key="H2" value="128.0746417974821" />
+      <entry key="H4" value="157.5645900773848" />
+      <entry key="D1" value="585.3111487184965" />
+      <entry key="W1" value="3187.0318851283646" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0000000116212275" />
-      <entry key="H2" value="1.0009210176695846" />
-      <entry key="H4" value="1.4051553127750547" />
-      <entry key="D1" value="172.59993878330164" />
-      <entry key="W1" value="1223.8986125233148" />
+      <entry key="S2" value="1.0000000000000004" />
+      <entry key="S5" value="1.0000006973566404" />
+      <entry key="S10" value="1.00083507882283" />
+      <entry key="S30" value="1.0941692776647811" />
+      <entry key="S60" value="1.307035892267038" />
+      <entry key="M2" value="1.5778915978607013" />
+      <entry key="M5" value="3.042095262010433" />
+      <entry key="M10" value="8.113706337038114" />
+      <entry key="M15" value="13.014486450449398" />
+      <entry key="M30" value="22.498329146993207" />
+      <entry key="H1" value="30.61530497780034" />
+      <entry key="H2" value="36.117515734880996" />
+      <entry key="H4" value="39.67430449340904" />
+      <entry key="D1" value="206.89407765835398" />
+      <entry key="W1" value="1258.4799118865642" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.817718376071273E-10" />
-      <entry key="MS500" value="0.015989084581730272" />
-      <entry key="S2" value="0.6035326729733076" />
-      <entry key="S5" value="1.6784768902023814" />
-      <entry key="S10" value="2.5349315545900017" />
-      <entry key="S30" value="3.4186764611636464" />
-      <entry key="S60" value="3.695631824705736" />
-      <entry key="M2" value="3.8608654935002877" />
-      <entry key="M5" value="5.76597451683258" />
-      <entry key="M10" value="15.527832733008587" />
-      <entry key="M15" value="26.250786932542205" />
-      <entry key="M30" value="47.80140759556799" />
-      <entry key="H1" value="65.9241358510676" />
-      <entry key="H2" value="77.77444569058304" />
-      <entry key="H4" value="85.86523168518082" />
-      <entry key="D1" value="676.8277375792477" />
-      <entry key="W1" value="4325.820233659813" />
+      <entry key="MS100" value="6.866812040505017E-5" />
+      <entry key="MS500" value="0.14812081620418524" />
+      <entry key="S2" value="0.8281129141372078" />
+      <entry key="S5" value="1.935802963071959" />
+      <entry key="S10" value="3.3557542793230217" />
+      <entry key="S30" value="5.67383435665932" />
+      <entry key="S60" value="7.071483959654563" />
+      <entry key="M2" value="8.326647540277051" />
+      <entry key="M5" value="12.378787871051212" />
+      <entry key="M10" value="24.846259724436027" />
+      <entry key="M15" value="38.40512247686713" />
+      <entry key="M30" value="73.40270015210422" />
+      <entry key="H1" value="119.84522619559111" />
+      <entry key="H2" value="164.1756568225768" />
+      <entry key="H4" value="197.22980845662664" />
+      <entry key="D1" value="792.1960280430986" />
+      <entry key="W1" value="4445.504976265663" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -267,23 +263,7 @@
       <workItem from="1782987123899" duration="4105000" />
       <workItem from="1783175864463" duration="5200000" />
       <workItem from="1783568462730" duration="2120000" />
-      <workItem from="1783676121472" duration="1298000" />
-    </task>
-    <task id="LOCAL-00038" summary="building the flutter web">
-      <option name="closed" value="true" />
-      <created>1781934844596</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1781934844596</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Adding flutter web build">
-      <option name="closed" value="true" />
-      <created>1781935100995</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1781935100995</updated>
+      <workItem from="1783676121472" duration="6155000" />
     </task>
     <task id="LOCAL-00040" summary="Enabled the flutter web to talk to backend.">
       <option name="closed" value="true" />
@@ -661,15 +641,29 @@
       <option name="project" value="LOCAL" />
       <updated>1783570546229</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Solving redundant login issue">
+      <option name="closed" value="true" />
+      <created>1783677465437</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1783677465440</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Fixing the LandingScreen.dart">
+      <option name="closed" value="true" />
+      <created>1783681747410</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1783681747411</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on security ... CORS" />
-    <MESSAGE value="building the flutter web" />
     <MESSAGE value="Adding flutter web build" />
     <MESSAGE value="Enabled the flutter web to talk to backend." />
     <MESSAGE value="Created User.java to keep track of different users. Modified DatabaseManager.java to create a User tale and related methods" />
@@ -693,7 +687,9 @@
     <MESSAGE value="Fixing Landing page" />
     <MESSAGE value="Implemented Tests for Security Manager class" />
     <MESSAGE value="Startung DatabaseManagerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startung DatabaseManagerTest" />
+    <MESSAGE value="Solving redundant login issue" />
+    <MESSAGE value="Fixing the LandingScreen.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing the LandingScreen.dart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
