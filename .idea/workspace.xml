@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixing Landing page">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Startung DatabaseManagerTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/OnboardingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/OnboardingScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="97" />
+    <option name="cachedIndexableFilesCount" value="98" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
         <option value="Dart File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,61 +62,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.00035213793692" />
-      <entry key="MS500" value="1.6105006906293744" />
-      <entry key="S2" value="5.674837511084125" />
-      <entry key="S5" value="9.869972479295853" />
-      <entry key="S10" value="12.86574238384549" />
-      <entry key="S30" value="16.251032295895772" />
-      <entry key="S60" value="17.938958769290068" />
-      <entry key="M2" value="20.79298867063346" />
-      <entry key="M5" value="29.52559043640682" />
-      <entry key="M10" value="41.28648480226871" />
-      <entry key="M15" value="51.165253292760305" />
-      <entry key="M30" value="73.05941325319513" />
-      <entry key="H1" value="95.87828281277602" />
-      <entry key="H2" value="123.26631725428058" />
-      <entry key="H4" value="198.9020740386863" />
-      <entry key="D1" value="1008.8602862389666" />
-      <entry key="W1" value="3391.3756857590215" />
+      <entry key="MS100" value="4.343690838809084E-15" />
+      <entry key="MS500" value="0.001344171359076579" />
+      <entry key="S2" value="0.25810923879861186" />
+      <entry key="S5" value="1.0283579098354543" />
+      <entry key="S10" value="1.7302322652604156" />
+      <entry key="S30" value="2.4891311248094996" />
+      <entry key="S60" value="2.7315933043308815" />
+      <entry key="M2" value="2.879037718739476" />
+      <entry key="M5" value="4.773469672277837" />
+      <entry key="M10" value="14.532395636711353" />
+      <entry key="M15" value="25.254620479773095" />
+      <entry key="M30" value="46.80429882776239" />
+      <entry key="H1" value="64.92605619444275" />
+      <entry key="H2" value="76.7746537434022" />
+      <entry key="H4" value="84.46089792905363" />
+      <entry key="D1" value="504.2358361625463" />
+      <entry key="W1" value="3101.928266354358" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="5.6822276603722E-91" />
-      <entry key="S5" value="7.97640968153779E-37" />
-      <entry key="S10" value="8.931074785006454E-19" />
-      <entry key="S30" value="9.630187078640227E-7" />
-      <entry key="S60" value="9.819981351419896E-4" />
-      <entry key="M2" value="0.03242872064189794" />
-      <entry key="M5" value="0.3777559238056763" />
-      <entry key="M10" value="1.4303134621833704" />
-      <entry key="M15" value="2.7512148483247834" />
-      <entry key="M30" value="6.328605112723422" />
-      <entry key="H1" value="10.559900860312363" />
-      <entry key="H2" value="21.033215789415706" />
-      <entry key="H4" value="66.6379570819153" />
-      <entry key="D1" value="395.1505304514845" />
-      <entry key="W1" value="1354.797722666879" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0000000116212275" />
+      <entry key="H2" value="1.0009210176695846" />
+      <entry key="H4" value="1.4051553127750547" />
+      <entry key="D1" value="172.59993878330164" />
+      <entry key="W1" value="1223.8986125233148" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.02569164514200102" />
-      <entry key="MS500" value="1.0743246095343542" />
-      <entry key="S2" value="5.473818866660342" />
-      <entry key="S5" value="9.766474765298888" />
-      <entry key="S10" value="12.803025443552551" />
-      <entry key="S30" value="16.224200018372755" />
-      <entry key="S60" value="17.921580102713783" />
-      <entry key="M2" value="20.810201385891595" />
-      <entry key="M5" value="29.876522048048283" />
-      <entry key="M10" value="42.63799709661959" />
-      <entry key="M15" value="53.804730737143466" />
-      <entry key="M30" value="79.261769646314" />
-      <entry key="H1" value="106.34121893378808" />
-      <entry key="H2" value="144.23679137329688" />
-      <entry key="H4" value="265.4978429081501" />
-      <entry key="D1" value="1403.9931555982544" />
-      <entry key="W1" value="4746.166201759371" />
+      <entry key="MS100" value="6.817718376071273E-10" />
+      <entry key="MS500" value="0.015989084581730272" />
+      <entry key="S2" value="0.6035326729733076" />
+      <entry key="S5" value="1.6784768902023814" />
+      <entry key="S10" value="2.5349315545900017" />
+      <entry key="S30" value="3.4186764611636464" />
+      <entry key="S60" value="3.695631824705736" />
+      <entry key="M2" value="3.8608654935002877" />
+      <entry key="M5" value="5.76597451683258" />
+      <entry key="M10" value="15.527832733008587" />
+      <entry key="M15" value="26.250786932542205" />
+      <entry key="M30" value="47.80140759556799" />
+      <entry key="H1" value="65.9241358510676" />
+      <entry key="H2" value="77.77444569058304" />
+      <entry key="H4" value="85.86523168518082" />
+      <entry key="D1" value="676.8277375792477" />
+      <entry key="W1" value="4325.820233659813" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -131,6 +132,8 @@
   &quot;keyToString&quot;: {
     &quot;Application.Backend.executor&quot;: &quot;Run&quot;,
     &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SecurityManagerTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SecurityManagerTest.testEncryptReturnsNonNullValue.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -140,9 +143,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Building-user-interface-a&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -155,6 +162,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -165,8 +173,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nanaf\Desktop\Ryder\Portfolio\That-Shy-Life--Journaling-App\that_shy_life_ui\lib" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.thatshylife" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Backend">
+  <component name="RunManager" selected="JUnit.SecurityManagerTest">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.thatshylife.Main" />
       <module name="journal-app" />
@@ -177,6 +191,37 @@
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" />
       <method v="2" />
+    </configuration>
+    <configuration name="SecurityManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="journal-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thatshylife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thatshylife" />
+      <option name="MAIN_CLASS_NAME" value="com.thatshylife.SecurityManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityManagerTest.testEncryptReturnsNonNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="journal-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thatshylife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thatshylife" />
+      <option name="MAIN_CLASS_NAME" value="com.thatshylife.SecurityManagerTest" />
+      <option name="METHOD_NAME" value="testEncryptReturnsNonNullValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
@@ -194,6 +239,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SecurityManagerTest" />
+        <item itemvalue="JUnit.SecurityManagerTest.testEncryptReturnsNonNullValue" />
         <item itemvalue="Flutter.main.dart" />
         <item itemvalue="Spring Boot.Main" />
       </list>
@@ -217,31 +264,10 @@
       <workItem from="1782798189809" duration="188000" />
       <workItem from="1782798440543" duration="1583000" />
       <workItem from="1782805065593" duration="13697000" />
-      <workItem from="1782987123899" duration="601000" />
-    </task>
-    <task id="LOCAL-00035" summary="Working on security ... CORS">
-      <option name="closed" value="true" />
-      <created>1781931485013</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1781931485014</updated>
-    </task>
-    <task id="LOCAL-00036" summary="building the flutter web">
-      <option name="closed" value="true" />
-      <created>1781934038182</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1781934038182</updated>
-    </task>
-    <task id="LOCAL-00037" summary="building the flutter web">
-      <option name="closed" value="true" />
-      <created>1781934624533</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1781934624533</updated>
+      <workItem from="1782987123899" duration="4105000" />
+      <workItem from="1783175864463" duration="5200000" />
+      <workItem from="1783568462730" duration="2120000" />
+      <workItem from="1783676121472" duration="1298000" />
     </task>
     <task id="LOCAL-00038" summary="building the flutter web">
       <option name="closed" value="true" />
@@ -611,15 +637,37 @@
       <option name="project" value="LOCAL" />
       <updated>1782846943657</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Fixing Landing page">
+      <option name="closed" value="true" />
+      <created>1782987743210</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1782987743212</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Implemented Tests for Security Manager class">
+      <option name="closed" value="true" />
+      <created>1783290569888</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1783290569891</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Startung DatabaseManagerTest">
+      <option name="closed" value="true" />
+      <created>1783570546226</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1783570546229</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adjustment made for a Render Web Service" />
-    <MESSAGE value="Deployment Successful, Backend live!, correcting flutter base url" />
     <MESSAGE value="Working on security ... CORS" />
     <MESSAGE value="building the flutter web" />
     <MESSAGE value="Adding flutter web build" />
@@ -643,7 +691,35 @@
     <MESSAGE value="Created LandingScreen.dart&#10;Created OnboardingScreen.dart" />
     <MESSAGE value="Placed Landing page as first page that appears and modified OnboardingScreen.dart Padding" />
     <MESSAGE value="Fixing Landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Landing page" />
+    <MESSAGE value="Implemented Tests for Security Manager class" />
+    <MESSAGE value="Startung DatabaseManagerTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Startung DatabaseManagerTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/com/thatshylife/SecurityManagerTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/com/thatshylife/SecurityManagerTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/com/thatshylife/SecurityManagerTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/com/thatshylife/SecurityManagerTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

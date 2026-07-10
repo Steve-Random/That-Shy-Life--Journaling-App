@@ -14,7 +14,7 @@ public class SecurityManager {
     private static final String ALGORITHM = "AES";
 
     @Value("${SECRET_KEY}")
-    public void setSecretKey(String Key){
+    public void setSecretKey(String secretKey){
         SecurityManager.secretKey = secretKey;
     }
 

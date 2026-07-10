@@ -11,6 +11,18 @@ import java.util.List;
 @Component
 public class DatabaseManager {
 
+    // for testing  [
+
+    public DatabaseManager(){}
+
+    public DatabaseManager(String dbUrl, String dbUser, String dbPassword) {
+        this.dbUrl = dbUrl;
+        this.dbUser = dbUser;
+        this.dbPassword = dbPassword;
+    }
+
+    //   ] for testing
+
     @PostConstruct
     public void init(){
         createUsersTable();
