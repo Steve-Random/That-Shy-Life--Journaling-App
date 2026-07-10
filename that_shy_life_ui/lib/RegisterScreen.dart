@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:that_shy_life_ui/LoginScreen.dart';
 
 import 'JournalFeedScreen.dart';
 import 'JournalService.dart';
@@ -114,7 +115,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
               AppWidgets.textLink(
                 label: "Already have an account? Login",
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LoginScreen()),
+                  );
                 },
               ),
 

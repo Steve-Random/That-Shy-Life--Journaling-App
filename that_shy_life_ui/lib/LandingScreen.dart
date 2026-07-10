@@ -13,7 +13,10 @@ class LandingScreen extends StatelessWidget {
       backgroundColor: AppTheme.background,
 
       body: SafeArea(
-        child: SingleChildScrollView(
+        child: Center(
+          child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 480),
+          child: Padding(
           padding: const EdgeInsetsGeometry.symmetric(horizontal: 32),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -36,43 +39,49 @@ class LandingScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 28),
+              const SizedBox(height: 20),
 
               //App name
               Text(
                 'That Shy Life',
                 style: TextStyle(
-                  fontSize: 34,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                   color: AppTheme.primary,
                   letterSpacing: 0.5,
                 ),
               ),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: 16),
 
               Icon(
                 Icons.air_rounded,
-                size: 72,
+                size: 56,
                   color: AppTheme.primary.withValues(alpha: 0.4),
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               // Tagline
               Text(
                 'A quiet space to reflect, recharge, and track your energy.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 15,
                   color: Colors.grey[600],
-                  height: 1.5,
+                  height: 1.4,
                 ),
               ),
 
               const Spacer(flex: 2),
 
               //Feature bullets
+              Align(
+                alignment: Alignment.centerLeft,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
               _feature(Icons.lock_outline_rounded,
                   'Your journal, private and encrypted'),
               const SizedBox(height: 12),
@@ -81,6 +90,9 @@ class LandingScreen extends StatelessWidget {
               const SizedBox(height: 12),
               _feature(
                   Icons.insights_rounded, 'See your energy patterns over time'),
+              ],
+              ),
+              ),
 
               const Spacer(flex: 3),
 
@@ -97,7 +109,7 @@ class LandingScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppTheme.primary,
                     foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusGeometry.circular(12),
                     ),
@@ -109,7 +121,7 @@ class LandingScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               //Sign In button
               SizedBox(
@@ -123,7 +135,7 @@ class LandingScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppTheme.primary,
                     foregroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusGeometry.circular(12),
                     ),
@@ -135,11 +147,10 @@ class LandingScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 14),
 
 
-          Center(
-            child: TextButton(
+            TextButton(
               onPressed: () =>
                   Navigator.push(
                     context,
@@ -150,8 +161,11 @@ class LandingScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 13, color: AppTheme.primary),
               ),
             ),
-          ),
+
+            const Spacer(flex: 1),
             ],
+          ),
+          ),
           ),
         ),
       ),
@@ -163,10 +177,12 @@ class LandingScreen extends StatelessWidget {
       children: [
         Icon(icon, color: AppTheme.primary, size: 20),
         const SizedBox(width: 12),
-        Text(
+        Expanded(
+    child: Text(
           text,
           style: TextStyle(fontSize: 15, color: Colors.grey[700]),
         ),
+    ),
       ],
     );
   }

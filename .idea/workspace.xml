@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Startung DatabaseManagerTest">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Solving redundant login issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,61 +60,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="4.343690838809084E-15" />
-      <entry key="MS500" value="0.001344171359076579" />
-      <entry key="S2" value="0.25810923879861186" />
-      <entry key="S5" value="1.0283579098354543" />
-      <entry key="S10" value="1.7302322652604156" />
-      <entry key="S30" value="2.4891311248094996" />
-      <entry key="S60" value="2.7315933043308815" />
-      <entry key="M2" value="2.879037718739476" />
-      <entry key="M5" value="4.773469672277837" />
-      <entry key="M10" value="14.532395636711353" />
-      <entry key="M15" value="25.254620479773095" />
-      <entry key="M30" value="46.80429882776239" />
-      <entry key="H1" value="64.92605619444275" />
-      <entry key="H2" value="76.7746537434022" />
-      <entry key="H4" value="84.46089792905363" />
-      <entry key="D1" value="504.2358361625463" />
-      <entry key="W1" value="3101.928266354358" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.3578569437533848E-204" />
+      <entry key="S2" value="1.0988957562717469E-51" />
+      <entry key="S5" value="5.110822141108059E-21" />
+      <entry key="S10" value="1.0849941724888989E-10" />
+      <entry key="S30" value="0.0012850009289171746" />
+      <entry key="S60" value="0.10284722243328415" />
+      <entry key="M2" value="1.1916845411571277" />
+      <entry key="M5" value="7.478639519269718" />
+      <entry key="M10" value="18.563329985962273" />
+      <entry key="M15" value="28.479382220876435" />
+      <entry key="M30" value="54.38939745513598" />
+      <entry key="H1" value="90.38605475192371" />
+      <entry key="H2" value="124.78653252872701" />
+      <entry key="H4" value="150.09688779238468" />
+      <entry key="D1" value="575.4481603542297" />
+      <entry key="W1" value="3176.2785372139597" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0000000116212275" />
-      <entry key="H2" value="1.0009210176695846" />
-      <entry key="H4" value="1.4051553127750547" />
-      <entry key="D1" value="172.59993878330164" />
-      <entry key="W1" value="1223.8986125233148" />
+      <entry key="S10" value="1.0000000000998581" />
+      <entry key="S30" value="1.000834164715984" />
+      <entry key="S60" value="1.0766410677007943" />
+      <entry key="M2" value="2.1564891100704124" />
+      <entry key="M5" value="8.502491007147396" />
+      <entry key="M10" value="16.277760499556628" />
+      <entry key="M15" value="20.930297348360437" />
+      <entry key="M30" value="27.895127055962057" />
+      <entry key="H1" value="32.9697869867258" />
+      <entry key="H2" value="36.17187930894175" />
+      <entry key="H4" value="38.324373232618385" />
+      <entry key="D1" value="205.36345854022082" />
+      <entry key="W1" value="1256.7632960976016" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.817718376071273E-10" />
-      <entry key="MS500" value="0.015989084581730272" />
-      <entry key="S2" value="0.6035326729733076" />
-      <entry key="S5" value="1.6784768902023814" />
-      <entry key="S10" value="2.5349315545900017" />
-      <entry key="S30" value="3.4186764611636464" />
-      <entry key="S60" value="3.695631824705736" />
-      <entry key="M2" value="3.8608654935002877" />
-      <entry key="M5" value="5.76597451683258" />
-      <entry key="M10" value="15.527832733008587" />
-      <entry key="M15" value="26.250786932542205" />
-      <entry key="M30" value="47.80140759556799" />
-      <entry key="H1" value="65.9241358510676" />
-      <entry key="H2" value="77.77444569058304" />
-      <entry key="H4" value="85.86523168518082" />
-      <entry key="D1" value="676.8277375792477" />
-      <entry key="W1" value="4325.820233659813" />
+      <entry key="MS100" value="1.3209433251485097E-6" />
+      <entry key="MS500" value="0.0667078336274975" />
+      <entry key="S2" value="0.5082111735499655" />
+      <entry key="S5" value="0.7628122937875084" />
+      <entry key="S10" value="0.8733912606206732" />
+      <entry key="S30" value="0.9579572302036742" />
+      <entry key="S60" value="1.1551116837385154" />
+      <entry key="M2" value="3.319973323622094" />
+      <entry key="M5" value="15.92905008847392" />
+      <entry key="M10" value="34.78862246501499" />
+      <entry key="M15" value="49.36360733918019" />
+      <entry key="M30" value="82.25233090539231" />
+      <entry key="H1" value="123.33581236622351" />
+      <entry key="H2" value="160.9469614732311" />
+      <entry key="H4" value="188.4149179150535" />
+      <entry key="D1" value="780.8028616486927" />
+      <entry key="W1" value="4433.03507763698" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -267,15 +265,7 @@
       <workItem from="1782987123899" duration="4105000" />
       <workItem from="1783175864463" duration="5200000" />
       <workItem from="1783568462730" duration="2120000" />
-      <workItem from="1783676121472" duration="1298000" />
-    </task>
-    <task id="LOCAL-00038" summary="building the flutter web">
-      <option name="closed" value="true" />
-      <created>1781934844596</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1781934844596</updated>
+      <workItem from="1783676121472" duration="5283000" />
     </task>
     <task id="LOCAL-00039" summary="Adding flutter web build">
       <option name="closed" value="true" />
@@ -661,14 +651,21 @@
       <option name="project" value="LOCAL" />
       <updated>1783570546229</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Solving redundant login issue">
+      <option name="closed" value="true" />
+      <created>1783677465437</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1783677465440</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Working on security ... CORS" />
     <MESSAGE value="building the flutter web" />
     <MESSAGE value="Adding flutter web build" />
     <MESSAGE value="Enabled the flutter web to talk to backend." />
@@ -693,7 +690,8 @@
     <MESSAGE value="Fixing Landing page" />
     <MESSAGE value="Implemented Tests for Security Manager class" />
     <MESSAGE value="Startung DatabaseManagerTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Startung DatabaseManagerTest" />
+    <MESSAGE value="Solving redundant login issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving redundant login issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
