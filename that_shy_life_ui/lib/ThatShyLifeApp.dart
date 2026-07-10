@@ -28,7 +28,7 @@ class ThatShyLifeApp extends StatefulWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
       home: FutureBuilder<String?>(
-          future: JournalService.getToken(),
+          future: _tokenFuture,
           builder: (context, snapshot){
             if(snapshot.connectionState == ConnectionState.waiting){
               return const Scaffold(
