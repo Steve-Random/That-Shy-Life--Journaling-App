@@ -9,7 +9,10 @@ class JournalService {
   static String? _cachedToken;
 
   static String get baseUrl{
-      return 'https://that-shy-life-journaling-app.onrender.com';
+     const bool useStaging = bool.fromEnvironment('STAGING', defaultValue:  false);
+      return useStaging
+        ?'https://that-shy-life-journaling-app-staging.onrender.com'
+          :'https://that-shy-life-journaling-app.onrender.com';
   }
 
   //Token Storage
