@@ -15,6 +15,21 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen> {
   TimeOfDay? _reminderTime;
 
+  @override
+  void initState() {
+    super.initState();
+    _loadSavedReminderTime();
+  }
+
+  Future<void> _loadSavedReminderTime() async {
+    final saved = await NotificationService.getSavedReminderTime();
+    if ((saved != null) && (mounted)) {
+      setState(() {
+        _reminderTime = saved;
+      });
+    }
+  }
+
   Future<void> _pickReminderTime() async {
     final TimeOfDay? picked = await showTimePicker(
       context: context,
@@ -26,6 +41,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
         hour: picked.hour,
         minute: picked.minute,
       );
+
+      await NotificationService.saveReminderTime(picked.hour, picked.minute);
 
       setState(() {
         _reminderTime = picked;
@@ -43,6 +60,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Future<void> _cancelReminder() async {
     await NotificationService.cancelDailyReminder();
+    await NotificationService.clearSavedReminderTime();
     setState(() {
       _reminderTime = null;
     });
