@@ -1,6 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tzdata;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _plugin =
@@ -60,5 +62,26 @@ class NotificationService {
       scheduled = scheduled.add(const Duration(days: 1));
     }
     return scheduled;
+  }
+
+  static Future<void> saveReminderTime(int hour, int minute) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('reminder_hour', hour);
+    await prefs.setInt('reminder_minute', minute);
+  }
+
+  static Future<TimeOfDay?> getSavedReminderTime() async {
+    final prefs = await SharedPreferences.getInstance();
+    final hour =  prefs.getInt('reminder_hour');
+    final minute =  prefs.getInt('reminder_minute');
+
+    if ((hour == null) || (minute == null)) return null;
+    return TimeOfDay(hour: hour, minute: minute);
+  }
+
+  static Future<void> clearSavedReminderTime() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('reminder_hour');
+    await prefs.remove('reminder_minute');
   }
 }
