@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/LoginScreen.dart';
+import 'package:that_shy_life_ui/SettingsScreen.dart';
 import 'package:that_shy_life_ui/app_theme.dart';
 
 import 'JournalDetailScreen.dart';
 import 'JournalEntry.dart';
 import 'JournalService.dart';
 import 'NewEntryScreen.dart';
-import 'OnboardingScreen.dart';
 import 'SocialBatteryScreen.dart';
 
 class JournalFeedScreen extends StatefulWidget {
@@ -43,18 +43,14 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
         leading: Row(
           children: [
             IconButton(
-              icon: const Icon(Icons.help_outline_rounded),
+              icon: const Icon(Icons.settings_outlined),
               color: AppTheme.primary,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        OnboardingScreen(onDone: () => Navigator.pop(context)),
-                  ),
-                );
-              },
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const SettingsScreen()),
+              ),
             ),
+
             IconButton(
               icon: const Icon(Icons.battery_charging_full_rounded),
               color: AppTheme.primary,
