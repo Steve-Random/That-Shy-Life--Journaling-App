@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added Notification feature and created SettingsScreen.dart">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/SettingsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/SettingsScreen.dart" afterDir="false" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/NOTICES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/fonts/MaterialIcons-Regular.otf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,61 +65,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000012214365837" />
-      <entry key="MS500" value="1.1434805001166461" />
-      <entry key="S2" value="2.673941508734855" />
-      <entry key="S5" value="3.813497777699251" />
-      <entry key="S10" value="4.352771912735479" />
-      <entry key="S30" value="4.770985726329535" />
-      <entry key="S60" value="4.902549934883778" />
-      <entry key="M2" value="5.544959610442704" />
-      <entry key="M5" value="11.242571856918207" />
-      <entry key="M10" value="23.23350474972264" />
-      <entry key="M15" value="35.66664234915218" />
-      <entry key="M30" value="69.23056468703189" />
-      <entry key="H1" value="125.39929889521808" />
-      <entry key="H2" value="210.9120240392516" />
-      <entry key="H4" value="301.0410771413051" />
-      <entry key="D1" value="529.2128170989822" />
-      <entry key="W1" value="2941.3636232670883" />
+      <entry key="MS100" value="1.0840059558594768" />
+      <entry key="MS500" value="2.007383101348899" />
+      <entry key="S2" value="3.36658387832839" />
+      <entry key="S5" value="5.297754563669107" />
+      <entry key="S10" value="8.559058961720586" />
+      <entry key="S30" value="18.0848059600728" />
+      <entry key="S60" value="27.61459149312457" />
+      <entry key="M2" value="37.48025550219098" />
+      <entry key="M5" value="49.889728534872845" />
+      <entry key="M10" value="63.57012797361098" />
+      <entry key="M15" value="76.39947965209616" />
+      <entry key="M30" value="110.84516308544339" />
+      <entry key="H1" value="168.28547432532434" />
+      <entry key="H2" value="255.4871284775967" />
+      <entry key="H4" value="348.0463825941001" />
+      <entry key="D1" value="580.4645578919091" />
+      <entry key="W1" value="2992.99261386306" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="5.67080972952433E-124" />
-      <entry key="S5" value="7.514172736790932E-50" />
-      <entry key="S10" value="3.8671989111153035E-25" />
-      <entry key="S30" value="1.1689347510587916E-8" />
-      <entry key="S60" value="1.8859882522059726E-4" />
-      <entry key="M2" value="0.043987099386345915" />
-      <entry key="M5" value="1.9869494648160262" />
-      <entry key="M10" value="8.979818550025595" />
-      <entry key="M15" value="17.139893556473417" />
-      <entry key="M30" value="39.547805411909906" />
-      <entry key="H1" value="74.4185960553842" />
-      <entry key="H2" value="121.28319151793933" />
-      <entry key="H4" value="166.5324009189584" />
-      <entry key="D1" value="261.0567486586343" />
-      <entry key="W1" value="1214.4801613672832" />
+      <entry key="MS100" value="3.441654554420663E-235" />
+      <entry key="MS500" value="1.280422966819717E-47" />
+      <entry key="S2" value="1.89177130102167E-12" />
+      <entry key="S5" value="2.0896637510440144E-5" />
+      <entry key="S10" value="0.005189213400978992" />
+      <entry key="S30" value="0.2527347281381536" />
+      <entry key="S60" value="0.7022342411603557" />
+      <entry key="M2" value="1.1855913765842498" />
+      <entry key="M5" value="2.3974335681382914" />
+      <entry key="M10" value="7.419914944970145" />
+      <entry key="M15" value="14.40546241541432" />
+      <entry key="M30" value="35.76024861944701" />
+      <entry key="H1" value="70.79358044676664" />
+      <entry key="H2" value="118.6215528110337" />
+      <entry key="H4" value="165.3041213724986" />
+      <entry key="D1" value="262.20727876624466" />
+      <entry key="W1" value="1215.9155885132216" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.6883666415963765E-6" />
-      <entry key="MS500" value="0.2003145787217684" />
-      <entry key="S2" value="2.1059902654808127" />
-      <entry key="S5" value="3.518311592044275" />
-      <entry key="S10" value="4.190238804840299" />
-      <entry key="S30" value="4.713053001032432" />
-      <entry key="S60" value="4.873265163826502" />
-      <entry key="M2" value="5.5730221671766" />
-      <entry key="M5" value="13.201412014169358" />
-      <entry key="M10" value="32.15608240582742" />
-      <entry key="M15" value="52.73234796395618" />
-      <entry key="M30" value="108.69012783625453" />
-      <entry key="H1" value="199.73365186963653" />
-      <entry key="H2" value="332.12584410561664" />
-      <entry key="H4" value="467.5254713212327" />
-      <entry key="D1" value="790.2570596578252" />
-      <entry key="W1" value="4155.836841975019" />
+      <entry key="MS100" value="0.7828992646174517" />
+      <entry key="MS500" value="1.9203955559326968" />
+      <entry key="S2" value="3.336606895544885" />
+      <entry key="S5" value="5.281285038590912" />
+      <entry key="S10" value="8.551081804905852" />
+      <entry key="S30" value="18.31138329381101" />
+      <entry key="S60" value="28.282966116340546" />
+      <entry key="M2" value="38.63574835313478" />
+      <entry key="M5" value="52.26019291817659" />
+      <entry key="M10" value="70.94527715203462" />
+      <entry key="M15" value="90.74446746041437" />
+      <entry key="M30" value="146.52671326459134" />
+      <entry key="H1" value="238.9995010961286" />
+      <entry key="H2" value="374.0411389637524" />
+      <entry key="H4" value="513.3030097368359" />
+      <entry key="D1" value="842.6593016424084" />
+      <entry key="W1" value="4208.901253002068" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -270,23 +270,7 @@
       <workItem from="1782987123899" duration="4105000" />
       <workItem from="1783175864463" duration="5200000" />
       <workItem from="1783568462730" duration="2120000" />
-      <workItem from="1783676121472" duration="26498000" />
-    </task>
-    <task id="LOCAL-00043" summary="Udpdated methods in DatabaseManager.java, JournalController.java, Register and Login good">
-      <option name="closed" value="true" />
-      <created>1782177443363</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1782177443363</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart">
-      <option name="closed" value="true" />
-      <created>1782193238812</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1782193238812</updated>
+      <workItem from="1783676121472" duration="27478000" />
     </task>
     <task id="LOCAL-00045" summary="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart">
       <option name="closed" value="true" />
@@ -664,14 +648,29 @@
       <option name="project" value="LOCAL" />
       <updated>1783894988887</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart">
+      <option name="closed" value="true" />
+      <created>1783906392304</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1783906392304</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart">
+      <option name="closed" value="true" />
+      <created>1783906606015</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1783906606015</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created JwtUtil.java for token management.&#10;Created AuthController.java for Signing in or registering logic&#10;Created AuthFiler.java for filtering all requests to the controller" />
     <MESSAGE value="Udpdated methods in DatabaseManager.java, JournalController.java, Register and Login good" />
     <MESSAGE value="Edited JournalService.dart to use the new Authentication feature&#10;Created LoginScreen.dart&#10;Created RegisterScreen.dart&#10;Edited ThatShyLifeApp.dart" />
     <MESSAGE value="Created app_widgets.dart&#10;Edited LoginScreen.dart&#10;Edited RegisterScreen.dart&#10;Created SocialBatteryScreen.dart" />
@@ -696,7 +695,8 @@
     <MESSAGE value="Solving Persistent Login Issue" />
     <MESSAGE value="Making build good for dev branch" />
     <MESSAGE value="Added Notification feature and created SettingsScreen.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Notification feature and created SettingsScreen.dart" />
+    <MESSAGE value="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
