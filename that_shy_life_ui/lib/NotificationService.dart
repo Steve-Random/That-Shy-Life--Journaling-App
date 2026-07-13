@@ -44,7 +44,7 @@ class NotificationService {
           priority: Priority.high,
           ),
         ),
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         matchDateTimeComponents: DateTimeComponents.time, //repeats daily
         uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
         );

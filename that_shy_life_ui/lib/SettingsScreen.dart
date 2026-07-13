@@ -51,7 +51,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Daily reminder set for ${picked?.format(context)}'),
+            content: Text('Daily reminder set for ${picked.format(context)}'),
           ),
         );
       }
