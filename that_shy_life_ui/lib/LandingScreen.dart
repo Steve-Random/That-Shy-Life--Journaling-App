@@ -156,7 +156,7 @@ class LandingScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (_) => const LegalScreen()),
                   ),
-              child: const Text(
+              child: Text(
                 'Privacy policy & Terms of Service',
                 style: TextStyle(fontSize: 13, color: AppTheme.primary),
               ),

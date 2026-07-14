@@ -18,7 +18,8 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _confirmPasswordController = TextEditingController();
+  final TextEditingController _confirmPasswordController =
+      TextEditingController();
   bool _isLoading = false;
   String? _errorMessage;
 
@@ -44,14 +45,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => OnboardingScreen(
-              onDone: (){
+          MaterialPageRoute(
+            builder: (context) => OnboardingScreen(
+              onDone: () {
                 Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => const JournalFeedScreen()),
-                    );
-                        },
-          ),
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const JournalFeedScreen(),
+                  ),
+                );
+              },
+            ),
           ),
         );
       }
@@ -67,75 +71,88 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.background,
-      body: Center(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 400),
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              AppWidgets.screenTitle(
-                title: 'That Shy Life',
-                subtitle: 'Create your account',
-              ),
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            return SingleChildScrollView(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                child: Center(
+                  child: Container(
+                    constraints: const BoxConstraints(maxWidth: 400),
+                    padding: const EdgeInsets.all(24.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        AppWidgets.screenTitle(
+                          title: 'That Shy Life',
+                          subtitle: 'Create your account',
+                        ),
 
-              const SizedBox(height: 32),
-              AppWidgets.textField(
-                controller: _emailController,
-                hint: 'Email',
-                keyboardType: TextInputType.emailAddress,
-              ),
+                        const SizedBox(height: 32),
+                        AppWidgets.textField(
+                          controller: _emailController,
+                          hint: 'Email',
+                          keyboardType: TextInputType.emailAddress,
+                        ),
 
-              const SizedBox(height: 16),
-              AppWidgets.textField(
-                controller: _passwordController,
-                hint: 'Password',
-                obscure: true,
-              ),
+                        const SizedBox(height: 16),
+                        AppWidgets.textField(
+                          controller: _passwordController,
+                          hint: 'Password',
+                          obscure: true,
+                        ),
 
-              const SizedBox(height: 16),
-              AppWidgets.textField(
-                controller: _confirmPasswordController,
-                hint: 'Confirm Password',
-                obscure: true,
-              ),
+                        const SizedBox(height: 16),
+                        AppWidgets.textField(
+                          controller: _confirmPasswordController,
+                          hint: 'Confirm Password',
+                          obscure: true,
+                        ),
 
-              const SizedBox(height: 8),
-              AppWidgets.errorText(_errorMessage),
+                        const SizedBox(height: 8),
+                        AppWidgets.errorText(_errorMessage),
 
-              const SizedBox(height: 16),
-              AppWidgets.primaryButton(
-                label: 'Create Account',
-                onPressed: _register,
-                isLoading: _isLoading,
-              ),
+                        const SizedBox(height: 16),
+                        AppWidgets.primaryButton(
+                          label: 'Create Account',
+                          onPressed: _register,
+                          isLoading: _isLoading,
+                        ),
 
-              const SizedBox(height: 16),
-              AppWidgets.textLink(
-                label: "Already have an account? Login",
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const LoginScreen()),
-                  );
-                },
-              ),
+                        const SizedBox(height: 16),
+                        AppWidgets.textLink(
+                          label: "Already have an account? Login",
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LoginScreen(),
+                              ),
+                            );
+                          },
+                        ),
 
-              const SizedBox(height: 8),
-              AppWidgets.textLink(
-                label: 'Privacy Policy & Terms of Service',
-                onPressed: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const LegalScreen()),
-                  );
-                },
+                        const SizedBox(height: 8),
+                        AppWidgets.textLink(
+                          label: 'Privacy Policy & Terms of Service',
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LegalScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
-            ],
-          ),
+            );
+          },
         ),
       ),
     );

@@ -18,6 +18,17 @@ class NotificationService {
         InitializationSettings(android: androidSettings);
 
     await _plugin.initialize(settings);
+    //...............
+    const AndroidNotificationChannel channel = AndroidNotificationChannel(
+            'daily_check_channel',
+            'Daily Check-in',
+            description: 'Daily reminder to journal and check in',
+            importance: Importance.max,
+    );
+    await _plugin
+        .resolvePlatformSpecificImplementation<
+        AndroidFlutterLocalNotificationsPlugin>()
+    ?.createNotificationChannel(channel);
 
     //Requesting the user for permission (for Android 13 and above)
     await _plugin
@@ -44,11 +55,11 @@ class NotificationService {
           priority: Priority.high,
           ),
         ),
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         matchDateTimeComponents: DateTimeComponents.time, //repeats daily
         uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
         );
-  }
+}
 
   static Future<void> cancelDailyReminder() async {
     await _plugin.cancel(0);
