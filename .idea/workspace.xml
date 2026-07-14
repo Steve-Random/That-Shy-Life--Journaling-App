@@ -6,9 +6,55 @@
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Solving Notification Bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/.last_build_id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/AssetManifest.bin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/assets/app_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/assets/shaders/stretch_effect.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/canvaskit.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/chromium/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/chromium/canvaskit.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/chromium/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/experimental_webparagraph/canvaskit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/experimental_webparagraph/canvaskit.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/experimental_webparagraph/canvaskit.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/skwasm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/skwasm.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/skwasm.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/skwasm_heavy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/skwasm_heavy.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/skwasm_heavy.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/wimp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/wimp.js.symbols" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/canvaskit/wimp.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_service_worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/icons/Icon-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/icons/Icon-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/icons/Icon-maskable-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/icons/Icon-maskable-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/version.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LoginScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LoginScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NotificationService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NotificationService.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/SettingsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/SettingsScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/app_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,61 +112,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.362603318787738" />
-      <entry key="MS500" value="3.2859523963970183" />
-      <entry key="S2" value="6.293855470794583" />
-      <entry key="S5" value="9.974982460964814" />
-      <entry key="S10" value="13.174725726434508" />
-      <entry key="S30" value="18.860816060925057" />
-      <entry key="S60" value="25.897052727026313" />
-      <entry key="M2" value="35.880600067687396" />
-      <entry key="M5" value="56.321241841083015" />
-      <entry key="M10" value="75.59124959241345" />
-      <entry key="M15" value="87.07798108697503" />
-      <entry key="M30" value="114.16131911622887" />
-      <entry key="H1" value="182.19715019811272" />
-      <entry key="H2" value="319.47227456793433" />
-      <entry key="H4" value="500.459327158823" />
-      <entry key="D1" value="913.7683012098638" />
-      <entry key="W1" value="3355.723478237225" />
+      <entry key="MS100" value="1.066262747809984" />
+      <entry key="MS500" value="2.3997351705269208" />
+      <entry key="S2" value="5.784286255719867" />
+      <entry key="S5" value="9.706208650538798" />
+      <entry key="S10" value="12.520843566892017" />
+      <entry key="S30" value="15.379788627060819" />
+      <entry key="S60" value="17.35626721863583" />
+      <entry key="M2" value="21.86168908663257" />
+      <entry key="M5" value="34.58568930085658" />
+      <entry key="M10" value="55.684545510024016" />
+      <entry key="M15" value="77.63973930543777" />
+      <entry key="M30" value="137.44499759490415" />
+      <entry key="H1" value="233.50303624038642" />
+      <entry key="H2" value="394.385975018581" />
+      <entry key="H4" value="628.458612573895" />
+      <entry key="D1" value="1213.2312950421376" />
+      <entry key="W1" value="3697.442682758548" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.21156130331175E-13" />
-      <entry key="MS500" value="0.0029440134952312125" />
-      <entry key="S2" value="0.23293510732619327" />
-      <entry key="S5" value="0.5583338771370201" />
-      <entry key="S10" value="0.7472174229346" />
-      <entry key="S30" value="0.9074639639151402" />
-      <entry key="S60" value="0.9618159042223213" />
-      <entry key="M2" value="1.1438458363100952" />
-      <entry key="M5" value="2.012449420832658" />
-      <entry key="M10" value="2.9597944723365632" />
-      <entry key="M15" value="3.4928684635694194" />
-      <entry key="M30" value="5.228025675512119" />
-      <entry key="H1" value="15.713322855919525" />
-      <entry key="H2" value="52.02357047602141" />
-      <entry key="H4" value="113.1481633122179" />
-      <entry key="D1" value="266.08996093874293" />
-      <entry key="W1" value="1228.8539940219455" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.3093474202948191E-79" />
+      <entry key="S2" value="2.4265596147546044E-20" />
+      <entry key="S5" value="2.0973184473999966E-8" />
+      <entry key="S10" value="2.3093379166162239E-4" />
+      <entry key="S30" value="0.17181543632812463" />
+      <entry key="S60" value="1.1913461817158681" />
+      <entry key="M2" value="3.998108830050656" />
+      <entry key="M5" value="12.558934217767803" />
+      <entry key="M10" value="26.340174295184642" />
+      <entry key="M15" value="38.21393879298404" />
+      <entry key="M30" value="62.41847353456035" />
+      <entry key="H1" value="87.70472586990805" />
+      <entry key="H2" value="122.93073888822445" />
+      <entry key="H4" value="184.41561739785433" />
+      <entry key="D1" value="371.80321237110365" />
+      <entry key="W1" value="1343.3387124126712" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.13671286903965" />
-      <entry key="MS500" value="3.164809610892608" />
-      <entry key="S2" value="6.3817483945234565" />
-      <entry key="S5" value="10.40365733808979" />
-      <entry key="S10" value="13.83304231159446" />
-      <entry key="S30" value="19.728610787190693" />
-      <entry key="S60" value="26.834390614636657" />
-      <entry key="M2" value="37.00831888707302" />
-      <entry key="M5" value="58.322779981824425" />
-      <entry key="M10" value="78.54316898346057" />
-      <entry key="M15" value="90.56455780838066" />
-      <entry key="M30" value="119.38274353407843" />
-      <entry key="H1" value="197.8943078830613" />
-      <entry key="H2" value="371.465893505457" />
-      <entry key="H4" value="613.574284241367" />
-      <entry key="D1" value="1179.845298807026" />
-      <entry key="W1" value="4584.570377284224" />
+      <entry key="MS100" value="1.0070468402674173" />
+      <entry key="MS500" value="2.36746524767661" />
+      <entry key="S2" value="5.754140905451525" />
+      <entry key="S5" value="9.678744342771894" />
+      <entry key="S10" value="12.501485057960828" />
+      <entry key="S30" value="15.523735883449714" />
+      <entry key="S60" value="18.47214423162136" />
+      <entry key="M2" value="25.73741455931418" />
+      <entry key="M5" value="47.001806314267036" />
+      <entry key="M10" value="81.88214960998415" />
+      <entry key="M15" value="115.71812451905056" />
+      <entry key="M30" value="199.75378213034182" />
+      <entry key="H1" value="321.12936168379804" />
+      <entry key="H2" value="517.2585394105116" />
+      <entry key="H4" value="812.8273747668864" />
+      <entry key="D1" value="1585.0176267786542" />
+      <entry key="W1" value="5040.77366368923" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -279,14 +325,9 @@
       <workItem from="1783930294131" duration="527000" />
       <workItem from="1783930903011" duration="305000" />
       <workItem from="1783951969342" duration="12097000" />
-    </task>
-    <task id="LOCAL-00049" summary="Edited JournalFeedScreen.dart">
-      <option name="closed" value="true" />
-      <created>1782346947931</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1782346947931</updated>
+      <workItem from="1783984738833" duration="295000" />
+      <workItem from="1784000914830" duration="6971000" />
+      <workItem from="1784055234666" duration="4497000" />
     </task>
     <task id="LOCAL-00050" summary="Edited JournalFeedScreen.dart">
       <option name="closed" value="true" />
@@ -672,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783931200874</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Solving Notification Bug">
+      <option name="closed" value="true" />
+      <created>1783984772003</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1783984772004</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

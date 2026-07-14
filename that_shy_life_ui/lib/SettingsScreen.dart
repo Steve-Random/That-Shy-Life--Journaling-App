@@ -103,7 +103,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'daily check-in reminder',
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
@@ -116,7 +116,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             _reminderTime != null
                                 ? 'Set for ${_reminderTime!.format(context)}'
                                 : 'No reminder set',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: AppTheme.textMuted,
                               fontSize: 13,
                             ),
@@ -144,6 +144,40 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
 
               const SizedBox(height: 24),
+
+              AppWidgets.screenTitle(
+                  title: 'Appearance',
+                  subtitle: 'Choose how That Shy Life looks',
+              ),
+              const SizedBox(height: 16),
+
+          AppWidgets.card(
+            child: Row(
+              children: [
+                Icon(Icons.dark_mode_outlined, color: AppTheme.primary),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    'Dark Mode',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: AppTheme.textDark,
+                    ),
+                  ),
+                ),
+              ValueListenableBuilder<ThemeMode>(
+                  valueListenable: AppTheme.themeMode,
+                  builder: (context, mode, _){
+                    return Switch(
+                    value: mode == ThemeMode.dark,
+                      activeThumbColor: AppTheme.primary,
+                        onChanged: (value) => AppTheme.setDarkMode(value),
+                    );
+                  },
+              ),
+              ],
+            ),
+          ),
 
               InkWell(
                 onTap: () => Navigator.push(
