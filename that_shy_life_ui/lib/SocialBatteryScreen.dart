@@ -60,7 +60,7 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
       backgroundColor: AppTheme.background,
       appBar: AppBar(
         title: const Text('Social Battery'),
-        backgroundColor: Colors.white,
+        backgroundColor: AppTheme.background,
         foregroundColor: AppTheme.textDark,
         elevation: 0,
         centerTitle: true,
@@ -261,7 +261,7 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
                                       (spot, percent, bar, index) =>
                                           FlDotCirclePainter(
                                             radius: 4,
-                                            color: Colors.white,
+                                            color: AppTheme.surface,
                                             strokeWidth: 2,
                                             strokeColor: avgColor,
                                           ),
@@ -271,8 +271,8 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
                                       show: true,
                                       gradient: LinearGradient(
                                           colors:[
-                                            avgColor.withOpacity(0.3),
-                                            avgColor.withOpacity(0.0),
+                                            avgColor.withValues(alpha: 0.3),
+                                            avgColor.withValues(alpha: 0.0),
                                           ],
                                         begin: Alignment.topCenter,
                                         end: Alignment.bottomCenter,

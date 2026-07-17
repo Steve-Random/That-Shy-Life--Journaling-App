@@ -23,24 +23,31 @@ class ThatShyLifeApp extends StatefulWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'That Shy Life',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.theme,
-      home: FutureBuilder<String?>(
-          future: _tokenFuture,
-          builder: (context, snapshot){
-            if(snapshot.connectionState == ConnectionState.waiting){
-              return const Scaffold(
-                body: Center(child: CircularProgressIndicator()),
-              );
-            }
-            if(snapshot.data != null){
-              return const JournalFeedScreen();
-            }
-            return const LandingScreen();
-          },
-      ),
-    );
+    return ValueListenableBuilder<ThemeMode>(
+        valueListenable: AppTheme.themeMode,
+        builder: (context,mode,_) {
+          return MaterialApp(
+            title: 'That Shy Life',
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.lightTheme,
+            darkTheme: AppTheme.darkTheme,
+            themeMode: mode,
+            home: FutureBuilder<String?>(
+              future: _tokenFuture,
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Scaffold(
+                    body: Center(child: CircularProgressIndicator()),
+                  );
+                }
+                if (snapshot.data != null) {
+                  return const JournalFeedScreen();
+                }
+                return const LandingScreen();
+              },
+            ),
+          );
+        }
+          );
   }
 }
