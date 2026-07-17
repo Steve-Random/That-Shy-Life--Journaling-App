@@ -68,7 +68,7 @@ class LandingScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 15,
-                  color: Colors.grey[600],
+                  color: AppTheme.textMuted,
                   height: 1.4,
                 ),
               ),
@@ -108,7 +108,7 @@ class LandingScreen extends StatelessWidget {
                       ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppTheme.primary,
-                    foregroundColor: Colors.white,
+                    foregroundColor: AppTheme.textDark,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusGeometry.circular(12),

@@ -26,7 +26,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppTheme.background,
       appBar: AppBar(
         title: const Text('New Reflection'),
         actions: [
@@ -61,10 +61,10 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   hintText: 'Title',
                   border: InputBorder.none,
-                  hintStyle: TextStyle(color: Colors.grey),
+                  hintStyle: TextStyle(color: AppTheme.textMuted),
                 ),
               ),
 
@@ -110,7 +110,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                   overlayShape: const RoundSliderOverlayShape(overlayRadius: 20),
                   activeTickMarkColor: _socialBatteryColor(),
                   inactiveTickMarkColor: AppTheme.border,
-                  thumbColor: Colors.white,
+                  thumbColor: AppTheme.surface,
                   overlayColor: _socialBatteryColor().withValues(alpha: 0.15),
                 ),
                 child: Slider(
