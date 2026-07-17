@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixed Notification bug&#10;Added a Dark mode theme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalDetailScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalDetailScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalFeedScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LandingScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/LegalScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/LegalScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NewEntryScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/SocialBatteryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/SocialBatteryScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NotificationService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NotificationService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,61 +63,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0018865944097366" />
-      <entry key="MS500" value="1.292231948206253" />
-      <entry key="S2" value="2.02044899021409" />
-      <entry key="S5" value="2.4912964970347717" />
-      <entry key="S10" value="2.719713131375108" />
-      <entry key="S30" value="2.90002648249387" />
-      <entry key="S60" value="2.9491506749709777" />
-      <entry key="M2" value="2.9798734348286673" />
-      <entry key="M5" value="3.3213774083127166" />
-      <entry key="M10" value="5.0200907926673315" />
-      <entry key="M15" value="9.221566482510456" />
-      <entry key="M30" value="38.854823532269464" />
-      <entry key="H1" value="124.69174499441235" />
-      <entry key="H2" value="293.8281857745609" />
-      <entry key="H4" value="553.1826511925223" />
-      <entry key="D1" value="1230.5670758157612" />
-      <entry key="W1" value="3741.9475359631765" />
+      <entry key="MS100" value="1.4933725944145135" />
+      <entry key="MS500" value="2.9335752641313864" />
+      <entry key="S2" value="5.330919770713316" />
+      <entry key="S5" value="10.113341697844476" />
+      <entry key="S10" value="15.99306709473195" />
+      <entry key="S30" value="25.158420613452677" />
+      <entry key="S60" value="30.338432898670508" />
+      <entry key="M2" value="37.80636824000382" />
+      <entry key="M5" value="51.87445475513395" />
+      <entry key="M10" value="62.77224652596223" />
+      <entry key="M15" value="70.10089477767126" />
+      <entry key="M30" value="99.50190761935843" />
+      <entry key="H1" value="181.88705944996903" />
+      <entry key="H2" value="349.25239428676815" />
+      <entry key="H4" value="610.1372764453816" />
+      <entry key="D1" value="1298.9446051919056" />
+      <entry key="W1" value="3814.101274012769" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.1969902624344725E-36" />
-      <entry key="MS500" value="6.54060803401019E-8" />
-      <entry key="S2" value="0.015992064431468" />
-      <entry key="S5" value="0.19123254830644087" />
-      <entry key="S10" value="0.4373014387198387" />
-      <entry key="S30" value="0.759032378225472" />
-      <entry key="S60" value="0.871240495289683" />
-      <entry key="M2" value="0.9443150720769414" />
-      <entry key="M5" value="1.9152321028653538" />
-      <entry key="M10" value="6.530125306222642" />
-      <entry key="M15" value="12.397175277430138" />
-      <entry key="M30" value="32.05694331274392" />
-      <entry key="H1" value="66.81756927326111" />
-      <entry key="H2" value="116.17540150699463" />
-      <entry key="H4" value="189.0608931303829" />
-      <entry key="D1" value="404.03613668052867" />
-      <entry key="W1" value="1382.8866522078404" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.4370495636795286E-266" />
+      <entry key="S2" value="3.975548700555061E-67" />
+      <entry key="S5" value="4.8232220014346525E-27" />
+      <entry key="S10" value="1.4959318297674649E-13" />
+      <entry key="S30" value="2.0685022545713583E-4" />
+      <entry key="S60" value="0.0454489076141474" />
+      <entry key="M2" value="0.7244401283694895" />
+      <entry key="M5" value="4.219419796450496" />
+      <entry key="M10" value="9.782823357365462" />
+      <entry key="M15" value="15.618462241809306" />
+      <entry key="M30" value="34.75716080500757" />
+      <entry key="H1" value="69.74140099080496" />
+      <entry key="H2" value="120.45995105860015" />
+      <entry key="H4" value="194.8648157258173" />
+      <entry key="D1" value="413.8551385266916" />
+      <entry key="W1" value="1393.8345773614174" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.5955274419324244" />
-      <entry key="MS500" value="1.1548565324998934" />
-      <entry key="S2" value="1.9665521330774658" />
-      <entry key="S5" value="2.5787325071351783" />
-      <entry key="S10" value="3.0451096320503113" />
-      <entry key="S30" value="3.5931907447117206" />
-      <entry key="S60" value="3.7822411732220194" />
-      <entry key="M2" value="3.9032652966964134" />
-      <entry key="M5" value="5.217197604790091" />
-      <entry key="M10" value="11.517113326961669" />
-      <entry key="M15" value="21.577493349834008" />
-      <entry key="M30" value="70.85841207345388" />
-      <entry key="H1" value="191.45238163909968" />
-      <entry key="H2" value="409.95134638986906" />
-      <entry key="H4" value="742.1977660876412" />
-      <entry key="D1" value="1634.5854188302458" />
-      <entry key="W1" value="5124.826274587972" />
+      <entry key="MS100" value="1.3803185370309785" />
+      <entry key="MS500" value="2.8841741730869566" />
+      <entry key="S2" value="5.3064199121498055" />
+      <entry key="S5" value="10.069082185999548" />
+      <entry key="S10" value="15.934233264156903" />
+      <entry key="S30" value="25.117142935705065" />
+      <entry key="S60" value="30.353518154490697" />
+      <entry key="M2" value="38.492224408722336" />
+      <entry key="M5" value="56.03726958958599" />
+      <entry key="M10" value="72.49600057237642" />
+      <entry key="M15" value="85.659789722211" />
+      <entry key="M30" value="134.19684770707784" />
+      <entry key="H1" value="251.56689683223928" />
+      <entry key="H2" value="469.65733732424746" />
+      <entry key="H4" value="804.9546836044822" />
+      <entry key="D1" value="1712.7815237892194" />
+      <entry key="W1" value="5207.9278692119" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -288,6 +280,7 @@
       <workItem from="1784000914830" duration="6971000" />
       <workItem from="1784055234666" duration="6287000" />
       <workItem from="1784245132643" duration="4725000" />
+      <workItem from="1784270414792" duration="954000" />
     </task>
     <task id="LOCAL-00051" summary="Edited JournalFeedScreen.dart">
       <option name="closed" value="true" />
