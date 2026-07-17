@@ -11,7 +11,7 @@ class LegalScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Legal'),
-          backgroundColor: Colors.white,
+          backgroundColor: AppTheme.surface,
           foregroundColor: AppTheme.primary,
           elevation: 1,
           scrolledUnderElevation: 0,
@@ -102,11 +102,11 @@ class LegalScreen extends StatelessWidget {
 
   Widget _sub(String text) => Padding(
     padding: const EdgeInsets.only(bottom: 12),
-    child: Text(text, style: const TextStyle(fontSize: 13, color: Colors.grey)),
+    child: Text(text, style: TextStyle(fontSize: 13, color: AppTheme.textMuted)),
   );
 
   Widget _body(String text) => Padding(
     padding: const EdgeInsets.only(bottom: 8),
-    child: Text(text, style: const TextStyle(fontSize: 15, height: 1.6, color: Colors.black87)),
+    child: Text(text, style: TextStyle(fontSize: 15, height: 1.6, color: AppTheme.textDark)),
   );
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/JournalEntry.dart';
+import 'app_theme.dart';
 
 class JournalDetailScreen extends StatelessWidget{
   final JournalEntry entry;
@@ -16,12 +17,12 @@ class JournalDetailScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.grey[50],
+      backgroundColor: AppTheme.background,
       appBar: AppBar(
         title: Text(entry.microEntry ?? "Reflection Details"),
         elevation: 0,
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black87,
+        backgroundColor: AppTheme.surface,
+        foregroundColor: AppTheme.textDark,
       ),
 
       body: SingleChildScrollView(
@@ -34,38 +35,38 @@ class JournalDetailScreen extends StatelessWidget{
               width: double.infinity,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: AppTheme.surface,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.grey[200]!),
+                border: Border.all(color: AppTheme.border),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                       "Date Recorded",
-                    style: TextStyle(fontSize: 12, color: Colors.grey[500], fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 12, color: AppTheme.textMuted, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     _formatDate(entry.createdAt),
-                    style: const TextStyle(fontSize: 16, color: Colors.black87),
+                    style: TextStyle(fontSize: 16, color: AppTheme.textDark),
                   ),
                   //TODO Stack Social Battery and tags later
                 ],
               ),
             ),
             //-----Main Reflection Body
-            const Text(
+            Text(
               "My Reflection",
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey, letterSpacing: 0.5),
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: AppTheme.textMuted, letterSpacing: 0.5),
             ),
             const SizedBox(height: 12),
             SelectableText(
               entry.content ?? "No content recorded.",
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 16,
                 height: 1.6,
-                color: Colors.black87,
+                color: AppTheme.textMuted,
               ),
             ),
           ],

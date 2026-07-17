@@ -29,14 +29,14 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: AppTheme.background,
       appBar: AppBar(
         title: const Text(
           'That Shy Life',
           style: TextStyle(fontWeight: FontWeight.w600, letterSpacing: 0.5),
         ),
         centerTitle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: AppTheme.background,
         elevation: 1,
         scrolledUnderElevation: 0,
 
@@ -161,10 +161,10 @@ Widget _buildJournalCard(BuildContext context, JournalEntry entry) {
   return Padding(
     padding: const EdgeInsets.only(top: 16.0),
     child: Card(
-      color: Colors.white,
+      color: AppTheme.surface,
       elevation: 0,
       shape: RoundedRectangleBorder(
-        side: BorderSide(color: Colors.grey[200]!),
+        side: BorderSide(color: AppTheme.border),
         borderRadius: BorderRadius.circular(12),
       ),
       child: InkWell(
@@ -188,10 +188,10 @@ Widget _buildJournalCard(BuildContext context, JournalEntry entry) {
                   Expanded(
                     child: Text(
                       entry.microEntry ?? "Untitled Reflection",
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colors.black87,
+                        color: AppTheme.textDark,
                       ),
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -199,7 +199,7 @@ Widget _buildJournalCard(BuildContext context, JournalEntry entry) {
                   const SizedBox(width: 8),
                   Text(
                     formattedDate,
-                    style: TextStyle(fontSize: 13, color: Colors.grey[500]),
+                    style: TextStyle(fontSize: 13, color: AppTheme.textMuted),
                   ),
                 ],
               ),
@@ -209,7 +209,7 @@ Widget _buildJournalCard(BuildContext context, JournalEntry entry) {
                 style: TextStyle(
                   fontSize: 16,
                   height: 1.5,
-                  color: Colors.grey[800],
+                  color: AppTheme.textDark,
                 ),
               ),
             ],
