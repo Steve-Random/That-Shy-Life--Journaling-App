@@ -73,7 +73,7 @@ class AppWidgets {
       width: double.infinity,
         padding: padding,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppTheme.surface,
             borderRadius: BorderRadiusGeometry.circular(16),
             border: Border.all(color: AppTheme.border),
         ),
