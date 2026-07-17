@@ -4,6 +4,7 @@ import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tzdata;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:flutter/foundation.dart' show kIsWeb, defaultTargetPlatform, TargetPlatform;
 
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _plugin =
@@ -38,9 +39,11 @@ class NotificationService {
     ?.requestNotificationsPermission();
 
     //Requesting exact alarm permission from user (for Android 12+)
-    final exactAlarmStatus = await Permission.scheduleExactAlarm.status;
-    if(!exactAlarmStatus.isGranted){
-      await Permission.scheduleExactAlarm.request();
+    if(!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
+      final exactAlarmStatus = await Permission.scheduleExactAlarm.status;
+      if (!exactAlarmStatus.isGranted) {
+        await Permission.scheduleExactAlarm.request();
+      }
     }
   }
 

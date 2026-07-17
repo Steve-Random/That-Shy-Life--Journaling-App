@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixed Notification bug&#10;Added a Dark mode theme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/flutter_bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/build/web/main.dart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/NotificationService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/NotificationService.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,61 +66,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4933725944145135" />
-      <entry key="MS500" value="2.9335752641313864" />
-      <entry key="S2" value="5.330919770713316" />
-      <entry key="S5" value="10.113341697844476" />
-      <entry key="S10" value="15.99306709473195" />
-      <entry key="S30" value="25.158420613452677" />
-      <entry key="S60" value="30.338432898670508" />
-      <entry key="M2" value="37.80636824000382" />
-      <entry key="M5" value="51.87445475513395" />
-      <entry key="M10" value="62.77224652596223" />
-      <entry key="M15" value="70.10089477767126" />
-      <entry key="M30" value="99.50190761935843" />
-      <entry key="H1" value="181.88705944996903" />
-      <entry key="H2" value="349.25239428676815" />
-      <entry key="H4" value="610.1372764453816" />
-      <entry key="D1" value="1298.9446051919056" />
-      <entry key="W1" value="3814.101274012769" />
+      <entry key="MS100" value="1.8726705418768635E-96" />
+      <entry key="MS500" value="7.153066717358902E-20" />
+      <entry key="S2" value="1.6353965187626543E-5" />
+      <entry key="S5" value="0.012174446557195467" />
+      <entry key="S10" value="0.11033788694394245" />
+      <entry key="S30" value="0.4819640676253179" />
+      <entry key="S60" value="0.7467744075086812" />
+      <entry key="M2" value="1.4226732337165404" />
+      <entry key="M5" value="9.372578249725992" />
+      <entry key="M10" value="26.251235251472018" />
+      <entry key="M15" value="39.38473096353016" />
+      <entry key="M30" value="74.91405321815293" />
+      <entry key="H1" value="157.78296609054092" />
+      <entry key="H2" value="325.25705546291016" />
+      <entry key="H4" value="589.1123969196165" />
+      <entry key="D1" value="1293.2840087305917" />
+      <entry key="W1" value="3813.459687860596" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.4370495636795286E-266" />
-      <entry key="S2" value="3.975548700555061E-67" />
-      <entry key="S5" value="4.8232220014346525E-27" />
-      <entry key="S10" value="1.4959318297674649E-13" />
-      <entry key="S30" value="2.0685022545713583E-4" />
-      <entry key="S60" value="0.0454489076141474" />
-      <entry key="M2" value="0.7244401283694895" />
-      <entry key="M5" value="4.219419796450496" />
-      <entry key="M10" value="9.782823357365462" />
-      <entry key="M15" value="15.618462241809306" />
-      <entry key="M30" value="34.75716080500757" />
-      <entry key="H1" value="69.74140099080496" />
-      <entry key="H2" value="120.45995105860015" />
-      <entry key="H4" value="194.8648157258173" />
-      <entry key="D1" value="413.8551385266916" />
-      <entry key="W1" value="1393.8345773614174" />
+      <entry key="MS100" value="1.0000005402011325" />
+      <entry key="MS500" value="1.0557842682760195" />
+      <entry key="S2" value="1.5030905258370453" />
+      <entry key="S5" value="1.9750960127999964" />
+      <entry key="S10" value="2.530898606625963" />
+      <entry key="S30" value="4.608250724208819" />
+      <entry key="S60" value="6.811086878645451" />
+      <entry key="M2" value="8.841329984926556" />
+      <entry key="M5" value="11.174341751857924" />
+      <entry key="M10" value="14.982227553414011" />
+      <entry key="M15" value="19.710881235041494" />
+      <entry key="M30" value="36.957708495613126" />
+      <entry key="H1" value="71.27310869825841" />
+      <entry key="H2" value="123.10863940532047" />
+      <entry key="H4" value="199.17069575948017" />
+      <entry key="D1" value="423.0922836811006" />
+      <entry key="W1" value="1404.5033267800495" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3803185370309785" />
-      <entry key="MS500" value="2.8841741730869566" />
-      <entry key="S2" value="5.3064199121498055" />
-      <entry key="S5" value="10.069082185999548" />
-      <entry key="S10" value="15.934233264156903" />
-      <entry key="S30" value="25.117142935705065" />
-      <entry key="S60" value="30.353518154490697" />
-      <entry key="M2" value="38.492224408722336" />
-      <entry key="M5" value="56.03726958958599" />
-      <entry key="M10" value="72.49600057237642" />
-      <entry key="M15" value="85.659789722211" />
-      <entry key="M30" value="134.19684770707784" />
-      <entry key="H1" value="251.56689683223928" />
-      <entry key="H2" value="469.65733732424746" />
-      <entry key="H4" value="804.9546836044822" />
-      <entry key="D1" value="1712.7815237892194" />
-      <entry key="W1" value="5207.9278692119" />
+      <entry key="MS100" value="7.268052579609793E-6" />
+      <entry key="MS500" value="0.09810389647603586" />
+      <entry key="S2" value="0.8100824166450343" />
+      <entry key="S5" value="1.4546198541472726" />
+      <entry key="S10" value="2.1656307386916405" />
+      <entry key="S30" value="4.713401670216798" />
+      <entry key="S60" value="7.268646087513299" />
+      <entry key="M2" value="10.073960249774737" />
+      <entry key="M5" value="20.44747727700058" />
+      <entry key="M10" value="41.16225204141759" />
+      <entry key="M15" value="59.03109792004798" />
+      <entry key="M30" value="111.8096654722081" />
+      <entry key="H1" value="228.99506363250225" />
+      <entry key="H2" value="448.3106163537757" />
+      <entry key="H4" value="788.2353864895483" />
+      <entry key="D1" value="1716.357832767368" />
+      <entry key="W1" value="5217.954988489848" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -280,15 +283,7 @@
       <workItem from="1784000914830" duration="6971000" />
       <workItem from="1784055234666" duration="6287000" />
       <workItem from="1784245132643" duration="4725000" />
-      <workItem from="1784270414792" duration="954000" />
-    </task>
-    <task id="LOCAL-00051" summary="Edited JournalFeedScreen.dart">
-      <option name="closed" value="true" />
-      <created>1782348464323</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1782348464323</updated>
+      <workItem from="1784270414792" duration="1769000" />
     </task>
     <task id="LOCAL-00052" summary="Edited JournalFeedScreen.dart">
       <option name="closed" value="true" />
@@ -674,7 +669,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784060066304</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Fixed Notification bug&#10;Added a Dark mode theme">
+      <option name="closed" value="true" />
+      <created>1784271388593</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1784271388595</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
