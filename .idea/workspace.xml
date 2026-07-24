@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Fixed App name on phone">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Adding documentation to JournalEntry.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/JournalEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thatshylife/DatabaseManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,61 +64,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000875375669414" />
-      <entry key="MS500" value="1.1972163327119376" />
-      <entry key="S2" value="2.905459657363803" />
-      <entry key="S5" value="4.890336004838661" />
-      <entry key="S10" value="6.150070559220304" />
-      <entry key="S30" value="7.300207363579424" />
-      <entry key="S60" value="7.677727557992628" />
-      <entry key="M2" value="8.37944817441867" />
-      <entry key="M5" value="14.636278774693844" />
-      <entry key="M10" value="27.982994604554904" />
-      <entry key="M15" value="40.6320554591694" />
-      <entry key="M30" value="76.4003557215542" />
-      <entry key="H1" value="155.038455133254" />
-      <entry key="H2" value="319.3007661473789" />
-      <entry key="H4" value="588.0391394948571" />
-      <entry key="D1" value="1328.5808525464388" />
-      <entry key="W1" value="3861.3511243163994" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000478397" />
+      <entry key="S5" value="1.0000744587024017" />
+      <entry key="S10" value="1.008628945613681" />
+      <entry key="S30" value="1.2052101365058216" />
+      <entry key="S60" value="1.4710384240531702" />
+      <entry key="M2" value="1.9763768564636988" />
+      <entry key="M5" value="4.545958846177842" />
+      <entry key="M10" value="10.048711684274565" />
+      <entry key="M15" value="16.809423184682295" />
+      <entry key="M30" value="43.10888325202748" />
+      <entry key="H1" value="111.23233739404624" />
+      <entry key="H2" value="266.97252564410246" />
+      <entry key="H4" value="538.0815893248445" />
+      <entry key="D1" value="1322.8239737386314" />
+      <entry key="W1" value="3872.3476402131187" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.3040055078004985E-105" />
-      <entry key="S5" value="1.1120178801207037E-42" />
-      <entry key="S10" value="1.0545326926903321E-21" />
-      <entry key="S30" value="1.0615683055619804E-7" />
-      <entry key="S60" value="4.333714188482463E-4" />
-      <entry key="M2" value="0.03714351227315054" />
-      <entry key="M5" value="0.7691316152656398" />
-      <entry key="M10" value="3.306684294797159" />
-      <entry key="M15" value="6.792014363999944" />
-      <entry key="M30" value="20.705172709201225" />
-      <entry key="H1" value="52.74223992031097" />
-      <entry key="H2" value="106.26146746348691" />
-      <entry key="H4" value="185.95369683837893" />
-      <entry key="D1" value="422.05893497799366" />
-      <entry key="W1" value="1407.1602676315742" />
+      <entry key="S2" value="3.877110460942125E-188" />
+      <entry key="S5" value="1.084950718287601E-75" />
+      <entry key="S10" value="3.3116857115228367E-38" />
+      <entry key="S30" value="4.0935799140777593E-13" />
+      <entry key="S60" value="9.872655623248368E-7" />
+      <entry key="M2" value="0.0016699678825777156" />
+      <entry key="M5" value="0.15016878848123916" />
+      <entry key="M10" value="0.8114569504678643" />
+      <entry key="M15" value="1.9427652067774186" />
+      <entry key="M30" value="9.106601726590856" />
+      <entry key="H1" value="33.62919767565134" />
+      <entry key="H2" value="84.4987018981308" />
+      <entry key="H4" value="166.02217896562325" />
+      <entry key="D1" value="415.9475001452834" />
+      <entry key="W1" value="1405.790532877465" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.632002564816707E-4" />
-      <entry key="MS500" value="0.34550760475463227" />
-      <entry key="S2" value="2.5163674896519668" />
-      <entry key="S5" value="4.7065278222313625" />
-      <entry key="S10" value="6.0519116222962" />
-      <entry key="S30" value="7.265857109708835" />
-      <entry key="S60" value="7.660714897830471" />
-      <entry key="M2" value="8.406820134709038" />
-      <entry key="M5" value="15.39507637863636" />
-      <entry key="M10" value="31.273503643161227" />
-      <entry key="M15" value="47.40244349275344" />
-      <entry key="M30" value="97.07180091394737" />
-      <entry key="H1" value="207.73638415101584" />
-      <entry key="H2" value="425.5152892248929" />
-      <entry key="H4" value="773.9487072117487" />
-      <entry key="D1" value="1750.6214675090268" />
-      <entry key="W1" value="5268.503361134584" />
+      <entry key="MS100" value="6.819379504835323E-5" />
+      <entry key="MS500" value="0.14680774640170668" />
+      <entry key="S2" value="0.6189951454656593" />
+      <entry key="S5" value="0.8254937212088325" />
+      <entry key="S10" value="0.9171222966076967" />
+      <entry key="S30" value="1.1734764901631656" />
+      <entry key="S60" value="1.4547217223730255" />
+      <entry key="M2" value="1.9684828420540228" />
+      <entry key="M5" value="4.687741899168051" />
+      <entry key="M10" value="10.850920043710094" />
+      <entry key="M15" value="18.74174774108411" />
+      <entry key="M30" value="52.19814674481238" />
+      <entry key="H1" value="144.83196446960707" />
+      <entry key="H2" value="351.4332660566473" />
+      <entry key="H4" value="704.0640936782039" />
+      <entry key="D1" value="1738.7533842391265" />
+      <entry key="W1" value="5278.130143633242" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -283,15 +283,8 @@
       <workItem from="1784245132643" duration="4725000" />
       <workItem from="1784270414792" duration="3500000" />
       <workItem from="1784311557125" duration="816000" />
-      <workItem from="1784786984253" duration="1505000" />
-    </task>
-    <task id="LOCAL-00056" summary="Added the Social Battery feature.">
-      <option name="closed" value="true" />
-      <created>1782446804632</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1782446804634</updated>
+      <workItem from="1784786984253" duration="3280000" />
+      <workItem from="1784873486523" duration="2240000" />
     </task>
     <task id="LOCAL-00057" summary="Added the Social Battery feature.">
       <option name="closed" value="true" />
@@ -677,14 +670,21 @@
       <option name="project" value="LOCAL" />
       <updated>1784312593554</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Adding documentation to JournalEntry.java">
+      <option name="closed" value="true" />
+      <created>1784789071371</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1784789071372</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edited JournalFeedScreen.dart" />
     <MESSAGE value="Added a global CORS configuration to main.java" />
     <MESSAGE value="Modified AuthFilter.java" />
     <MESSAGE value="Added the Social Battery feature." />
@@ -709,7 +709,8 @@
     <MESSAGE value="Solving Notification Bug" />
     <MESSAGE value="Fixed Notification bug&#10;Added a Dark mode theme" />
     <MESSAGE value="Fixed App name on phone" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed App name on phone" />
+    <MESSAGE value="Adding documentation to JournalEntry.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding documentation to JournalEntry.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
