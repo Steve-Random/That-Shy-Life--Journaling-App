@@ -4,10 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * REST controller handling user registration and login under
+ * {@code /api/auth}.
+ * <p>
+ *     <b>Note:</b> passwords are not hashed in the traditional one-way
+ *     sense -- they're run through {@link SecurityManager#encrypt(String)},
+ *     which is reversible AES encryption. See {@link SecurityManager} for
+ *     details on this security debt.
+ * </p>
+ */
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin( origins = {
@@ -24,6 +32,12 @@ public class AuthController {
     @Autowired
     private DatabaseManager databaseManager;
 
+    /**
+     * Registers a new user with the given email and password
+     *
+     * @return 200 with a signed JWT on success; 409 conflict if the email
+     *      is already registered.
+     */
     @PostMapping("/register")
     public ResponseEntity<Map<String,String>> register (@RequestBody Map<String,String> request){
         String email = request.get("email");
@@ -48,6 +62,14 @@ public class AuthController {
         return ResponseEntity.ok(Map.of("token", token));
     }
 
+    /**
+     * Authenticates a user by email and password
+     *
+     * @return 200 with a signed JWT on success; 401 unauthorized if the
+     *      email doesn't exist or password doesn't match (the same generic
+     *      error is returned in both cases, to avoid revealing which emails
+     *      are registered.
+     */
     @PostMapping("/login")
     public ResponseEntity<Map<String,String>> login (@RequestBody Map<String,String> request){
         String email = request.get("email");
