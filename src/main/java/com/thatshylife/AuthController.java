@@ -68,7 +68,7 @@ public class AuthController {
      * @return 200 with a signed JWT on success; 401 unauthorized if the
      *      email doesn't exist or password doesn't match (the same generic
      *      error is returned in both cases, to avoid revealing which emails
-     *      are registered.
+     *      are registered).
      */
     @PostMapping("/login")
     public ResponseEntity<Map<String,String>> login (@RequestBody Map<String,String> request){
