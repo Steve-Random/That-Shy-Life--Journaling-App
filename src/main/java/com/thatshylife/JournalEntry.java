@@ -6,6 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Represents a single journal entry, including its content, creation
+ * timestamp, social battery reading, and optional tags.
+ * <p>
+ * Instances are serialized to/from JSON via Jackson for API requests
+ * and responses; {@code @JsonIgnoreProperties(ignoreUnknown = true)}
+ * allows the backend to tolerate extra fields sent by older app versions.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class JournalEntry {
     private String userId;
@@ -13,18 +21,28 @@ public class JournalEntry {
     @JsonProperty("createdAt")
     private LocalDateTime timestamp;
     private String content; //the actual journal text
-    private String microEntry; //the one-wor or short phrase journal entry
+    private String microEntry; //the one-word or short phrase journal entry
     private int socialBattery;
     private boolean isAudioTranscript;
     private List<String> tags;
 
+    /**
+     * Creates a new entry with a freshly generated {@code id}, the current
+     * timestamp, and an empty tag list. Other fields must be set afterward
+     * via their setters
+      */
     public JournalEntry() {
         this.id = UUID.randomUUID().toString();
         this.timestamp = LocalDateTime.now();
         this.tags = new ArrayList<>();
     }
 
-    //Helper method to ensure the tag starts with "#" for consistency, and avoid duplicates
+    /**
+    *Adds a tag to this entry, normalizing it to start with '#' and
+    * skipping the add if an equivalent tag already exists
+    *
+    * @param tag the tag to add, with or without a leading '#'
+     */
     public void addTag(String tag) {
         if (!tag.startsWith("#")) {
             tag = "#" + tag;

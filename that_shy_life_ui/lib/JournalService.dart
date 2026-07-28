@@ -5,6 +5,7 @@ import 'app_theme.dart';
 import 'JournalEntry.dart';
 import 'package:flutter/foundation.dart';
 
+class SessionExpiredException implements Exception{}
 class JournalService {
   static String? _cachedToken;
 
@@ -68,6 +69,9 @@ class JournalService {
   //Entries
 
   //Fetching all entries from Java
+  ///Throw when the stored auth token is missing, expired or rejected
+  ///by the backend so callers can redirect to login instead of showing
+  ///a generic error
 static Future<List<JournalEntry>> fetchEntries() async{
     final token = await getToken();
   final response = await http.get(
@@ -80,6 +84,8 @@ static Future<List<JournalEntry>> fetchEntries() async{
   if(response.statusCode == 200){
     List<dynamic> body = json.decode(response.body);
     return body.map((item) => JournalEntry.fromJson(item)).toList();
+  }else if(response.statusCode == 401){
+    throw SessionExpiredException();
   }else{
     throw Exception('Failed to load entries');
   }
@@ -88,7 +94,7 @@ static Future<List<JournalEntry>> fetchEntries() async{
 //Sending a new reflection to Java (POST...http.post())
 Future<void> saveEntry(JournalEntry entry) async{
     final token = await getToken();
-  await http.post(
+ final response =  await http.post(
     Uri.parse('$baseUrl/api/entries'),
     headers: {
       'Content-Type': 'application/json',
@@ -96,5 +102,11 @@ Future<void> saveEntry(JournalEntry entry) async{
     },
     body: jsonEncode(entry.toJson()),
   );
+  if (response.statusCode == 401){
+    throw SessionExpiredException();
+  }else if ((response.statusCode != 200) && (response.statusCode != 201)){
+    throw Exception("Failed to save entry");
+  }
 }
+
 }

@@ -8,13 +8,26 @@ import java.time.LocalDateTime;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * Manages raw JDBC access to the application PostgreSQL database,
+ * including schema setup and CRUD operations for {@link User} and
+ * {@link JournalEntry} records.
+ * <p>
+ * Journal entry content and micro-entries are encrypted via
+ * {@link SecurityManager} before being persisted and decrypted on read.
+ */
 @Component
 public class DatabaseManager {
 
     // for testing  [
-
+/** No-arg constructor required for testing. */
     public DatabaseManager(){}
 
+    /**
+     * Constructs a manager with explicit connection credentials, by passing
+     * the {@code @value}-injected fields. Intended for tests
+     */
     public DatabaseManager(String dbUrl, String dbUser, String dbPassword) {
         this.dbUrl = dbUrl;
         this.dbUser = dbUser;
@@ -23,6 +36,10 @@ public class DatabaseManager {
 
     //   ] for testing
 
+    /**
+     * Creates the {@code users}and {@code entries} tables on startup if
+     * they don't already exist.
+     */
     @PostConstruct
     public void init(){
         createUsersTable();
@@ -38,6 +55,12 @@ public class DatabaseManager {
     @Value("${DB_PASSWORD}")
     private String dbPassword;
 
+    /**
+     * Opens a new database connection using the injected credentials
+     *
+     * @return an open {@link Connection}, or {@code null} if the connection
+     *    attempt failed (logged to stdout rather than thrown)
+     */
     public Connection connect() {
         Connection conn = null;
         try {
@@ -83,6 +106,12 @@ public class DatabaseManager {
         }
     }
 
+    /**
+     * Looks up a user by email.
+     *
+     * @return the matching {@link User}, or {@code null} if no user with
+     *     this email exists or the query fails
+     */
     public com.thatshylife.User findUserByEmail(String email){
         String sql = "SELECT * FROM users WHERE email = ?";
 
@@ -126,7 +155,11 @@ public class DatabaseManager {
         }
     }
 
-
+    /**
+     * Persists a journal entry, encrypting its content and micro-entry
+     * text via {@link SecurityManager} before storage, and serializing
+     * its tags to JSON
+     */
     public void saveEntry(JournalEntry entry) {
         String sql = "INSERT INTO entries(id, timestamp, content, microEntry, socialBattery, isAudioTranscript, tags, userId) VALUES(?,?,?,?,?,?,?,?)";
 
@@ -154,6 +187,13 @@ public class DatabaseManager {
         }
     }
 
+    /**
+     * Retrieves all journal entries belonging to a user, decrypting content
+     * and micro-entry text and deserializing tags back from JSON.
+     *
+     * @return the user's entries, or an empty list if none exist or the
+     *    query fails
+     */
     public  List<JournalEntry> getAllEntries(String userId) {
         List<JournalEntry> entries = new ArrayList<>();
         String sql = "SELECT * FROM entries WHERE userId = ?";

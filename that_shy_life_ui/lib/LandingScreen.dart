@@ -108,7 +108,7 @@ class LandingScreen extends StatelessWidget {
                       ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppTheme.primary,
-                    foregroundColor: AppTheme.textDark,
+                    foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadiusGeometry.circular(12),

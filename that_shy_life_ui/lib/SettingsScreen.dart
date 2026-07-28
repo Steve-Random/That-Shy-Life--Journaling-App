@@ -179,6 +179,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ),
 
+              const SizedBox(height: 16),
+
               InkWell(
                 onTap: () => Navigator.push(
                   context,
