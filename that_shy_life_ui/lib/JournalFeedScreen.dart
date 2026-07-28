@@ -23,8 +23,20 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
   @override
   void initState() {
     super.initState();
-    _future = JournalService.fetchEntries();
-  }
+    _future = JournalService.fetchEntries().catchError((error){
+      if (error is SessionExpiredException) {
+        WidgetsBinding.instance.addPostFrameCallback((_){
+          if (mounted) {
+            Navigator.of(context).pushAndRemoveUntil(
+              MaterialPageRoute(builder: (_) => const LoginScreen()),
+                  (route) => false,
+            );
+          }
+      });
+    }
+    throw error; // rethrowing so FutureBuilder still resolves to an error state
+  });
+}
 
   @override
   Widget build(BuildContext context) {
