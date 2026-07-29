@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalEntry.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/JournalEntry.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,61 +64,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0016920140174401" />
-      <entry key="MS500" value="1.474831886923129" />
-      <entry key="S2" value="4.965849666500278" />
-      <entry key="S5" value="8.32844004424408" />
-      <entry key="S10" value="11.516781946267814" />
-      <entry key="S30" value="20.07559970720704" />
-      <entry key="S60" value="25.211716583218504" />
-      <entry key="M2" value="28.986849230526335" />
-      <entry key="M5" value="36.90208109589144" />
-      <entry key="M10" value="53.633790131648055" />
-      <entry key="M15" value="69.12354705476757" />
-      <entry key="M30" value="100.14472857038278" />
-      <entry key="H1" value="127.92260357129209" />
-      <entry key="H2" value="147.56893399465957" />
-      <entry key="H4" value="176.3351127627646" />
-      <entry key="D1" value="919.7709679305343" />
-      <entry key="W1" value="3747.3623471861047" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000963285396" />
+      <entry key="S2" value="1.043471670712728" />
+      <entry key="S5" value="1.8222131919931261" />
+      <entry key="S10" value="3.852603997837772" />
+      <entry key="S30" value="10.9966746094301" />
+      <entry key="S60" value="18.387745602329012" />
+      <entry key="M2" value="28.304809493048452" />
+      <entry key="M5" value="52.589403084792366" />
+      <entry key="M10" value="85.90155686877324" />
+      <entry key="M15" value="111.58329161056773" />
+      <entry key="M30" value="161.12140950378281" />
+      <entry key="H1" value="206.29380089418473" />
+      <entry key="H2" value="238.8951619796617" />
+      <entry key="H4" value="275.02606656662107" />
+      <entry key="D1" value="1021.383462910074" />
+      <entry key="W1" value="3852.2299611102644" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.1576E-320" />
-      <entry key="S2" value="1.0372384489832954E-80" />
-      <entry key="S5" value="1.0147322023069387E-32" />
-      <entry key="S10" value="1.0073391698604902E-16" />
-      <entry key="S30" value="4.656897036117063E-6" />
-      <entry key="S60" value="0.0022390840564228335" />
-      <entry key="M2" value="0.06044027877938577" />
-      <entry key="M5" value="0.9264853081401437" />
-      <entry key="M10" value="3.995142867125618" />
-      <entry key="M15" value="7.448429921445409" />
-      <entry key="M30" value="15.842455609113616" />
-      <entry key="H1" value="24.93345521999186" />
-      <entry key="H2" value="32.15181629922122" />
-      <entry key="H4" value="41.97302355653632" />
-      <entry key="D1" value="276.41855044132797" />
-      <entry key="W1" value="1338.787569410001" />
+      <entry key="MS100" value="4.441088341574298E-182" />
+      <entry key="MS500" value="5.364112559644295E-37" />
+      <entry key="S2" value="8.558927183263332E-10" />
+      <entry key="S5" value="2.4486261654530465E-4" />
+      <entry key="S10" value="0.019572873345885457" />
+      <entry key="S30" value="0.5502705119315122" />
+      <entry key="S60" value="1.5164008438401133" />
+      <entry key="M2" value="2.6799371428201146" />
+      <entry key="M5" value="3.972128593218494" />
+      <entry key="M10" value="5.727638734970123" />
+      <entry key="M15" value="8.171673877413854" />
+      <entry key="M30" value="15.780527187661491" />
+      <entry key="H1" value="25.662099562276666" />
+      <entry key="H2" value="34.29053640762432" />
+      <entry key="H4" value="45.071712906818284" />
+      <entry key="D1" value="279.3175666473546" />
+      <entry key="W1" value="1342.3316407501338" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04703737580081693" />
-      <entry key="MS500" value="1.002076787169993" />
-      <entry key="S2" value="4.77819171744041" />
-      <entry key="S5" value="8.234679870964325" />
-      <entry key="S10" value="11.463784773580656" />
-      <entry key="S30" value="20.054011806952147" />
-      <entry key="S60" value="25.201935014732307" />
-      <entry key="M2" value="29.0377974077455" />
-      <entry key="M5" value="37.79818448773356" />
-      <entry key="M10" value="57.575427727455406" />
-      <entry key="M15" value="76.5127680029619" />
-      <entry key="M30" value="115.93386786649364" />
-      <entry key="H1" value="152.8184170805304" />
-      <entry key="H2" value="179.6979287488366" />
-      <entry key="H4" value="218.29424143598496" />
-      <entry key="D1" value="1196.1769595237956" />
-      <entry key="W1" value="5086.142168550309" />
+      <entry key="MS100" value="0.10013373469870276" />
+      <entry key="MS500" value="0.6311261057366788" />
+      <entry key="S2" value="0.934042886289416" />
+      <entry key="S5" value="1.7694729398781053" />
+      <entry key="S10" value="3.8235145526363796" />
+      <entry key="S30" value="11.46862045597529" />
+      <entry key="S60" value="19.807328540091387" />
+      <entry key="M2" value="30.893985901145346" />
+      <entry key="M5" value="56.49490051438259" />
+      <entry key="M10" value="91.56946321035835" />
+      <entry key="M15" value="119.69524403366994" />
+      <entry key="M30" value="176.84728892865098" />
+      <entry key="H1" value="231.9151162572428" />
+      <entry key="H2" value="273.1599911651233" />
+      <entry key="H4" value="320.08202312177275" />
+      <entry key="D1" value="1300.6881462074075" />
+      <entry key="W1" value="5194.553802120632" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -286,15 +289,8 @@
       <workItem from="1785048244325" duration="3309000" />
       <workItem from="1785115661365" duration="895000" />
       <workItem from="1785164433016" duration="1630000" />
-      <workItem from="1785197425365" duration="4191000" />
-    </task>
-    <task id="LOCAL-00064" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782540717202</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1782540717202</updated>
+      <workItem from="1785197425365" duration="4338000" />
+      <workItem from="1785299674480" duration="1366000" />
     </task>
     <task id="LOCAL-00065" summary="Fixing blank feed sceen bug">
       <option name="closed" value="true" />
@@ -680,7 +676,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785201716596</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users">
+      <option name="closed" value="true" />
+      <created>1785221267021</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1785221267021</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
