@@ -12,6 +12,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.Collections;
 
+/**
+ * Spring Boot application entry point for the That Shy Life backend.
+ */
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +23,11 @@ public class Main {
         app.run(args);
     }
 
-@Bean
+    /**
+     * Configures CORS to allow requests from the Flutter web app's local
+     * dev server and deployed staging/ production origins.
+     */
+    @Bean
 public WebMvcConfigurer corsConfigurer() {
     return new WebMvcConfigurer() {
         @Override

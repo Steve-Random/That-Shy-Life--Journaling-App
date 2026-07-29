@@ -3,6 +3,13 @@ package com.thatshylife;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+/**
+ * Represents a registered user's account credentials.
+ * <p>
+ *     {@code password} stores the output of {@link SecurityManager#encrypt(String)},
+ *     not a one-way hash -- see that class for details on this security debt.
+ * </p>
+ */
 public class User {
 
     private String id;
@@ -10,6 +17,11 @@ public class User {
     private String password;
     private LocalDateTime createdAt;
 
+    /**
+     * Creates a new user with a freshly generated {@code id} and the
+     * current timestamp as {@code createdAt}, Other fields must be set
+     * afterward via their setters.
+     */
     public User(){
         this.id = UUID.randomUUID().toString();
         this.createdAt = LocalDateTime.now();

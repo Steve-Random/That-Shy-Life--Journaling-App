@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/JournalEntry.dart';
 import 'package:that_shy_life_ui/app_theme.dart';
+
 import 'JournalService.dart';
+import 'LoginScreen.dart';
 
 //For New Entries/New Reflections
 class NewEntryScreen extends StatefulWidget {
@@ -17,7 +19,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
   final TextEditingController _contentController = TextEditingController();
 
   //Color helper
-  Color _socialBatteryColor(){
+  Color _socialBatteryColor() {
     if (_socialBattery >= 65) return const Color(0xFF7FB5A8);
     if (_socialBattery >= 35) return const Color(0xFFD4A96A);
     return const Color(0xFFB08090);
@@ -32,16 +34,28 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
         actions: [
           TextButton(
             onPressed: () async {
-              if((_titleController.text.isNotEmpty) && (_contentController.text.isNotEmpty)){
+              if ((_titleController.text.isNotEmpty) &&
+                  (_contentController.text.isNotEmpty)) {
                 final newEntry = JournalEntry(
-                    microEntry: _titleController.text,
-                    content: _contentController.text,
-                    createdAt: DateTime.now(),
+                  microEntry: _titleController.text,
+                  content: _contentController.text,
+                  createdAt: DateTime.now(),
                   socialBattery: _socialBattery,
                 );
-                await JournalService().saveEntry(newEntry);
-             if(mounted) Navigator.pop(context,true);}
+                try {
+                  await JournalService().saveEntry(newEntry);
+                  if (mounted) Navigator.pop(context, true);
+                } on SessionExpiredException {
+                  if (mounted) {
+                    Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(builder: (_) => const LoginScreen()),
+                      (route) => false,
+                    );
+                  }
+                }
+              }
             },
+
             child: const Text(
               'Save',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -67,7 +81,6 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                   hintStyle: TextStyle(color: AppTheme.textMuted),
                 ),
               ),
-
 
               const Divider(),
 
@@ -95,53 +108,65 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                           style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w600,
-                            color: _socialBatteryColor()
+                            color: _socialBatteryColor(),
                           ),
                         ),
                       ],
-                ),
+                    ),
 
                     const SizedBox(height: 8),
 
-              SliderTheme(
-                data: SliderTheme.of(context).copyWith(
-                  trackHeight: 6,
-                  thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 10),
-                  overlayShape: const RoundSliderOverlayShape(overlayRadius: 20),
-                  activeTickMarkColor: _socialBatteryColor(),
-                  inactiveTickMarkColor: AppTheme.border,
-                  thumbColor: AppTheme.surface,
-                  overlayColor: _socialBatteryColor().withValues(alpha: 0.15),
-                ),
-                child: Slider(
-                  value: _socialBattery.toDouble(),
-                  min: 0,
-                  max: 100,
-                  divisions: 100,
-                  onChanged: (value){
-                    setState(() {
-                      _socialBattery = value.toInt();
-                    });
-                  },
-                ),
-              ),
+                    SliderTheme(
+                      data: SliderTheme.of(context).copyWith(
+                        trackHeight: 6,
+                        thumbShape: const RoundSliderThumbShape(
+                          enabledThumbRadius: 10,
+                        ),
+                        overlayShape: const RoundSliderOverlayShape(
+                          overlayRadius: 20,
+                        ),
+                        activeTickMarkColor: _socialBatteryColor(),
+                        inactiveTickMarkColor: AppTheme.border,
+                        thumbColor: AppTheme.surface,
+                        overlayColor: _socialBatteryColor().withValues(
+                          alpha: 0.15,
+                        ),
+                      ),
+                      child: Slider(
+                        value: _socialBattery.toDouble(),
+                        min: 0,
+                        max: 100,
+                        divisions: 100,
+                        onChanged: (value) {
+                          setState(() {
+                            _socialBattery = value.toInt();
+                          });
+                        },
+                      ),
+                    ),
 
-              const SizedBox(height: 4),
+                    const SizedBox(height: 4),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Drained',
-                    style: TextStyle(fontSize: 11, color: AppTheme.textMuted),
-                  ),
-                  Text(
-                    'Recharged',
-                    style: TextStyle(fontSize: 11, color: AppTheme.textMuted),
-                  ),
-                ],
-              ),
-              ],
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Drained',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: AppTheme.textMuted,
+                          ),
+                        ),
+                        Text(
+                          'Recharged',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: AppTheme.textMuted,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
 
@@ -171,5 +196,4 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
     _contentController.dispose();
     super.dispose();
   }
-
 }
