@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/// Central source of truth for the app's light/dark theming.
+///
+/// Exposes semantic color getters ([primary], [background], [surface],
+/// [textDark], [textMuted], [border]) that automatically resolve to the
+/// correct light or dark value based on [themeMode], plus fully built
+/// [lightTheme]/[darkTheme] 'ThemeData' objects for 'MaterialApp'.
+///
 class AppTheme {
   static final ValueNotifier<ThemeMode> themeMode =
     ValueNotifier(ThemeMode.light);
@@ -31,6 +38,8 @@ class AppTheme {
   static Color get textMuted => _isDark ? _textMutedDark : _textMutedLight;
   static Color get border => _isDark ? _borderDark : _borderLight;
 
+  /// Pre-built light and dark [ThemeData], ready to pass directly to
+  /// 'MaterialApp.theme' and 'MaterialApp.darkTheme'.
   static ThemeData get lightTheme => _buildTheme(Brightness.light);
   static ThemeData get darkTheme => _buildTheme(Brightness.dark);
 
@@ -78,6 +87,9 @@ class AppTheme {
 }
 
 //helper method
+  /// Updates [themeMode] and persists the choice to [SharedPreferences]
+  /// under the 'dark_Mode' key so the app remembers the user's
+  /// preferences across restarts
 static Future<void> setDarkMode(bool isDark) async{
     themeMode.value = isDark ? ThemeMode.dark : ThemeMode.light;
     final prefs = await SharedPreferences.getInstance();
