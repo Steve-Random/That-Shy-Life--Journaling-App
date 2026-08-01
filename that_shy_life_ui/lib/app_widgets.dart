@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/app_theme.dart';
 
+/// Central source of truth for the app's light/dark theming.
+///
+/// Exposes semantic color getters([primary], [background], [surface],
+/// [textDark],[textMuted],[border]) that automatically resolve to the
+/// correct light or dark value based on [themeMode], plus fully built
+/// [lightTheme]/[darkTheme] 'ThemeData' objects for 'MaterialApp'.
 class AppWidgets {
 
   //Reusable styled Text Field
