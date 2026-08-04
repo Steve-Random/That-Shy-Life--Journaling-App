@@ -4,6 +4,8 @@ import 'app_theme.dart';
 import 'RegisterScreen.dart';
 import 'LegalScreen.dart';
 
+/// First screen shown to unauthenticated users. Routes to [RegisterScreen],
+/// [LoginScreen], or [LegalScreen] depending on which button is tapped.
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
 
@@ -15,6 +17,8 @@ class LandingScreen extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
+            // Caps content width on wide screens (web/tablet) so the layout
+            // doesn't stretch edge-to-edge
               constraints: const BoxConstraints(maxWidth: 480),
           child: Padding(
           padding: const EdgeInsetsGeometry.symmetric(horizontal: 32),
