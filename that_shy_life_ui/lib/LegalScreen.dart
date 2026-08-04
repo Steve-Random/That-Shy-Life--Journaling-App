@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'app_theme.dart';
 
+/// Displays the Privacy Policy and Terms of Service as two tabs.
+/// Content is hardcoded in [_buildPrivacyPolicy] and [_buildTermsOfService]
+/// rather than fetched remotely -- update both manually when legal text changes.
 class LegalScreen extends StatelessWidget {
   const LegalScreen({super.key});
 
