@@ -6,10 +6,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter/foundation.dart' show kIsWeb, defaultTargetPlatform, TargetPlatform;
 
+/// Manages local notification scheduling for daily check-in reminders,
+/// using flutter_local_notifications with per-timezone scheduling.
 class NotificationService {
   static final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();
 
+  /// Initializes the notification plugin,creates the Android notification
+  /// channel, and requests permissions.Exact-alarm permission is only
+  /// requested on Android 12+ --guarded by [KIsWeb]/[defaultTargetPlatform]
+  /// since permission_handler's exact-alarm APIs aren't supported on web.
   static Future<void> init() async {
     tzdata.initializeTimeZones();
 
@@ -47,6 +53,12 @@ class NotificationService {
     }
   }
 
+  /// Schedules a repeating daily notification at [hour]:[minute].
+  ///
+  /// Tries exact scheduling first ('exactAllowWhileIdle') for precise
+  /// timing. If that throws (e.g. user denied the exact-alarm permission),
+  /// falls back to 'inexactAllowWhileIdle' so the reminder still fires,
+  /// just without exact-timing guarantees.
   static Future<void> scheduleDailyReminder({
     required int hour,
     required int minute,
@@ -99,6 +111,8 @@ class NotificationService {
     await _plugin.cancel(0);
   }
 
+  /// Returns the next occurrence of [hour]:[minute] in the local timezone --
+  /// today if that time hasn't passed yet, otherwise tomorrow.
   static tz.TZDateTime _nextInstanceOfTime(int hour, int minute) {
     final now = tz.TZDateTime.now(tz.local);
     var scheduled =

@@ -8,6 +8,8 @@ import 'app_widgets.dart';
 import 'LegalScreen.dart';
 import 'OnboardingScreen.dart';
 
+/// Account creation screen. Stateful to hold form controller's and
+/// loading/error state during the async registration call.
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
 
@@ -23,6 +25,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool _isLoading = false;
   String? _errorMessage;
 
+  /// Validates the password and confirm-password match locally before
+  /// calling [JournalService.register] (avoids a wasted network call for
+  /// an error the client can catch immediately).
+  ///
+  /// On success, replaces this screen with [OnboardingScreen] -- its
+  /// [onDone] callback then replaces *that* with [JournalFeedScreen].
+  /// So a new user's stack goes Register -> onboarding -> Feed, with no
+  /// way to navigate back to either immediate screen.
+  ///
+  /// On failure, shows a generic message that doesn't distinguish
+  /// "email already taken" from other errors (same intentional- vagueness
+  /// pattern as LoginScree).
   Future<void> _register() async {
     if (_passwordController.text != _confirmPasswordController.text) {
       setState(() {
