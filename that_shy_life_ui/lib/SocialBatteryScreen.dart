@@ -6,6 +6,10 @@ import 'app_theme.dart';
 import 'JournalEntry.dart';
 import 'JournalService.dart';
 
+/// Shows a 7-day chart of the user's social battery readings (via
+/// fl_chart) plus a text insight summarizing the weekly average.
+/// Fetches all entries via [JournalService.fetchEntries] and filters
+/// client-side rather than querying the backend for a date range.
 class SocialBatteryScreen extends StatefulWidget{
   const SocialBatteryScreen({super.key});
 
@@ -22,12 +26,18 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
     _future = JournalService.fetchEntries();
   }
 
+  /// Same teal/amber/rose thresholds ( >=65 /35-64/ <=35) as
+  /// NewEntryScreen_socialBatteryColor -- duplicated here rather than
+  ///  shared. keep both in sync if thresholds change.
   Color _batteryColor(double value) {
     if (value >= 65) return const Color(0xFF7FB5A8);
     if (value >= 35) return const Color(0xFFD4A96A);
     return const Color(0xFFB08090);
   }
 
+  /// Filters entries to the last 7 days and sorts oldest-first (for
+  /// left-to-right chronological chart rendering). Entries with a null
+  /// createdAt are excluded.
   List<JournalEntry> _getLastSevenDays ( List<JournalEntry> entries ) {
     final now = DateTime.now();
     final sevenDaysAgo = now.subtract(const Duration(days: 7));
@@ -43,7 +53,9 @@ class _SocialBatteryScreenState extends State<SocialBatteryScreen>{
     return days[date.weekday % 7];
   }
 
-
+ /// Generates a one-line summary of the week's average social battery.
+  /// Uses the same 65/35 thresholds as [_batteryColor] but for wording
+  /// rather than color -- keep both in sync if thresholds change.
   String _insight( List<JournalEntry> entries){
     if(entries.isEmpty) {
       return 'Start logging entries to see your energy patterns';
