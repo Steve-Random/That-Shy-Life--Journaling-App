@@ -1,4 +1,8 @@
-
+/// Represents a single journal eentry,mirroring the backends
+/// 'JournalEntry' model.
+///
+/// Used both for entries fetched from the API and new entries being
+/// created locally before they are saved via [JournalService].
 class JournalEntry {
   final String? id;
   final String? microEntry;
@@ -18,7 +22,15 @@ class JournalEntry {
     this.tags = const[],
 });
 
-  //converting JSON Map into a Dart object
+/// Parses a [JournalEntry] from a JSON mao returned by the backend.
+  ///
+  /// [createdAt] is truncated to 26 characters when present, to strip
+  /// excess sub-microsecond precision some backend responses include
+  /// before parsing with [DateTime.tryParse]: if parsing fails or the
+  /// field is missing, [DateTime.now] is used as a fallback.
+  ///
+  /// [socialBattery] defaults to 50 and [tags] to an empty list if
+  /// absent from the response.
 factory JournalEntry.fromJson(Map<String, dynamic> json) =>
   JournalEntry(
     id: json['id'],

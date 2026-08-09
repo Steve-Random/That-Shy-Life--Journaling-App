@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/JournalEntry.dart';
 import 'app_theme.dart';
 
+/// Displays a single journal entry's full details: date, reflection
+/// content, and (eventually) social battery and tags.
 class JournalDetailScreen extends StatelessWidget{
   final JournalEntry entry;
 

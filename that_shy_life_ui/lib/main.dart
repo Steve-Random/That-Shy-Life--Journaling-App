@@ -6,6 +6,11 @@ import 'firebase_options.dart';
 import 'NotificationService.dart';
 import 'app_theme.dart';
 
+/// App entry point. Initialization order matters here:
+/// Firebase and notifications must be before [runApp], and the
+/// saved theme prefernces is read synchronously into [AppTheme.themeMode]
+/// *before* runApp so the first frame renders in the correct theme
+/// (avoids a light/dark flash on launch).
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(

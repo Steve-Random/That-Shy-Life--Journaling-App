@@ -6,6 +6,8 @@ import 'JournalService.dart';
 import 'LoginScreen.dart';
 
 //For New Entries/New Reflections
+/// Screen for composing a new journal entry with a title, free-text
+/// content, and a social battery reading (0-100) captured at write time.
 class NewEntryScreen extends StatefulWidget {
   const NewEntryScreen({super.key});
 
@@ -33,6 +35,21 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
         title: const Text('New Reflection'),
         actions: [
           TextButton(
+
+            //TODO: Fix "Note" below .
+            /// Validates that title and content are non-empty, then saves the
+            /// entry and pops back to [JournalFeedScreen] with 'true' (signals
+            /// the feed to refresh).
+            ///
+            /// On [SessionExpiredException] (401), clears the navigation stack
+            /// and redirects to [LoginScreen] via pushAndRemoveUntil -- same
+            /// pattern as JournalFeedScreen, so the user can't navigate back
+            /// into an expired session.
+            ///
+            /// Note: if title/content are empty, this silently does nothing --
+            /// no error shown to the user. Also: no catch(e) for non-session
+            /// errors (e.g. network failure), so those fail silently too.
+            /// Both are known gaps, not yet fixed.
             onPressed: () async {
               if ((_titleController.text.isNotEmpty) &&
                   (_contentController.text.isNotEmpty)) {

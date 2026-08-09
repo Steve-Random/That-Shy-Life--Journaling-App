@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:that_shy_life_ui/app_theme.dart';
 
+/// Shared, pre-styled widgets used across the app's screens, keeping
+/// visual consistency (colors, spacing, shapes) in one place rather
+/// than duplicated per screen.
+///
+/// All widgets here automatically follow [AppTheme]'s current light/
+/// dark colors.
 class AppWidgets {
 
   //Reusable styled Text Field
+ /// A styled text input with a rounded outline border that highlights
+  /// with [AppTheme.primary] when focused.
   static Widget textField({
     required TextEditingController controller,
     required String hint,
@@ -33,6 +41,8 @@ class AppWidgets {
   }
 
   //Reusable Primary Button
+  /// A full-width elevated button in [AppTheme.primary], showing a
+  /// spinner in place of its label while [isLoading] is true.
   static Widget primaryButton({
     required String label,
     required VoidCallback? onPressed,
@@ -128,6 +138,7 @@ class AppWidgets {
  }
 
  //Reusable error message
+  ///A red error message or nothing at all if [message] is null
 static Widget errorText( String? message) {
     if(message == null) return const SizedBox.shrink();
     return Text(

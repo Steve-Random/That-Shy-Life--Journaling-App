@@ -6,6 +6,8 @@ import 'JournalFeedScreen.dart';
 import 'RegisterScreen.dart';
 import 'LegalScreen.dart';
 
+/// Email/password login screen. Stateful to hold form controllers and
+/// loading/error state during the async login call.
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -19,6 +21,9 @@ class _LoginScreenState extends State<LoginScreen>{
   bool _isLoading = false;
   String? _errorMessage;
 
+  /// Attempts login via [JournalService.login]. On success, replaces this
+  /// screen with [JournalFeedScreen], (using pushReplacement, not push, so
+  /// the user can't navigate back to the login screen after authenticating)
   Future<void> _login() async {
     setState(() {
       _isLoading = true;

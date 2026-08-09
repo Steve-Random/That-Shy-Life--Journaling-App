@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:that_shy_life_ui/LandingScreen.dart';
 
 import 'app_theme.dart';
 
+/// First-launch walkthrough shown before [LandingScreen]. Swipes through
+/// [_slides] describing core features; calls [onDone] when the user
+/// finishes or skips, which the caller uses to mark onboarding complete
+/// and navigate onward
 class OnboardingScreen extends StatefulWidget {
   final VoidCallback onDone;
 
@@ -56,6 +61,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
 
             Expanded(
+
+              /// Renders each [_Slide] in [_slides].[onPageChanged] keeps
+              /// [_index] in sync with the current page so the bottom button
+              /// (which reads [_index]) knows whenit's on the last slide.
               child: PageView.builder(
                 controller: _controller,
                 itemCount: _slides.length,

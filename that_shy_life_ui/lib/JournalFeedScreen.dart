@@ -9,6 +9,11 @@ import 'JournalService.dart';
 import 'NewEntryScreen.dart';
 import 'SocialBatteryScreen.dart';
 
+/// The main journal feed screen, showing all of the user's entries
+/// in a scrollable list.
+///
+/// Redirects to [LoginScreen] automatically if the stored session
+/// has expired (see [initState]).
 class JournalFeedScreen extends StatefulWidget {
   const JournalFeedScreen({super.key});
 
@@ -20,6 +25,11 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
   //final JournalService _journalService = JournalService();
   late Future<List<JournalEntry>> _future;
 
+  /// Kicks off the initial entries fetch
+  ///
+  /// if the fetch falls with [SessionExpiredException], clears the
+  /// navigation stack and redirects to [LoginScreen] instead of letting
+  /// the error surface in the [FutureBuilder].
   @override
   void initState() {
     super.initState();
@@ -149,6 +159,9 @@ class _JournalFeedScreenState extends State<JournalFeedScreen> {
   }
 }
 
+/// Builds a simple tappable card summarizing [entry], showing its
+/// title, formatted date, and content preview. Tapping navigates to
+/// [JournalDetailScreen]
 Widget _buildJournalCard(BuildContext context, JournalEntry entry) {
   //Helper for a readable date display
   String formattedDate = "Unknown Date";

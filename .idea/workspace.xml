@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users" />
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added documentation to SettingsScreen.dart, SocialBatteryScreen.dart, ThatShyLifeApp.dart">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,61 +64,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0016920140174401" />
-      <entry key="MS500" value="1.474831886923129" />
-      <entry key="S2" value="4.965849666500278" />
-      <entry key="S5" value="8.32844004424408" />
-      <entry key="S10" value="11.516781946267814" />
-      <entry key="S30" value="20.07559970720704" />
-      <entry key="S60" value="25.211716583218504" />
-      <entry key="M2" value="28.986849230526335" />
-      <entry key="M5" value="36.90208109589144" />
-      <entry key="M10" value="53.633790131648055" />
-      <entry key="M15" value="69.12354705476757" />
-      <entry key="M30" value="100.14472857038278" />
-      <entry key="H1" value="127.92260357129209" />
-      <entry key="H2" value="147.56893399465957" />
-      <entry key="H4" value="176.3351127627646" />
-      <entry key="D1" value="919.7709679305343" />
-      <entry key="W1" value="3747.3623471861047" />
+      <entry key="MS100" value="1.2508073047333625" />
+      <entry key="MS500" value="2.298099304417196" />
+      <entry key="S2" value="2.793693037403997" />
+      <entry key="S5" value="3.0017765210612803" />
+      <entry key="S10" value="4.275763638702359" />
+      <entry key="S30" value="11.65494881121312" />
+      <entry key="S60" value="18.57021998582168" />
+      <entry key="M2" value="28.496280192521944" />
+      <entry key="M5" value="59.05136520065102" />
+      <entry key="M10" value="109.72847566807002" />
+      <entry key="M15" value="150.24527663092493" />
+      <entry key="M30" value="248.7328399046744" />
+      <entry key="H1" value="425.0898168312636" />
+      <entry key="H2" value="698.2849223114151" />
+      <entry key="H4" value="1047.4600077139833" />
+      <entry key="D1" value="2294.0905756376114" />
+      <entry key="W1" value="5363.767903038959" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.1576E-320" />
-      <entry key="S2" value="1.0372384489832954E-80" />
-      <entry key="S5" value="1.0147322023069387E-32" />
-      <entry key="S10" value="1.0073391698604902E-16" />
-      <entry key="S30" value="4.656897036117063E-6" />
-      <entry key="S60" value="0.0022390840564228335" />
-      <entry key="M2" value="0.06044027877938577" />
-      <entry key="M5" value="0.9264853081401437" />
-      <entry key="M10" value="3.995142867125618" />
-      <entry key="M15" value="7.448429921445409" />
-      <entry key="M30" value="15.842455609113616" />
-      <entry key="H1" value="24.93345521999186" />
-      <entry key="H2" value="32.15181629922122" />
-      <entry key="H4" value="41.97302355653632" />
-      <entry key="D1" value="276.41855044132797" />
-      <entry key="W1" value="1338.787569410001" />
+      <entry key="MS500" value="4.250789776568743E-115" />
+      <entry key="S2" value="2.5533932720948484E-29" />
+      <entry key="S5" value="3.672433022736831E-12" />
+      <entry key="S10" value="2.1254186576016588E-6" />
+      <entry key="S30" value="0.024622452714882784" />
+      <entry key="S60" value="0.30255962469262687" />
+      <entry key="M2" value="1.1168050812780892" />
+      <entry key="M5" value="2.9738146069375464" />
+      <entry key="M10" value="4.9699506360405925" />
+      <entry key="M15" value="6.2907916663039805" />
+      <entry key="M30" value="9.056040945776633" />
+      <entry key="H1" value="13.58063936900145" />
+      <entry key="H2" value="22.464886814926885" />
+      <entry key="H4" value="40.70641142440335" />
+      <entry key="D1" value="266.16490078955115" />
+      <entry key="W1" value="1351.688860616181" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.04703737580081693" />
-      <entry key="MS500" value="1.002076787169993" />
-      <entry key="S2" value="4.77819171744041" />
-      <entry key="S5" value="8.234679870964325" />
-      <entry key="S10" value="11.463784773580656" />
-      <entry key="S30" value="20.054011806952147" />
-      <entry key="S60" value="25.201935014732307" />
-      <entry key="M2" value="29.0377974077455" />
-      <entry key="M5" value="37.79818448773356" />
-      <entry key="M10" value="57.575427727455406" />
-      <entry key="M15" value="76.5127680029619" />
-      <entry key="M30" value="115.93386786649364" />
-      <entry key="H1" value="152.8184170805304" />
-      <entry key="H2" value="179.6979287488366" />
-      <entry key="H4" value="218.29424143598496" />
-      <entry key="D1" value="1196.1769595237956" />
-      <entry key="W1" value="5086.142168550309" />
+      <entry key="MS100" value="0.9730420671716604" />
+      <entry key="MS500" value="2.122383351717743" />
+      <entry key="S2" value="2.730846983057755" />
+      <entry key="S5" value="2.9745120419449695" />
+      <entry key="S10" value="4.260735559394755" />
+      <entry key="S30" value="11.670685959574719" />
+      <entry key="S60" value="18.85741563723214" />
+      <entry key="M2" value="29.589274480188944" />
+      <entry key="M5" value="61.998163696624964" />
+      <entry key="M10" value="114.67296366376335" />
+      <entry key="M15" value="156.51305796496382" />
+      <entry key="M30" value="257.7696470059662" />
+      <entry key="H1" value="438.6528182380512" />
+      <entry key="H2" value="720.7333433630663" />
+      <entry key="H4" value="1088.1513266776753" />
+      <entry key="D1" value="2560.2423404780893" />
+      <entry key="W1" value="6715.4487272469205" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -286,103 +289,9 @@
       <workItem from="1785048244325" duration="3309000" />
       <workItem from="1785115661365" duration="895000" />
       <workItem from="1785164433016" duration="1630000" />
-      <workItem from="1785197425365" duration="4191000" />
-    </task>
-    <task id="LOCAL-00064" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782540717202</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1782540717202</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782541170335</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1782541170335</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782541855794</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1782541855794</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782542438327</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1782542438327</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782566081186</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1782566081186</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Fixing blank feed sceen bug">
-      <option name="closed" value="true" />
-      <created>1782566459937</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1782566459937</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Removed DROP statement tables entries fixed">
-      <option name="closed" value="true" />
-      <created>1782567472593</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1782567472593</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Updated the Social battery SLider in NewEntryScreen.dart">
-      <option name="closed" value="true" />
-      <created>1782569603392</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1782569603393</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Added LegalScreen.dart&#10;Added Firebase Analytics">
-      <option name="closed" value="true" />
-      <created>1782576168500</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1782576168501</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Added LegalScreen.dart&#10;Added Firebase Analytics">
-      <option name="closed" value="true" />
-      <created>1782576471029</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1782576471030</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Added LegalScreen.dart&#10;Added Firebase Analytics">
-      <option name="closed" value="true" />
-      <created>1782577930617</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1782577930617</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Fixing black screen caused by unhandled Social battery null or empty">
-      <option name="closed" value="true" />
-      <created>1782618249691</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1782618249691</updated>
+      <workItem from="1785197425365" duration="4338000" />
+      <workItem from="1785299674480" duration="1492000" />
+      <workItem from="1785388479762" duration="15000" />
     </task>
     <task id="LOCAL-00076" summary="Fixing blank screen caused by unhandled Social battery null or empty">
       <option name="closed" value="true" />
@@ -680,23 +589,109 @@
       <option name="project" value="LOCAL" />
       <updated>1785201716596</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users">
+      <option name="closed" value="true" />
+      <created>1785221267021</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1785221267021</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Added documentation to JournalEntry.dart">
+      <option name="closed" value="true" />
+      <created>1785301066805</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1785301066806</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Added documentation to app_theme.dart">
+      <option name="closed" value="true" />
+      <created>1785389628898</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1785389628900</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Added documentation to app_widgets.dart">
+      <option name="closed" value="true" />
+      <created>1785556662114</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1785556662115</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Added documentation to app_widgets.dart">
+      <option name="closed" value="true" />
+      <created>1785563644829</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1785563644829</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Added documentation to JournalFeedScreen.dart and JournalDetailScreen.dart">
+      <option name="closed" value="true" />
+      <created>1785647293686</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1785647293688</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Added documentation to JournalService.dart">
+      <option name="closed" value="true" />
+      <created>1785814588645</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1785814588646</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Added documentation to LandingScreen.dart, LegalScreen.dart, LoginScreen.dart">
+      <option name="closed" value="true" />
+      <created>1785821749582</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1785821749583</updated>
+    </task>
+    <task id="LOCAL-00121" summary="Added documentation to main.dart and NewEntryScreen.dart">
+      <option name="closed" value="true" />
+      <created>1785903604835</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1785903604836</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Added documentation to NotificationService.dart">
+      <option name="closed" value="true" />
+      <created>1785995413317</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1785995413319</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Added documentation to OnboardingScreen.dart, RegisterScreen.dart">
+      <option name="closed" value="true" />
+      <created>1786075907819</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1786075907820</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Added documentation to SettingsScreen.dart, SocialBatteryScreen.dart, ThatShyLifeApp.dart">
+      <option name="closed" value="true" />
+      <created>1786247924304</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1786247924304</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the Social battery SLider in NewEntryScreen.dart" />
-    <MESSAGE value="Added LegalScreen.dart&#10;Added Firebase Analytics" />
-    <MESSAGE value="Fixing black screen caused by unhandled Social battery null or empty" />
-    <MESSAGE value="Fixing blank screen caused by unhandled Social battery null or empty" />
-    <MESSAGE value="Created LandingScreen.dartcreen" />
-    <MESSAGE value="Created LandingScreen.dart&#10;Created OnboardingScreen.dart" />
-    <MESSAGE value="Placed Landing page as first page that appears and modified OnboardingScreen.dart Padding" />
-    <MESSAGE value="Fixing Landing page" />
-    <MESSAGE value="Implemented Tests for Security Manager class" />
-    <MESSAGE value="Startung DatabaseManagerTest" />
     <MESSAGE value="Solving redundant login issue" />
     <MESSAGE value="Fixing the LandingScreen.dart" />
     <MESSAGE value="Solving Persistent Login Issue" />
@@ -712,7 +707,17 @@
     <MESSAGE value="Added documentation to JournalController.java and JwtUtil.java" />
     <MESSAGE value="Added documentation to SecurityManager.java, AuthController.java" />
     <MESSAGE value="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to SecurityManager.java, AuthController.java&#10;Solving an expired token issue that does not give correct UX directions to users" />
+    <MESSAGE value="Added documentation to JournalEntry.dart" />
+    <MESSAGE value="Added documentation to app_theme.dart" />
+    <MESSAGE value="Added documentation to app_widgets.dart" />
+    <MESSAGE value="Added documentation to JournalFeedScreen.dart and JournalDetailScreen.dart" />
+    <MESSAGE value="Added documentation to JournalService.dart" />
+    <MESSAGE value="Added documentation to LandingScreen.dart, LegalScreen.dart, LoginScreen.dart" />
+    <MESSAGE value="Added documentation to main.dart and NewEntryScreen.dart" />
+    <MESSAGE value="Added documentation to NotificationService.dart" />
+    <MESSAGE value="Added documentation to OnboardingScreen.dart, RegisterScreen.dart" />
+    <MESSAGE value="Added documentation to SettingsScreen.dart, SocialBatteryScreen.dart, ThatShyLifeApp.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to SettingsScreen.dart, SocialBatteryScreen.dart, ThatShyLifeApp.dart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
