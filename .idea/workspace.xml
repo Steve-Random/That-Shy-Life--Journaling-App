@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added documentation to NotificationService.dart">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Added documentation to OnboardingScreen.dart, RegisterScreen.dart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/OnboardingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/OnboardingScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/RegisterScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/SettingsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/SettingsScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/SocialBatteryScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/SocialBatteryScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/that_shy_life_ui/lib/ThatShyLifeApp.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,61 +66,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000178655" />
-      <entry key="S5" value="1.000056287035923" />
-      <entry key="S10" value="1.0129258376973156" />
-      <entry key="S30" value="2.425121661829391" />
-      <entry key="S60" value="8.658123131038433" />
-      <entry key="M2" value="24.770188294435666" />
-      <entry key="M5" value="64.94123967340056" />
-      <entry key="M10" value="118.5482503574685" />
-      <entry key="M15" value="167.32700214191826" />
-      <entry key="M30" value="277.452959709836" />
-      <entry key="H1" value="414.0816627430002" />
-      <entry key="H2" value="601.2121843108479" />
-      <entry key="H4" value="847.6999725202684" />
-      <entry key="D1" value="1904.5355872013415" />
-      <entry key="W1" value="4899.566941671465" />
+      <entry key="MS100" value="1.0000001806874956" />
+      <entry key="MS500" value="1.0461193901311436" />
+      <entry key="S2" value="1.8559856876727887" />
+      <entry key="S5" value="3.0590376348556476" />
+      <entry key="S10" value="3.9675904292123017" />
+      <entry key="S30" value="5.793251940468553" />
+      <entry key="S60" value="7.375098731312619" />
+      <entry key="M2" value="13.23937926770345" />
+      <entry key="M5" value="45.52758523409858" />
+      <entry key="M10" value="96.55144463404852" />
+      <entry key="M15" value="135.02693012038992" />
+      <entry key="M30" value="229.3546700507951" />
+      <entry key="H1" value="402.7723875002177" />
+      <entry key="H2" value="672.6253826490359" />
+      <entry key="H4" value="1017.7852336160616" />
+      <entry key="D1" value="2256.6237237799387" />
+      <entry key="W1" value="5323.289823457164" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.6288435454053447E-169" />
-      <entry key="S2" value="6.3528681631429434E-43" />
-      <entry key="S5" value="1.3218675369977349E-17" />
-      <entry key="S10" value="3.635749629715631E-9" />
-      <entry key="S30" value="0.0015376753635678898" />
-      <entry key="S60" value="0.039213516010397326" />
-      <entry key="M2" value="0.19870226792372028" />
-      <entry key="M5" value="0.6046908301011904" />
-      <entry key="M10" value="1.2328527885343625" />
-      <entry key="M15" value="1.9015529871072812" />
-      <entry key="M30" value="3.8369293266536135" />
-      <entry key="H1" value="7.607098435611805" />
-      <entry key="H2" value="16.437438667468886" />
-      <entry key="H4" value="34.86696959567862" />
-      <entry key="D1" value="262.9196443380022" />
-      <entry key="W1" value="1344.485445589564" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="8.356161485598496E-87" />
+      <entry key="S5" value="3.8124232542453116E-35" />
+      <entry key="S10" value="7.519556171981239E-18" />
+      <entry key="S30" value="3.6100353319608243E-6" />
+      <entry key="S60" value="0.0033271620141683447" />
+      <entry key="M2" value="0.11166714742791543" />
+      <entry key="M5" value="1.0663275345729202" />
+      <entry key="M10" value="2.5185241339042337" />
+      <entry key="M15" value="3.5490024458297857" />
+      <entry key="M30" value="5.931539214394474" />
+      <entry key="H1" value="10.229453291761514" />
+      <entry key="H2" value="19.000556719189962" />
+      <entry key="H4" value="37.1922602456565" />
+      <entry key="D1" value="262.6956564557397" />
+      <entry key="W1" value="1348.0740009802425" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.34627736702773115" />
-      <entry key="MS500" value="0.8088813483617391" />
-      <entry key="S2" value="0.9483555831969673" />
-      <entry key="S5" value="0.9790688315468647" />
-      <entry key="S10" value="1.0023229591620157" />
-      <entry key="S30" value="2.4209965416350583" />
-      <entry key="S60" value="8.684550734115637" />
-      <entry key="M2" value="24.937622099428136" />
-      <entry key="M5" value="65.50210837826751" />
-      <entry key="M10" value="119.73916148858996" />
-      <entry key="M15" value="169.18940381167084" />
-      <entry key="M30" value="281.2583352372672" />
-      <entry key="H1" value="421.6654178163005" />
-      <entry key="H2" value="617.6311892497612" />
-      <entry key="H4" value="882.5513661549603" />
-      <entry key="D1" value="2167.44211590531" />
-      <entry key="W1" value="6244.044394231187" />
+      <entry key="MS100" value="0.08246935720216624" />
+      <entry key="MS500" value="0.6491099629922823" />
+      <entry key="S2" value="1.7220511588976966" />
+      <entry key="S5" value="2.9953483195090462" />
+      <entry key="S10" value="3.9311985500586415" />
+      <entry key="S30" value="5.776331245300049" />
+      <entry key="S60" value="7.367838943393493" />
+      <entry key="M2" value="13.341325586600528" />
+      <entry key="M5" value="46.57751827420031" />
+      <entry key="M10" value="99.05126250169114" />
+      <entry key="M15" value="138.55810262725723" />
+      <entry key="M30" value="235.27000564669208" />
+      <entry key="H1" value="412.98580582989564" />
+      <entry key="H2" value="691.6103053517703" />
+      <entry key="H4" value="1054.9628341774687" />
+      <entry key="D1" value="2519.306320359344" />
+      <entry key="W1" value="6671.355800350544" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -131,44 +132,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Backend.executor": "Run",
-    "Flutter.main.dart.executor": "Run",
-    "JUnit.SecurityManagerTest.executor": "Debug",
-    "JUnit.SecurityManagerTest.testEncryptReturnsNonNullValue.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "#104 on work",
-    "io.flutter.reload.alreadyRun": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "ml.llm.AcpAgentsConfigurable",
-    "show.migrate.to.gradle.popup": "false",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Backend.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SecurityManagerTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.SecurityManagerTest.testEncryptReturnsNonNullValue.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#104 on work&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nanaf/Desktop/Ryder/Portfolio/That-Shy-Life--Journaling-App/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.thatshylife" />
@@ -293,14 +294,6 @@
       <workItem from="1785197425365" duration="4338000" />
       <workItem from="1785299674480" duration="1492000" />
       <workItem from="1785388479762" duration="15000" />
-    </task>
-    <task id="LOCAL-00074" summary="Added LegalScreen.dart&#10;Added Firebase Analytics">
-      <option name="closed" value="true" />
-      <created>1782577930617</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1782577930617</updated>
     </task>
     <task id="LOCAL-00075" summary="Fixing black screen caused by unhandled Social battery null or empty">
       <option name="closed" value="true" />
@@ -686,14 +679,21 @@
       <option name="project" value="LOCAL" />
       <updated>1785995413319</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Added documentation to OnboardingScreen.dart, RegisterScreen.dart">
+      <option name="closed" value="true" />
+      <created>1786075907819</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1786075907820</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implemented Tests for Security Manager class" />
     <MESSAGE value="Startung DatabaseManagerTest" />
     <MESSAGE value="Solving redundant login issue" />
     <MESSAGE value="Fixing the LandingScreen.dart" />
@@ -718,7 +718,8 @@
     <MESSAGE value="Added documentation to LandingScreen.dart, LegalScreen.dart, LoginScreen.dart" />
     <MESSAGE value="Added documentation to main.dart and NewEntryScreen.dart" />
     <MESSAGE value="Added documentation to NotificationService.dart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to NotificationService.dart" />
+    <MESSAGE value="Added documentation to OnboardingScreen.dart, RegisterScreen.dart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation to OnboardingScreen.dart, RegisterScreen.dart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
