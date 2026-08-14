@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Finished JwUtilTest.java">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Implemented SecurityManagerTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/thatshylife/SecurityManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/thatshylife/SecurityManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/JournalEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thatshylife/SecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thatshylife/SecurityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/com/thatshylife/JournalEntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/thatshylife/JournalEntryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,61 +64,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.6293491108525497E-18" />
-      <entry key="MS500" value="3.048691080088115E-4" />
-      <entry key="S2" value="0.1669073646267447" />
-      <entry key="S5" value="1.002248727978491" />
-      <entry key="S10" value="2.1382426713265317" />
-      <entry key="S30" value="3.7297290846437967" />
-      <entry key="S60" value="4.313177580889551" />
-      <entry key="M2" value="4.644934291913151" />
-      <entry key="M5" value="5.095364148533633" />
-      <entry key="M10" value="7.071091661971313" />
-      <entry key="M15" value="10.745987127810105" />
-      <entry key="M30" value="36.116000140217864" />
-      <entry key="H1" value="144.59566286433343" />
-      <entry key="H2" value="415.0136474980219" />
-      <entry key="H4" value="843.7480862599953" />
-      <entry key="D1" value="2348.995076125134" />
-      <entry key="W1" value="5533.833592795655" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000575031297063" />
+      <entry key="S2" value="1.0877458268174882" />
+      <entry key="S5" value="1.430277039364921" />
+      <entry key="S10" value="1.8482412152145362" />
+      <entry key="S30" value="2.7854409034846457" />
+      <entry key="S60" value="4.170324938008914" />
+      <entry key="M2" value="6.487919138474245" />
+      <entry key="M5" value="12.777942755070917" />
+      <entry key="M10" value="24.86229920142884" />
+      <entry key="M15" value="35.54655948682049" />
+      <entry key="M30" value="65.275656117038" />
+      <entry key="H1" value="158.40176848961548" />
+      <entry key="H2" value="409.4358173472958" />
+      <entry key="H4" value="837.3318781750157" />
+      <entry key="D1" value="2385.9921155769043" />
+      <entry key="W1" value="5596.096156428188" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0000000023656812" />
-      <entry key="M2" value="1.0001515371985477" />
-      <entry key="M5" value="1.1520468726570172" />
-      <entry key="M10" value="2.7809626108028267" />
-      <entry key="M15" value="5.558378137487098" />
-      <entry key="M30" value="16.96356430753446" />
-      <entry key="H1" value="40.6890343568914" />
-      <entry key="H2" value="72.82646370979654" />
-      <entry key="H4" value="109.70286598702305" />
-      <entry key="D1" value="353.3037761034263" />
-      <entry key="W1" value="1448.0081677356054" />
+      <entry key="MS100" value="1.6735458537022996E-43" />
+      <entry key="MS500" value="2.7843737018014094E-9" />
+      <entry key="S2" value="0.007264281969882695" />
+      <entry key="S5" value="0.14288980421970907" />
+      <entry key="S10" value="0.4975621845388024" />
+      <entry key="S30" value="2.831943059799386" />
+      <entry key="S60" value="6.035920225046467" />
+      <entry key="M2" value="10.506934947630725" />
+      <entry key="M5" value="22.166402182837064" />
+      <entry key="M10" value="36.93451072353183" />
+      <entry key="M15" value="47.00637306785284" />
+      <entry key="M30" value="67.19164127339118" />
+      <entry key="H1" value="96.23501007090677" />
+      <entry key="H2" value="134.0404561066334" />
+      <entry key="H4" value="176.54275514254186" />
+      <entry key="D1" value="427.163657589174" />
+      <entry key="W1" value="1524.62586511951" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.736365916131577E-14" />
-      <entry key="MS500" value="0.002744753640851961" />
-      <entry key="S2" value="0.3884958522575297" />
-      <entry key="S5" value="1.548043825452964" />
-      <entry key="S10" value="2.875967672048177" />
-      <entry key="S30" value="4.632798614901643" />
-      <entry key="S60" value="5.263388204495159" />
-      <entry key="M2" value="5.619838318521183" />
-      <entry key="M5" value="6.236201672247949" />
-      <entry key="M10" value="9.841609674920667" />
-      <entry key="M15" value="16.29136936679449" />
-      <entry key="M30" value="53.056908300106414" />
-      <entry key="H1" value="185.2527286180212" />
-      <entry key="H2" value="487.8078241112613" />
-      <entry key="H4" value="953.4240561654702" />
-      <entry key="D1" value="2702.282943144089" />
-      <entry key="W1" value="6981.833255463634" />
+      <entry key="MS100" value="6.7221438849121636E-15" />
+      <entry key="MS500" value="0.001467295821196518" />
+      <entry key="S2" value="0.2437405192299076" />
+      <entry key="S5" value="0.9631860093155592" />
+      <entry key="S10" value="1.89650698839113" />
+      <entry key="S30" value="5.290404740774649" />
+      <entry key="S60" value="9.942615949230428" />
+      <entry key="M2" value="16.79042110532392" />
+      <entry key="M5" value="34.771013629111216" />
+      <entry key="M10" value="61.64874080256993" />
+      <entry key="M15" value="82.42649421897961" />
+      <entry key="M30" value="132.3759992505155" />
+      <entry key="H1" value="254.56813918703483" />
+      <entry key="H2" value="543.4242868550407" />
+      <entry key="H4" value="1013.8370101621697" />
+      <entry key="D1" value="2813.1378424239288" />
+      <entry key="W1" value="7120.713209100909" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -139,6 +134,7 @@
   "keyToString": {
     "Application.Backend.executor": "Run",
     "Flutter.main.dart.executor": "Run",
+    "JUnit.JournalEntryTest.executor": "Run",
     "JUnit.JwtUtilTest.executor": "Run",
     "JUnit.SecurityManagerTest.executor": "Run",
     "JUnit.SecurityManagerTest.testEncryptReturnsNonNullValue.executor": "Debug",
@@ -155,7 +151,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "#109 on work",
+    "git-widget-placeholder": "work",
     "io.flutter.reload.alreadyRun": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -188,7 +184,7 @@
       <recent name="com.thatshylife" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SecurityManagerTest">
+  <component name="RunManager" selected="JUnit.JournalEntryTest">
     <configuration name="Backend" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.thatshylife.Main" />
       <module name="journal-app" />
@@ -199,6 +195,21 @@
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/that_shy_life_ui/lib/main.dart" />
       <method v="2" />
+    </configuration>
+    <configuration name="JournalEntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="journal-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thatshylife.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thatshylife" />
+      <option name="MAIN_CLASS_NAME" value="com.thatshylife.JournalEntryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="JwtUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="journal-app" />
@@ -246,27 +257,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="journal-app" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.thatshylife.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.thatshylife.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JournalEntryTest" />
         <item itemvalue="JUnit.SecurityManagerTest" />
         <item itemvalue="JUnit.JwtUtilTest" />
         <item itemvalue="Flutter.main.dart" />
         <item itemvalue="JUnit.SecurityManagerTest.testEncryptReturnsNonNullValue" />
-        <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -314,14 +311,6 @@
       <workItem from="1785197425365" duration="4338000" />
       <workItem from="1785299674480" duration="1492000" />
       <workItem from="1785388479762" duration="15000" />
-    </task>
-    <task id="LOCAL-00081" summary="Created LandingScreen.dart&#10;Created OnboardingScreen.dart">
-      <option name="closed" value="true" />
-      <created>1782812244525</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1782812244526</updated>
     </task>
     <task id="LOCAL-00082" summary="Placed Landing page as first page that appears and modified OnboardingScreen.dart Padding">
       <option name="closed" value="true" />
@@ -707,14 +696,21 @@
       <option name="project" value="LOCAL" />
       <updated>1786514129709</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Implemented SecurityManagerTest.java">
+      <option name="closed" value="true" />
+      <created>1786596454149</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1786596454151</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solving Persistent Login Issue" />
     <MESSAGE value="Making build good for dev branch" />
     <MESSAGE value="Added Notification feature and created SettingsScreen.dart" />
     <MESSAGE value="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart" />
@@ -739,7 +735,8 @@
     <MESSAGE value="Added documentation to SettingsScreen.dart, SocialBatteryScreen.dart, ThatShyLifeApp.dart" />
     <MESSAGE value="Implementing JwUtilTest.java" />
     <MESSAGE value="Finished JwUtilTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished JwUtilTest.java" />
+    <MESSAGE value="Implemented SecurityManagerTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented SecurityManagerTest.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
