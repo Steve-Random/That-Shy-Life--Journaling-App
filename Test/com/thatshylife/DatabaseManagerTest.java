@@ -94,7 +94,7 @@ class DatabaseManagerTest {
         }
     }
 
-    //Create Newt Table (entries table)
+    //Create New Table (entries table)
 
     @Test
     void createNewTable_executesCreateTableStatement() throws Exception {
@@ -107,7 +107,13 @@ class DatabaseManagerTest {
         verify(mockStatement).execute(contains("CREATE TABLE IF NOT EXISTS entries"));
     }
 
+    //SaveUser
+
     @Test
-    void getAllEntries() {
+    void saveUser_insertsUserWithCorrectFields() {
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+
+
+
     }
 }
