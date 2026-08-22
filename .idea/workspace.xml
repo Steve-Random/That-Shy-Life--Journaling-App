@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Implemented JournalEntryTest.java">
+    <list default="true" id="0496a99e-30a0-4283-a0f8-fdd6d2f94bb0" name="Changes" comment="Implementing DatabaseManagerTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/thatshylife/DatabaseManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/thatshylife/DatabaseManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,61 +63,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7803385196342567E-67" />
-      <entry key="MS500" value="7.754958458968475E-14" />
-      <entry key="S2" value="8.873685246941088E-4" />
-      <entry key="S5" value="0.09139296118807495" />
-      <entry key="S10" value="0.4546235971572061" />
-      <entry key="S30" value="2.2466059354713046" />
-      <entry key="S60" value="4.898302109838083" />
-      <entry key="M2" value="9.18738482009232" />
-      <entry key="M5" value="19.821546370134058" />
-      <entry key="M10" value="33.64766766631262" />
-      <entry key="M15" value="43.84528567251603" />
-      <entry key="M30" value="62.16579732648503" />
-      <entry key="H1" value="77.38983369932771" />
-      <entry key="H2" value="87.53533051569528" />
-      <entry key="H4" value="95.31868626461316" />
-      <entry key="D1" value="962.4285610379814" />
-      <entry key="W1" value="4940.263620184566" />
+      <entry key="MS100" value="4.002356058178461E-16" />
+      <entry key="MS500" value="8.326512614921448E-4" />
+      <entry key="S2" value="0.16986981475867616" />
+      <entry key="S5" value="0.4941417839710581" />
+      <entry key="S10" value="0.7603432204389603" />
+      <entry key="S30" value="1.9896337663793506" />
+      <entry key="S60" value="3.7774969089919788" />
+      <entry key="M2" value="5.682626316445968" />
+      <entry key="M5" value="7.4458771130494625" />
+      <entry key="M10" value="8.178846832933978" />
+      <entry key="M15" value="8.442241797552848" />
+      <entry key="M30" value="8.715821569930135" />
+      <entry key="H1" value="8.856563263071322" />
+      <entry key="H2" value="8.947733370708916" />
+      <entry key="H4" value="10.417671425404597" />
+      <entry key="D1" value="487.2864307062742" />
+      <entry key="W1" value="4480.347311939847" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000060780673725" />
-      <entry key="S2" value="1.0548177353162536" />
-      <entry key="S5" value="1.4983780013327928" />
-      <entry key="S10" value="2.397625959983503" />
-      <entry key="S30" value="5.33660295930875" />
-      <entry key="S60" value="8.178780367817428" />
-      <entry key="M2" value="12.678702540086656" />
-      <entry key="M5" value="24.9727783636493" />
-      <entry key="M10" value="41.51095099551953" />
-      <entry key="M15" value="54.52210968131284" />
-      <entry key="M30" value="79.8892974743407" />
-      <entry key="H1" value="102.53108390760687" />
-      <entry key="H2" value="118.21194448011728" />
-      <entry key="H4" value="127.91887531379174" />
-      <entry key="D1" value="291.06763383048457" />
-      <entry key="W1" value="1457.113176105307" />
+      <entry key="MS500" value="1.0000000100655413" />
+      <entry key="S2" value="1.010017251938932" />
+      <entry key="S5" value="1.1635533347598193" />
+      <entry key="S10" value="1.506552493243392" />
+      <entry key="S30" value="2.6977263207574618" />
+      <entry key="S60" value="3.5500288973537506" />
+      <entry key="M2" value="4.1771651528697955" />
+      <entry key="M5" value="4.643548889252818" />
+      <entry key="M10" value="4.816856740328086" />
+      <entry key="M15" value="4.8767828327463985" />
+      <entry key="M30" value="4.93782319205392" />
+      <entry key="H1" value="4.968773036002943" />
+      <entry key="H2" value="5.010190643731101" />
+      <entry key="H4" value="6.883516291362849" />
+      <entry key="D1" value="149.19921877040375" />
+      <entry key="W1" value="1323.007640685093" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.9294670036789988E-25" />
-      <entry key="MS500" value="1.141176009617284E-5" />
-      <entry key="S2" value="0.07108566047927586" />
-      <entry key="S5" value="0.7159703796268057" />
-      <entry key="S10" value="2.1423356030271092" />
-      <entry key="S30" value="7.1193092964587805" />
-      <entry key="S60" value="12.719649731469252" />
-      <entry key="M2" value="21.568639348341765" />
-      <entry key="M5" value="44.539704916019204" />
-      <entry key="M10" value="74.94166362505737" />
-      <entry key="M15" value="98.17725666654353" />
-      <entry key="M30" value="141.91675603670933" />
-      <entry key="H1" value="179.8327077805791" />
-      <entry key="H2" value="205.6966092236156" />
-      <entry key="H4" value="223.2102001754166" />
-      <entry key="D1" value="1253.4848540784146" />
-      <entry key="W1" value="6397.368472602553" />
+      <entry key="MS100" value="1.7094078636358102E-7" />
+      <entry key="MS500" value="0.04431770060195397" />
+      <entry key="S2" value="0.4893191038335944" />
+      <entry key="S5" value="1.0260417992829958" />
+      <entry key="S10" value="1.6994503421256517" />
+      <entry key="S30" value="4.299052736428418" />
+      <entry key="S60" value="7.067215516668811" />
+      <entry key="M2" value="9.704376180044397" />
+      <entry key="M5" value="12.019432845625316" />
+      <entry key="M10" value="12.959213867049005" />
+      <entry key="M15" value="13.294350520086434" />
+      <entry key="M30" value="13.641129727425117" />
+      <entry key="H1" value="13.819033482911927" />
+      <entry key="H2" value="13.954750011779172" />
+      <entry key="H4" value="17.299195668588283" />
+      <entry key="D1" value="636.4797486912399" />
+      <entry key="W1" value="5803.347381116886" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -311,22 +310,6 @@
       <workItem from="1785197425365" duration="4338000" />
       <workItem from="1785299674480" duration="1492000" />
       <workItem from="1785388479762" duration="15000" />
-    </task>
-    <task id="LOCAL-00083" summary="Fixing Landing page">
-      <option name="closed" value="true" />
-      <created>1782846943657</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1782846943657</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Fixing Landing page">
-      <option name="closed" value="true" />
-      <created>1782987743210</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1782987743212</updated>
     </task>
     <task id="LOCAL-00085" summary="Implemented Tests for Security Manager class">
       <option name="closed" value="true" />
@@ -704,14 +687,29 @@
       <option name="project" value="LOCAL" />
       <updated>1786684929456</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Implementing DatabaseManagerTest.java">
+      <option name="closed" value="true" />
+      <created>1787196989653</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1787196989654</updated>
+    </task>
+    <task id="LOCAL-00133" summary="Implementing DatabaseManagerTest.java">
+      <option name="closed" value="true" />
+      <created>1787284519920</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1787284519920</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Notification feature and created SettingsScreen.dart" />
     <MESSAGE value="Implemented SettingsScreen.dart&#10;Changed some display in JournalFeedScreen.dart" />
     <MESSAGE value="Solving Notification Bug" />
     <MESSAGE value="Fixed Notification bug&#10;Added a Dark mode theme" />
@@ -736,7 +734,8 @@
     <MESSAGE value="Finished JwUtilTest.java" />
     <MESSAGE value="Implemented SecurityManagerTest.java" />
     <MESSAGE value="Implemented JournalEntryTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented JournalEntryTest.java" />
+    <MESSAGE value="Implementing DatabaseManagerTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing DatabaseManagerTest.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
