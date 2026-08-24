@@ -157,14 +157,16 @@ class DatabaseManagerTest {
         when(mockResultset.getString("email")).thenReturn("test@example.com");
         when(mockResultset.getString("createdAt")).thenReturn("2026-01-01T09:00");
 
-        //.........
-
         User result;
         try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)) {
-            result = dbManager.findUserByEmail("nobody@example.com");
+            result = dbManager.findUserByEmail("test@example.com");
         }
 
-        assertNull(result);
+        assertNotNull(result);
+        assertEquals("user-1", result.getId());
+        assertEquals("test@example.com", result.getEmail());
+        assertEquals("hashed-password", result.getPassword());
+        assertEquals(LocalDateTime.of(2026, 1, 1, 9, 0), result.getCreatedAt());
     }
 
     @Test
@@ -193,5 +195,98 @@ class DatabaseManagerTest {
 
         assertNull(result);
     }
+
+    //SaveEntry
+
+    @Test
+    void saveEntry_EncryptsContentAndMicroEntryBeforeStoring() throws Exception{
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+
+        JournalEntry entry = new JournalEntry();
+        entry.setId("entry-1");
+        entry.setUserId("user-1");
+        entry.setTimestamp(LocalDateTime.of(2026, 2, 1, 10, 0));
+        entry.setContent("This is private content.");
+        entry.setMicroEntry("quiet day");
+        entry.setSocialBattery(60);
+        entry.setAudioTranscript(true);
+        entry.setTags(List.of("#quiet", "#reflective"));
+
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)){
+            dbManager.saveEntry(entry);
+        }
+
+        String expectedEncryptedContent = SecurityManager.encrypt("This is private content");
+        String expectedEncryptedMicroEntry = SecurityManager.encrypt("quiet day");
+        String expectedTagsJson = new ObjectMapper().writeValueAsString(List.of("#quiet", "#reflective"));
+
+        verify(mockPreparedStatement).setString(1, "entry-1");
+        verify(mockPreparedStatement).setString(2, "2026-02-01T10:00");
+        verify(mockPreparedStatement).setString(3, expectedEncryptedContent);
+        verify(mockPreparedStatement).setString(4, expectedEncryptedMicroEntry);
+        verify(mockPreparedStatement).setInt(5, 60);
+        verify(mockPreparedStatement).setInt(6, 1);
+        verify(mockPreparedStatement).setString(7, expectedTagsJson);
+        verify(mockPreparedStatement).setString(8, "user-1");
+        verify(mockPreparedStatement).executeUpdate();
+
+    }
+
+    @Test
+    void saveEntry_encodesFalseAudioTranscriptAsZero() throws Exception{
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+
+        JournalEntry entry = new JournalEntry();
+        entry.setId("entry-2");
+        entry.setUserId("user-1");
+        entry.setTimestamp(LocalDateTime.now());
+        entry.setContent("content");
+        entry.setMicroEntry("micro");
+        entry.setSocialBattery(50);
+        entry.setAudioTranscript(false);
+        entry.setTags(List.of("#calm"));
+
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)){
+            dbManager.saveEntry(entry);
+        }
+
+        verify(mockPreparedStatement).setInt(6, 0);
+
+    }
+
+    @Test
+    void saveEntry_doesNotThrow_whenExecuteUpdateFails() throws Exception{
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+        when(mockPreparedStatement.executeUpdate()).thenThrow(new SQLException("disk full"));
+
+        JournalEntry entry = new JournalEntry();
+        entry.setId("entry-3");
+        entry.setUserId("user-1");
+        entry.setTimestamp(LocalDateTime.now());
+        entry.setContent("content.");
+        entry.setMicroEntry("micro");
+        entry.setSocialBattery(40);
+
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)){
+            assertDoesNotThrow(() -> dbManager.saveEntry(entry));
+        }
+
+        String expectedEncryptedContent = SecurityManager.encrypt("This is private content");
+        String expectedEncryptedMicroEntry = SecurityManager.encrypt("quiet day");
+        String expectedTagsJson = new ObjectMapper().writeValueAsString(List.of("#quiet", "#reflective"));
+
+        verify(mockPreparedStatement).setString(1, "entry-1");
+        verify(mockPreparedStatement).setString(2, "2026-02-01T10:00");
+        verify(mockPreparedStatement).setString(3, expectedEncryptedContent);
+        verify(mockPreparedStatement).setString(4, expectedEncryptedMicroEntry);
+        verify(mockPreparedStatement).setInt(5, 60);
+        verify(mockPreparedStatement).setInt(6, 1);
+        verify(mockPreparedStatement).setString(7, expectedTagsJson);
+        verify(mockPreparedStatement).setString(8, "user-1");
+        verify(mockPreparedStatement).executeUpdate();
+
+    }
+
+    //GetAllEntries
 
 }
