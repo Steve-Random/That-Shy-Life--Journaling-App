@@ -289,4 +289,117 @@ class DatabaseManagerTest {
 
     //GetAllEntries
 
+    @Test
+    void getAllEntries_returnsDecryptedEntry_whenOneRowExists() throws Exception {
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+        when(mockPreparedStatement.executeQuery()).thenReturn(mockResultset);
+
+        when(mockResultset.next()).thenReturn(true, false);
+
+        String encryptedContent = SecurityManager.encrypt("Original content");
+        String encryptedMicroEntry = SecurityManager.encrypt("original micro");
+        String tagsJson = new ObjectMapper().writeValueAsString(List.of("#tag1", "#tag2"));
+
+        when(mockResultset.getString("id")).thenReturn("user-1");
+        when(mockResultset.getString("timestamp")).thenReturn("2026-01-01T09:00");
+        when(mockResultset.getString("content")).thenReturn(encryptedContent);
+        when(mockResultset.getString("microEntry")).thenReturn(encryptedMicroEntry);
+        when(mockResultset.getInt("socialBattery")).thenReturn(70);
+        when(mockResultset.getInt("isAudioTranscript")).thenReturn(1);
+        when(mockResultset.getString("tags")).thenReturn(tagsJson);
+
+        List<JournalEntry> result;
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)) {
+            result = dbManager.getAllEntries("user-1");
+        }
+
+        assertEquals(1, result.size());
+        JournalEntry entry = result.get(0);
+        assertEquals("entry-1", entry.getId());
+        assertEquals(LocalDateTime.of(2026, 3, 1, 0, 30), entry.getTimestamp());
+        assertEquals("original content", entry.getContent());
+        assertEquals("original micro", entry.getMicroEntry());
+        assertEquals(70, entry.getSocialBattery());
+        assertTrue(entry.isAudioTranscript());
+        assertEquals(List.of("#tag1", "#tag2"), entry.getTags());
+    }
+
+    @Test
+    void getAllEntries_returnsEmptyList_whenNoRowsExist() throws Exception {
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+        when(mockPreparedStatement.executeQuery()).thenReturn(mockResultset);
+        when(mockResultset.next()).thenReturn(false);
+
+        List<JournalEntry> result;
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)) {
+            result = dbManager.getAllEntries("user-1");
+        }
+
+        assertNotNull(result);
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    void getAllEntries_returnsEmptyList_whenQueryFails() throws Exception {
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+        when(mockPreparedStatement.executeQuery()).thenThrow(new SQLException("connection lost"));
+
+        List<JournalEntry> result;
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)) {
+            result = dbManager.getAllEntries("user-1");
+        }
+
+        assertNotNull(result);
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    void getAllEntries_keepsConstructorTimestamp_whenTimestampColumnIsNull() throws Exception {
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+        when(mockPreparedStatement.executeQuery()).thenReturn(mockResultset);
+        when(mockResultset.next()).thenReturn(true, false);
+
+        when(mockResultset.getString("id")).thenReturn("user-1");
+        when(mockResultset.getString("timestamp")).thenReturn(null);
+        when(mockResultset.getString("content")).thenReturn("content");
+        when(mockResultset.getString("microEntry")).thenReturn("micro");
+        when(mockResultset.getInt("socialBattery")).thenReturn(30);
+        when(mockResultset.getInt("isAudioTranscript")).thenReturn(0);
+        when(mockResultset.getString("tags")).thenReturn(null);
+
+        LocalDateTime before = LocalDateTime.now();
+        List<JournalEntry> result;
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)) {
+            result = dbManager.getAllEntries("user-1");
+        }
+        LocalDateTime after = LocalDateTime.now();
+
+        JournalEntry entry = result.get(0);
+        assertNotNull(entry.getTimestamp());
+        assertFalse(entry.getTimestamp().isBefore(before.minusSeconds(1)));
+        assertFalse(entry.getTimestamp().isAfter(after.plusSeconds(1)));
+    }
+
+    @Test
+    void getAllEntries_keepsEmptyTagsList_whenTagsJsonIsMalformed() throws Exception {
+        when(mockConnection.prepareStatement(anyString())).thenReturn(mockPreparedStatement);
+        when(mockPreparedStatement.executeQuery()).thenReturn(mockResultset);
+        when(mockResultset.next()).thenReturn(true, false);
+
+        when(mockResultset.getString("id")).thenReturn("user-1");
+        when(mockResultset.getString("timestamp")).thenReturn(null);
+        when(mockResultset.getString("content")).thenReturn("content");
+        when(mockResultset.getString("microEntry")).thenReturn("micro");
+        when(mockResultset.getInt("socialBattery")).thenReturn(30);
+        when(mockResultset.getInt("isAudioTranscript")).thenReturn(0);
+        when(mockResultset.getString("tags")).thenReturn("not valid json");
+
+        List<JournalEntry> result;
+        try (MockedStatic<DriverManager> ignored = mockDriverManagerToReturn(mockConnection)) {
+            result = dbManager.getAllEntries("user-1");
+        }
+
+        assertTrue(result.get(0).getTags().isEmpty());
+    }
+
 }
